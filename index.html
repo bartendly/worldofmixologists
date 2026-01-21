@@ -122,6 +122,14 @@
     .hero-net-copy strong{color:rgba(242,242,243,0.95);font-weight:900;}
     @media (min-width:860px){.hero-net{padding:16px;}.hero-net-wrap{grid-template-columns:1.05fr 0.95fr;gap:14px;}.hero-net-title{font-size:15px;}}
  
+    .wom-map{margin-top:12px;}
+    .wom-map-figure{width:100%;border-radius:18px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.02);overflow:hidden;}
+    .wom-map-inner{padding:14px;}
+    .wom-map-svg{width:100%;height:auto;display:block;}
+    .wom-map-caption{padding:12px 14px 14px 14px;border-top:1px solid rgba(255,255,255,0.10);color:rgba(183,183,194,0.92);font-size:13px;line-height:1.55;}
+    .wom-map-caption b{color:rgba(242,242,243,0.98);}
+    @media (min-width: 860px){.wom-map-inner{padding:18px;}.wom-map-caption{font-size:14px;}}
+   
     </style>    
 </head>
 
@@ -173,67 +181,109 @@
               <span class="hero-net-badge">Global execution layer</span>
             </div>
           
-            <div class="hero-net-wrap">
-              <svg viewBox="0 0 520 240" role="img" aria-label="Global network illustration">
-                <defs>
-                  <radialGradient id="glow" cx="35%" cy="20%" r="80%">
-                    <stop offset="0%" stop-color="rgba(255,109,33,0.20)"></stop>
-                    <stop offset="100%" stop-color="rgba(0,0,0,0)"></stop>
-                  </radialGradient>
-                  <clipPath id="globeClip">
-                    <circle cx="190" cy="120" r="92"></circle>
-                  </clipPath>
-                </defs>
-          
-                <!-- background glow -->
-                <rect x="0" y="0" width="520" height="240" fill="url(#glow)"></rect>
-          
-                <!-- globe circle -->
-                <circle cx="190" cy="120" r="92" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"></circle>
-          
-                <!-- simple “map” lines inside globe -->
-                <g clip-path="url(#globeClip)" opacity="0.85">
-                  <path d="M120 120 C150 78, 195 78, 220 98 C235 110, 250 104, 260 92" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2"></path>
-                  <path d="M130 150 C160 132, 190 132, 215 148 C235 160, 255 152, 270 138" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2"></path>
-                  <path d="M150 86 C165 100, 170 118, 158 132" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"></path>
-                  <path d="M205 88 C195 106, 198 126, 214 140" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"></path>
-                </g>
-          
-                <!-- connection arcs (outside the globe) -->
-                <path d="M190 120 C250 40, 330 30, 390 70" fill="none" stroke="rgba(255,109,33,0.45)" stroke-width="2" stroke-dasharray="4 6"></path>
-                <path d="M190 120 C260 160, 340 190, 420 155" fill="none" stroke="rgba(255,109,33,0.35)" stroke-width="2" stroke-dasharray="4 6"></path>
-                <path d="M190 120 C270 100, 315 95, 360 110" fill="none" stroke="rgba(255,109,33,0.28)" stroke-width="2" stroke-dasharray="4 6"></path>
-                <path d="M190 120 C245 70, 300 60, 335 80" fill="none" stroke="rgba(255,109,33,0.25)" stroke-width="2" stroke-dasharray="4 6"></path>
-
-                <!-- cities (dots) -->
-                <g>
-                  <!-- inside globe (Europe anchor) -->
-                  <circle cx="170" cy="115" r="4.4" fill="var(--accent)"></circle>
-
-                  <!-- outside globe -->
-                  <circle cx="390" cy="70" r="4.8" fill="var(--accent)"></circle>     <!-- Hong Kong -->
-                  <circle cx="420" cy="155" r="4.8" fill="var(--accent2)"></circle>  <!-- Singapore -->
-                  <circle cx="360" cy="110" r="4.8" fill="var(--accent)"></circle>   <!-- Dubai -->
-                  <circle cx="335" cy="80" r="4.8" fill="var(--accent2)"></circle>   <!-- Barcelona -->
-                </g>
-
-                <!-- city labels -->
-                <g font-family="ui-sans-serif, system-ui" font-size="12" fill="rgba(242,242,243,0.86)">
-                  <text x="345" y="76">Barcelona</text>
-                  <text x="398" y="66">Hong Kong</text>
-                  <text x="430" y="151">Singapore</text>
-                  <text x="372" y="106">Dubai</text>
-                </g>
- 
-                <!-- subtle caption inside globe -->
-                <text x="140" y="214" font-family="ui-sans-serif, system-ui" font-size="12" fill="rgba(183,183,194,0.70)">curation → ops → delivery</text>
-              </svg>
-          
-              <p class="hero-net-copy">
-                <strong>Bartendly</strong> connects bars, brands and bartenders to opportunities across cities.
-                World of Mixologists curates. Bartendly operates and delivers.
-              </p>
-            </div>
+            <div class="wom-map" aria-label="Global map of operations">
+                <div class="wom-map-figure">
+                  <div class="wom-map-inner">
+                    <svg class="wom-map-svg" viewBox="0 0 980 360" role="img" aria-label="World map with highlighted cities and connections">
+                      <defs>
+                        <radialGradient id="rim" cx="35%" cy="30%" r="75%">
+                          <stop offset="0%" stop-color="rgba(255,174,58,0.22)"></stop>
+                          <stop offset="55%" stop-color="rgba(255,109,33,0.10)"></stop>
+                          <stop offset="100%" stop-color="rgba(255,255,255,0.06)"></stop>
+                        </radialGradient>
+              
+                        <clipPath id="globeClip">
+                          <circle cx="250" cy="180" r="145"></circle>
+                        </clipPath>
+              
+                        <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+                          <feGaussianBlur stdDeviation="2.2" result="blur"></feGaussianBlur>
+                          <feMerge>
+                            <feMergeNode in="blur"></feMergeNode>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                          </feMerge>
+                        </filter>
+                      </defs>
+              
+                      <!-- globe base -->
+                      <circle cx="250" cy="180" r="145" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.12)" stroke-width="2"></circle>
+                      <circle cx="250" cy="180" r="145" fill="url(#rim)" opacity="0.9"></circle>
+              
+                      <!-- subtle latitude lines -->
+                      <g clip-path="url(#globeClip)" opacity="0.55">
+                        <ellipse cx="250" cy="180" rx="135" ry="55" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1"></ellipse>
+                        <ellipse cx="250" cy="180" rx="120" ry="88" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"></ellipse>
+                        <ellipse cx="250" cy="180" rx="95" ry="115" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"></ellipse>
+                      </g>
+              
+                      <!-- continents (stylised but readable) -->
+                      <g clip-path="url(#globeClip)" opacity="0.95">
+                        <!-- Europe / Africa -->
+                        <path d="M235 120 C260 105, 288 110, 300 132 C312 155, 292 165, 280 172 C268 180, 272 198, 286 214 C300 230, 290 245, 270 252 C250 260, 235 248, 228 232 C220 214, 210 205, 198 190 C184 170, 190 150, 206 140 C220 132, 220 126, 235 120 Z" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.10)" stroke-width="1"></path>
+              
+                        <!-- Asia -->
+                        <path d="M290 128 C320 112, 355 118, 385 135 C410 150, 420 176, 405 195 C390 215, 358 220, 340 212 C322 204, 312 208, 300 220 C286 234, 270 228, 270 210 C270 192, 286 178, 300 170 C314 162, 300 146, 290 128 Z" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.08)" stroke-width="1"></path>
+              
+                        <!-- Americas hint (left side) -->
+                        <path d="M140 150 C160 125, 190 118, 202 132 C214 148, 206 170, 190 188 C176 202, 168 220, 170 240 C172 258, 152 264, 140 248 C128 230, 120 208, 120 190 C120 172, 126 162, 140 150 Z" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.06)" stroke-width="1"></path>
+                      </g>
+              
+                      <!-- cities on globe (approx positions) -->
+                      <g filter="url(#softGlow)">
+                        <!-- Barcelona -->
+                        <circle cx="238" cy="150" r="5.2" fill="var(--accent2)"></circle>
+                        <circle cx="238" cy="150" r="10" fill="rgba(255,174,58,0.12)"></circle>
+              
+                        <!-- Dubai -->
+                        <circle cx="285" cy="170" r="5.2" fill="var(--accent)"></circle>
+                        <circle cx="285" cy="170" r="10" fill="rgba(255,109,33,0.10)"></circle>
+              
+                        <!-- Hong Kong -->
+                        <circle cx="330" cy="165" r="5.2" fill="var(--accent2)"></circle>
+                        <circle cx="330" cy="165" r="10" fill="rgba(255,174,58,0.10)"></circle>
+              
+                        <!-- Singapore -->
+                        <circle cx="318" cy="210" r="5.2" fill="var(--accent)"></circle>
+                        <circle cx="318" cy="210" r="10" fill="rgba(255,109,33,0.10)"></circle>
+                      </g>
+              
+                      <!-- labels -->
+                      <g font-family="ui-sans-serif, system-ui" font-size="13" fill="rgba(242,242,243,0.90)">
+                        <text x="252" y="145">Barcelona</text>
+                        <text x="298" y="166">Dubai</text>
+                        <text x="344" y="160">Hong Kong</text>
+                        <text x="332" y="214">Singapore</text>
+                      </g>
+              
+                      <!-- dotted connections leaving the globe to the right -->
+                      <g fill="none" stroke-dasharray="4 7">
+                        <path d="M250 180 C380 85, 560 70, 740 105" stroke="rgba(255,174,58,0.40)" stroke-width="2"></path>
+                        <path d="M250 180 C390 130, 560 140, 770 155" stroke="rgba(255,109,33,0.35)" stroke-width="2"></path>
+                        <path d="M250 180 C400 210, 560 250, 780 235" stroke="rgba(255,174,58,0.28)" stroke-width="2"></path>
+                        <path d="M250 180 C360 170, 520 170, 700 185" stroke="rgba(255,109,33,0.22)" stroke-width="2"></path>
+                      </g>
+              
+                      <!-- right-side “network nodes” (so it fills the dead space) -->
+                      <g filter="url(#softGlow)">
+                        <circle cx="740" cy="105" r="5" fill="var(--accent2)"></circle>
+                        <circle cx="770" cy="155" r="5" fill="var(--accent)"></circle>
+                        <circle cx="780" cy="235" r="5" fill="var(--accent2)"></circle>
+                        <circle cx="700" cy="185" r="5" fill="var(--accent)"></circle>
+                      </g>
+              
+                      <!-- small caption inside -->
+                      <g font-family="ui-sans-serif, system-ui" font-size="12" fill="rgba(183,183,194,0.85)">
+                        <text x="175" y="332">curation → ops → delivery</text>
+                      </g>
+                    </svg>
+                  </div>
+              
+                  <div class="wom-map-caption">
+                    <b>Operated by Bartendly.</b> The digital platform connecting bars and bartenders to opportunities across cities — with professional execution on the ground.
+                  </div>
+                </div>
+              </div>
+              
           </div>
           
         </div>
@@ -367,8 +417,9 @@
           </div>
           <div class="cta-actions">
             <button class="btn btn-primary" type="button" data-open-project>Open brief form</button>
-            <a class="btn btn-secondary" href="mailto:martial@worldofmixologists.com">Email us</a>
-          </div>
+            <a class="btn btn-secondary" href="https://wa.me/34618502493?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn btn-secondary" href="mailto:hello@worldofmixologists.com">Email us</a>
+        </div>   
         </div>
       </div>
     </section>
