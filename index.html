@@ -95,6 +95,16 @@
     .toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:rgba(18,18,26,0.96);border:1px solid var(--line);border-radius:16px;padding:12px 14px;color:var(--text);box-shadow:0 18px 50px rgba(0,0,0,0.55);width:min(560px, calc(100% - 24px));display:none;z-index:80;}
     .toast p{margin:0;font-size:13px;color:var(--muted);line-height:1.45;}
     @media (min-width: 860px){:root{--pad:22px;}.brand-title{font-size:15px;}.hero{padding:28px 0 18px 0;}.hero-grid{grid-template-columns:1.25fr 1fr;align-items:stretch;gap:16px;}.hero-media{min-height:360px;}h1{font-size:40px;}.sub{font-size:15px;}.cards{grid-template-columns:repeat(3, 1fr);}.steps{grid-template-columns:repeat(2, 1fr);}.cta-block{flex-direction:row;align-items:center;justify-content:space-between;}.cta-block h2{font-size:20px;}.foot{flex-direction:row;align-items:flex-start;justify-content:space-between;}.modal{padding:18px;}.grid{grid-template-columns:1fr 1fr;}}
+    
+    .hero-overlay{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;display:flex;flex-direction:column;gap:6px;pointer-events:none;}
+    .hero-overlay-title{font-weight:900;letter-spacing:-0.2px;font-size:16px;color:rgba(242,242,243,0.98);text-shadow:0 10px 30px rgba(0,0,0,0.65);}
+    .hero-overlay-sub{font-size:13px;line-height:1.35;color:rgba(183,183,194,0.92);max-width:38ch;text-shadow:0 10px 30px rgba(0,0,0,0.65);}
+    @media (min-width: 860px){.hero-overlay{left:18px;right:18px;bottom:18px;}.hero-overlay-title{font-size:18px;}.hero-overlay-sub{font-size:14px;max-width:46ch;}}
+
+    .wa-float{position:fixed;right:14px;bottom:14px;z-index:90;display:none;align-items:center;justify-content:center;padding:12px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.12);background:rgba(18,18,26,0.82);backdrop-filter:blur(10px);color:rgba(242,242,243,0.96);font-weight:900;font-size:13px;box-shadow:0 18px 50px rgba(0,0,0,0.55);transition:transform 160ms ease, background 160ms ease, opacity 160ms ease;}
+    .wa-float:hover{background:rgba(18,18,26,0.92);transform:translateY(-1px);}
+    @media (min-width: 860px){.wa-float{right:18px;bottom:18px;}}
+
     </style>    
 </head>
 
@@ -111,6 +121,7 @@
         <a class="nav-link" href="#whatwedo">What we do</a>
         <a class="nav-link" href="#how">How it works</a>
         <button class="btn btn-primary" type="button" data-open-project>Start a project</button>
+        <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Open Bartendly</a>
       </div>
     </nav>
   </header>
@@ -123,7 +134,8 @@
                 <source srcset="/assets/hero-600.webp 600w, /assets/hero-900.webp 900w, /assets/hero-1200.webp 1200w" type="image/webp">
                 <source srcset="/assets/hero-600.jpg 600w, /assets/hero-900.jpg 900w, /assets/hero-1200.jpg 1200w" type="image/jpeg">
                 <img src="/assets/hero-900.jpg" alt="Bartender preparing a cocktail before service in a high-end bar" loading="eager" fetchpriority="high">
-              </picture>              
+                <div class="hero-overlay"><span class="hero-overlay-title">World of Mixologists.</span><span class="hero-overlay-sub">Curated hospitality projects worldwide.</span></div>  
+            </picture>              
         </div>
 
         <div class="hero-copy">
@@ -132,6 +144,7 @@
           <p class="sub">World of Mixologists connects bars, brands and top bartenders through curated collaborations — operated professionally via Bartendly.</p>
           <div class="hero-cta">
             <button class="btn btn-primary" type="button" data-open-project>Start a project</button>
+            <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Go to Bartendly</a>
             <a class="btn btn-secondary" href="#whatwedo">Explore what we do</a>
           </div>
           <p class="note">No fake proof. No hype. Just serious hospitality work, curated with taste and executed by trusted professionals.</p>
@@ -220,6 +233,45 @@
         </div>
       </div>
     </section>
+
+    <section>
+        <div class="wrap">
+          <div class="cta-block">
+            <div>
+              <h2>Bartendly — the operating layer</h2>
+              <p class="section-sub">
+                Bartendly is the professional platform that powers World of Mixologists projects.
+                It connects bars, brands and top bartenders, and handles staffing, coordination and execution across cities.
+                World of Mixologists curates the vision and the people. Bartendly operates the work.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Explore Bartendly</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="wrap">
+          <div class="cta-block">
+            <div>
+              <h2>Bartendly — services & execution</h2>
+              <p class="section-sub">
+                Bartendly also operates as a service layer for brands, companies and private clients.
+                Through Bartendly, we deliver bartending teams and full bar execution for corporate events,
+                international fairs, brand activations, luxury private parties and large-scale hospitality projects.
+                World of Mixologists curates the concept and the people. Bartendly handles staffing and delivery.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="https://www.bartendly.com" target="_blank" rel="noopener">Bartending services via Bartendly</a>
+              <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Explore the Bartendly platform</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
     <section id="for">
       <div class="wrap">
@@ -370,5 +422,9 @@
       form.reset();
     });
   </script>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/XXXXXXXXXXX?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+<script>const waFloat=document.getElementById("waFloat");setTimeout(()=>{if(waFloat){waFloat.style.display="inline-flex";waFloat.style.opacity="1";}},3800);</script>    
+
 </body>
 </html>
