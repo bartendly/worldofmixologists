@@ -26,7 +26,7 @@
     header{position:sticky;top:0;z-index:50;background:rgba(11,11,14,0.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
     .nav{max-width:var(--max);margin:0 auto;padding:12px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:12px;}
     .brand{display:flex;align-items:center;gap:10px;min-width:0;}
-    .logo{width:28px;height:28px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 10px 24px rgba(255,109,33,0.18);flex:0 0 auto;}
+    .logo{width:28px;height:28px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 10px 24px rgba(255,109,33,0.18);flex:0 0 auto;display:grid;place-items:center;color:#111116;font-weight:950;font-size:12px;letter-spacing:-0.4px;line-height:1;}
     .brand-title{font-weight:800;letter-spacing:0.2px;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
     .nav-links{display:flex;align-items:center;gap:10px;}
     .nav-link{font-size:13px;color:var(--muted);padding:8px 10px;border-radius:12px;}
@@ -58,7 +58,8 @@
     .cards{display:grid;grid-template-columns:1fr;gap:12px;}
     .card{border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));padding:16px;box-shadow:0 14px 34px rgba(0,0,0,0.36);}
     .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px;}
-    .pill{font-size:12px;color:#111116;background:linear-gradient(135deg,var(--accent),var(--accent2));padding:7px 10px;border-radius:999px;font-weight:800;white-space:nowrap;}
+    .pill{font-size:12px;color:rgba(255,255,255,0.86);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);padding:6px 10px;border-radius:999px;font-weight:900;white-space:nowrap;}
+    @media (max-width:420px){.pill{font-size:11px;padding:5px 9px;}}
     .card h3{margin:0;font-size:16px;letter-spacing:-0.2px;}
     .card p{margin:8px 0 0 0;color:var(--muted);font-size:13px;line-height:1.55;}
     .steps{display:grid;grid-template-columns:1fr;gap:10px;}
@@ -105,6 +106,22 @@
     .wa-float:hover{background:rgba(18,18,26,0.92);transform:translateY(-1px);}
     @media (min-width: 860px){.wa-float{right:18px;bottom:18px;}}
 
+    .hero-overlay{position:absolute;left:16px;right:16px;top:18px;bottom:auto;z-index:2;display:flex;flex-direction:column;gap:6px;pointer-events:none;}
+    .hero-overlay-title{font-weight:950;letter-spacing:-0.25px;font-size:18px;line-height:1.05;color:rgba(242,242,243,0.98);text-shadow:0 14px 34px rgba(0,0,0,0.70);}
+    .hero-overlay-sub{font-size:14px;line-height:1.3;color:rgba(183,183,194,0.92);max-width:44ch;text-shadow:0 14px 34px rgba(0,0,0,0.70);}
+    @media (min-width:860px){.hero-overlay{left:20px;right:20px;top:22px;}.hero-overlay-title{font-size:22px;}.hero-overlay-sub{font-size:15px;max-width:54ch;}}
+
+    .hero-copy{display:flex;flex-direction:column;gap:14px;}
+    .hero-net{margin-top:4px;border-radius:18px;border:1px solid var(--line);background:radial-gradient(900px 420px at 20% 0%, rgba(255,109,33,0.12), rgba(255,255,255,0.02));padding:14px;overflow:hidden;}
+    .hero-net-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;}
+    .hero-net-title{font-weight:950;letter-spacing:-0.2px;font-size:14px;color:rgba(242,242,243,0.96);margin:0;}
+    .hero-net-badge{font-size:12px;font-weight:900;color:rgba(255,255,255,0.82);border:1px solid rgba(255,255,255,0.14);background:rgba(255,255,255,0.05);padding:6px 10px;border-radius:999px;white-space:nowrap;}
+    .hero-net-wrap{display:grid;grid-template-columns:1fr;gap:10px;align-items:center;}
+    .hero-net svg{width:100%;height:auto;display:block;}
+    .hero-net-copy{color:rgba(183,183,194,0.92);font-size:13px;line-height:1.5;margin:0;max-width:60ch;}
+    .hero-net-copy strong{color:rgba(242,242,243,0.95);font-weight:900;}
+    @media (min-width:860px){.hero-net{padding:16px;}.hero-net-wrap{grid-template-columns:1.05fr 0.95fr;gap:14px;}.hero-net-title{font-size:15px;}}
+ 
     </style>    
 </head>
 
@@ -114,8 +131,7 @@
   <header>
     <nav class="nav" aria-label="Primary">
       <a class="brand" href="#top" aria-label="World of Mixologists home">
-        <span class="logo" aria-hidden="true"></span>
-        <span class="brand-title">World of Mixologists</span>
+        <span class="logo" aria-hidden="true">WØM</span>
       </a>
       <div class="nav-links">
         <a class="nav-link" href="#whatwedo">What we do</a>
@@ -150,6 +166,76 @@
             <a class="btn btn-secondary" href="#whatwedo">Explore what we do</a>
           </div>
           <p class="note">No fake proof. No hype. Just serious hospitality work, curated with taste and executed by trusted professionals.</p>
+        
+          <div class="hero-net" aria-label="Operated by Bartendly worldwide network">
+            <div class="hero-net-top">
+              <p class="hero-net-title">Operated by Bartendly</p>
+              <span class="hero-net-badge">Global execution layer</span>
+            </div>
+          
+            <div class="hero-net-wrap">
+              <svg viewBox="0 0 520 240" role="img" aria-label="Global network illustration">
+                <defs>
+                  <radialGradient id="glow" cx="35%" cy="20%" r="80%">
+                    <stop offset="0%" stop-color="rgba(255,109,33,0.20)"></stop>
+                    <stop offset="100%" stop-color="rgba(0,0,0,0)"></stop>
+                  </radialGradient>
+                  <clipPath id="globeClip">
+                    <circle cx="190" cy="120" r="92"></circle>
+                  </clipPath>
+                </defs>
+          
+                <!-- background glow -->
+                <rect x="0" y="0" width="520" height="240" fill="url(#glow)"></rect>
+          
+                <!-- globe circle -->
+                <circle cx="190" cy="120" r="92" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"></circle>
+          
+                <!-- simple “map” lines inside globe -->
+                <g clip-path="url(#globeClip)" opacity="0.85">
+                  <path d="M120 120 C150 78, 195 78, 220 98 C235 110, 250 104, 260 92" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2"></path>
+                  <path d="M130 150 C160 132, 190 132, 215 148 C235 160, 255 152, 270 138" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2"></path>
+                  <path d="M150 86 C165 100, 170 118, 158 132" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"></path>
+                  <path d="M205 88 C195 106, 198 126, 214 140" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"></path>
+                </g>
+          
+                <!-- connection arcs (outside the globe) -->
+                <path d="M190 120 C250 40, 330 30, 390 70" fill="none" stroke="rgba(255,109,33,0.45)" stroke-width="2" stroke-dasharray="4 6"></path>
+                <path d="M190 120 C260 160, 340 190, 420 155" fill="none" stroke="rgba(255,109,33,0.35)" stroke-width="2" stroke-dasharray="4 6"></path>
+                <path d="M190 120 C270 100, 315 95, 360 110" fill="none" stroke="rgba(255,109,33,0.28)" stroke-width="2" stroke-dasharray="4 6"></path>
+                <path d="M190 120 C245 70, 300 60, 335 80" fill="none" stroke="rgba(255,109,33,0.25)" stroke-width="2" stroke-dasharray="4 6"></path>
+
+                <!-- cities (dots) -->
+                <g>
+                  <!-- inside globe (Europe anchor) -->
+                  <circle cx="170" cy="115" r="4.4" fill="var(--accent)"></circle>
+
+                  <!-- outside globe -->
+                  <circle cx="390" cy="70" r="4.8" fill="var(--accent)"></circle>     <!-- Hong Kong -->
+                  <circle cx="420" cy="155" r="4.8" fill="var(--accent2)"></circle>  <!-- Singapore -->
+                  <circle cx="360" cy="110" r="4.8" fill="var(--accent)"></circle>   <!-- Dubai -->
+                  <circle cx="335" cy="80" r="4.8" fill="var(--accent2)"></circle>   <!-- Barcelona -->
+                </g>
+
+                <!-- city labels -->
+                <g font-family="ui-sans-serif, system-ui" font-size="12" fill="rgba(242,242,243,0.86)">
+                  <text x="345" y="76">Barcelona</text>
+                  <text x="398" y="66">Hong Kong</text>
+                  <text x="430" y="151">Singapore</text>
+                  <text x="372" y="106">Dubai</text>
+                </g>
+ 
+                <!-- subtle caption inside globe -->
+                <text x="140" y="214" font-family="ui-sans-serif, system-ui" font-size="12" fill="rgba(183,183,194,0.70)">curation → ops → delivery</text>
+              </svg>
+          
+              <p class="hero-net-copy">
+                <strong>Bartendly</strong> connects bars, brands and bartenders to opportunities across cities.
+                World of Mixologists curates. Bartendly operates and delivers.
+              </p>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -229,7 +315,7 @@
             <div class="step-num" aria-hidden="true">4</div>
             <div>
               <strong>Operated via Bartendly</strong>
-              <span>Projects are contracted and handled professionally via Bartendly OÜ.</span>
+              <span>Projects are contracted and handled professionally via Bartendly digital platform.</span>
             </div>
           </div>
         </div>
@@ -247,9 +333,10 @@
               </p>
             </div>
             <div class="cta-actions">
-              <a class="btn btn-primary" href="https://www.bartendly.com" target="_blank" rel="noopener">Bartending services</a>
-              <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Explore the platform</a>
-            </div>
+                <button class="btn btn-primary" type="button" data-open-project>Open brief form</button>
+                <a class="btn btn-secondary" href="https://wa.me/34618502493?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener">Chat on WhatsApp</a>
+                <a class="btn btn-secondary" href="mailto:hello@worldofmixologists.com">Email us</a>
+            </div>              
           </div>
         </div>
       </section>
@@ -280,7 +367,7 @@
           </div>
           <div class="cta-actions">
             <button class="btn btn-primary" type="button" data-open-project>Open brief form</button>
-            <a class="btn btn-secondary" href="mailto:hello@worldofmixologists.com">Email us</a>
+            <a class="btn btn-secondary" href="mailto:martial@worldofmixologists.com">Email us</a>
           </div>
         </div>
       </div>
@@ -404,7 +491,7 @@
     });
   </script>
 
-<a class="wa-float" id="waFloat" href="https://wa.me/XXXXXXXXXXX?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+<a class="wa-float" id="waFloat" href="https://wa.me/34618502493?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat with us</a>
 <script>const waFloat=document.getElementById("waFloat");setTimeout(()=>{if(waFloat){waFloat.style.display="inline-flex";waFloat.style.opacity="1";}},3800);</script>    
 
 </body>
