@@ -276,9 +276,9 @@
     .card::before{border-radius:inherit;}
     .card::before{padding:1px;}
     .card::before{background:linear-gradient(135deg, rgba(255,109,33,0.30), rgba(111,231,255,0.16), rgba(255,174,58,0.20));}
-    .card::before{-webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);}
-    .card::before{-webkit-mask-composite:xor;}
-    .card::before{mask-composite:exclude;}
+    .card::before{pointer-events:none;}
+    .card::before{opacity:0.85;}
+    .card::before{pointer-events:none;}
     .card-top{display:flex;}
     .card-top{align-items:flex-start;}
     .card-top{justify-content:space-between;}
@@ -510,6 +510,23 @@
     @media (min-width:860px){.steps{grid-template-columns:repeat(2, 1fr);}}
     @media (min-width:860px){.wa-float{display:none!important;}}
     @media (min-width:860px){.start-float{display:none!important;}}
+
+    /* details reset */
+.accordion{ margin-top:12px; }
+.accordion > summary{ list-style:none; }
+.accordion > summary::-webkit-details-marker{ display:none; }
+
+/* details controls visibility */
+details.accordion > .panel { display:none; }
+details.accordion[open] > .panel { display:block; }
+
+
+.chev{ font-size:18px; line-height:1; }
+.accordion[open] .chev{ transform:translateY(-1px); }
+.chev::after{ content:"+"; }
+.accordion[open] .chev::after{ content:"−"; }
+
+
     </style>
     
 </head>
@@ -620,12 +637,14 @@
               <span class="pill">Core</span>
             </div>
             <p class="p-lead">International guest shifts, festivals, bar takeovers and masterclasses — curated case by case.</p>
-            <div class="accordion">
-              <button class="accordion-btn" type="button" aria-expanded="false" data-accordion="a1">
+           
+            <details class="accordion">
+              <summary class="accordion-btn">
                 <span>More information</span>
-                <span class="chev" aria-hidden="true">+</span>
-              </button>
-              <div class="panel" id="a1" role="region" aria-label="More information: Curated guest shifts">
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+            
+              <div class="panel">
                 <h4>What it is</h4>
                 <p>Guest shifts and hospitality events involving international bartenders, designed to create meaningful collaboration rather than one-off appearances.</p>
                 <h4 style="margin-top:12px;">Why curation matters</h4>
@@ -635,7 +654,8 @@
                 <h4 style="margin-top:12px;">Who executes</h4>
                 <p>Independent bartenders and hosts. World of Mixologists curates and connects — it does not employ talent.</p>
               </div>
-            </div>
+            </details>
+            
           </article>
 
           <article class="card">
@@ -644,12 +664,14 @@
               <span class="pill">Partner</span>
             </div>
             <p class="p-lead">A signature food & cocktail experience built around narrative, pairing and human connection.</p>
-            <div class="accordion">
-              <button class="accordion-btn" type="button" aria-expanded="false" data-accordion="a2">
+         
+            <details class="accordion">
+              <summary class="accordion-btn">
                 <span>More information</span>
-                <span class="chev" aria-hidden="true">+</span>
-              </button>
-              <div class="panel" id="a2" role="region" aria-label="More information: Sense & Soul">
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+            
+              <div class="panel">
                 <h4>What Sense & Soul is</h4>
                 <p>Sense & Soul is a defined hospitality experience combining gastronomy, cocktails, and storytelling. It is not generic consulting and not menu engineering — it is an experience delivered in person.</p>
                 <h4 style="margin-top:12px;">Who it’s for</h4>
@@ -658,7 +680,8 @@
                 <p><strong>Fernando Fastuca</strong> creates and delivers the experience. <strong>World of Mixologists</strong> curates, positions and connects. <strong>Bartendly</strong> supports the commercial and operational flow.</p>
                 <p class="mini" style="margin-top:10px;">Sense & Soul is conceived, owned and led by Fernando Fastuca.</p>
               </div>
-            </div>
+            </details>
+            
           </article>
 
           <article class="card">
@@ -667,12 +690,14 @@
               <span class="pill">Selective</span>
             </div>
             <p class="p-lead">Multi-city formats combining guest shifts, travel and impact-driven initiatives.</p>
-            <div class="accordion">
-              <button class="accordion-btn" type="button" aria-expanded="false" data-accordion="a3">
+           
+            <details class="accordion">
+              <summary class="accordion-btn">
                 <span>More information</span>
-                <span class="chev" aria-hidden="true">+</span>
-              </button>
-              <div class="panel" id="a3" role="region" aria-label="More information: BBB">
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+            
+              <div class="panel">
                 <h4>What this is</h4>
                 <p>Bartenders Beyond Borders (BBB) is a curated format developed in partnership with Tony Pescatori, combining guest shifts, travel, and impact-driven initiatives.</p>
                 <h4 style="margin-top:12px;">When it makes sense</h4>
@@ -680,7 +705,8 @@
                 <h4 style="margin-top:12px;">Important clarity</h4>
                 <p>BBB-style formats are activated selectively when aligned with the project — they are not the default offer.</p>
               </div>
-            </div>
+            </details>
+
           </article>
         </div>
       </div>
@@ -872,8 +898,6 @@
     closeButtons.forEach(b=>b.addEventListener("click",closeDialog));
     if(dialog){dialog.addEventListener("click",(e)=>{if(e.target===dialog){closeDialog();}});}
     window.addEventListener("keydown",(e)=>{if(e.key==="Escape" && dialog && dialog.open){closeDialog();}});
-    /* FIX ACCORDION: your HTML uses data-accordion="a1" and panels have id="a1" */
-    qsa(".accordion-btn").forEach((btn)=>{btn.addEventListener("click",()=>{const id=btn.dataset.accordion; const panel=id?document.getElementById(id):null; const expanded=btn.getAttribute("aria-expanded")==="true"; btn.setAttribute("aria-expanded",expanded?"false":"true"); const chev=qs(".chev",btn); if(panel){panel.style.display=expanded?"none":"block";} if(chev){chev.textContent=expanded?"+":"−";}});});
     /* Mobile-only floating CTAs */
     const waFloat=qs("#waFloat");
     const startFloat=qs("#startFloat");
@@ -883,6 +907,6 @@
     /* Form submit -> mailto (WhatsApp preferred is already in the form) */
     if(form){form.addEventListener("submit",(e)=>{e.preventDefault(); const data=new FormData(form); const payload=Object.fromEntries(data.entries()); const subject=encodeURIComponent("WØM Project Brief"); const body=encodeURIComponent(`Who: ${payload.who}\nCity: ${payload.city}\nCountry: ${payload.country}\nTimeframe: ${payload.timeframe}\nBudget: ${payload.budget||"-"}\nWhatsApp: ${payload.whatsapp}\nEmail: ${payload.email||"-"}\n\nBrief:\n${payload.what}\n\n(Submitted from wom landing page)`); window.location.href=`mailto:hello@worldofmixologists.com?subject=${subject}&body=${body}`; closeDialog(); form.reset();});}
     </script>
-    
+  
 </body>
 </html>
