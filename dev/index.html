@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>World of Mixologists | Curated Guest Shifts, Brand Activations & Hospitality Projects</title>
+  <meta name="description" content="World of Mixologists curates guest shifts, brand activations, corporate staffing, and partner formats (Sense & Soul, BBB) worldwide — contracted and operated via Bartendly." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.worldofmixologists.com/" />
+
+  <meta property="og:title" content="World of Mixologists" />
+  <meta property="og:description" content="Curated guest shifts, brand activations & hospitality projects worldwide — operated via Bartendly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.worldofmixologists.com/" />
+  <meta property="og:image" content="https://www.worldofmixologists.com/assets/og.jpg" />
+
+  <meta name="theme-color" content="#0B0B0E" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <link rel="preload" as="image" href="/assets/hero-900.webp" type="image/webp">
+  <style>
+    :root{--bg:#0B0B0E;--card:#12121A;--text:#F2F2F3;--muted:#B7B7C2;--line:rgba(255,255,255,0.10);--accent:#FF6D21;--accent2:#FFAE3A;--shadow:0 18px 48px rgba(0,0,0,0.55);--radius:18px;--radius2:22px;--max:1120px;--pad:18px;--font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{margin:0;font-family:var(--font);background:radial-gradient(1000px 600px at 12% 0%, rgba(255,109,33,0.16), rgba(11,11,14,0) 55%),radial-gradient(900px 500px at 92% 10%, rgba(255,174,58,0.10), rgba(11,11,14,0) 55%),var(--bg);color:var(--text);line-height:1.45;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+    a{color:inherit;text-decoration:none;}
+    button{font-family:inherit;}
+    strong{font-weight:850;}
+    .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+    .skip:focus{left:12px;top:12px;width:auto;height:auto;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:12px;z-index:9999;}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad);}
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(11,11,14,0.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+    .nav{max-width:var(--max);margin:0 auto;padding:12px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:12px;}
+    .brand{display:flex;align-items:center;gap:10px;min-width:0;}
+    .logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 14px 30px rgba(255,109,33,0.18);flex:0 0 auto;display:grid;place-items:center;color:#111116;font-weight:950;font-size:12px;letter-spacing:-0.4px;line-height:1;}
+    .brand-title{font-weight:900;letter-spacing:-0.2px;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:rgba(242,242,243,0.95);}
+    .nav-links{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;}
+    .nav-link{font-size:13px;color:rgba(183,183,194,0.95);padding:8px 10px;border-radius:12px;border:1px solid transparent;}
+    .nav-link:hover{border-color:rgba(255,255,255,0.10);background:rgba(255,255,255,0.03);}
+    .nav-link:focus{outline:2px solid rgba(255,109,33,0.55);outline-offset:2px;}
+    .btn{border:0;cursor:pointer;border-radius:14px;padding:11px 14px;font-weight:900;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:transform 120ms ease, box-shadow 120ms ease, background 120ms ease, opacity 120ms ease;}
+    .btn:active{transform:translateY(1px);}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111116;box-shadow:0 18px 44px rgba(255,109,33,0.18);}
+    .btn-primary:hover{box-shadow:0 22px 56px rgba(255,109,33,0.26);}
+    .btn-secondary{background:rgba(255,255,255,0.07);color:var(--text);border:1px solid rgba(255,255,255,0.12);}
+    .btn-secondary:hover{background:rgba(255,255,255,0.10);}
+    .hero{padding:22px 0 18px 0;}
+    .hero-grid{display:grid;grid-template-columns:1fr;gap:14px;}
+    .hero-media{position:relative;border-radius:var(--radius2);overflow:hidden;border:1px solid var(--line);background:radial-gradient(1200px 600px at 20% 0%, rgba(255,109,33,0.14), rgba(0,0,0,0.0));min-height:260px;box-shadow:var(--shadow);}
+    .hero-media img{width:100%;height:100%;object-fit:cover;display:block;opacity:0.94;filter:saturate(0.98) contrast(1.12);}
+    .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,11,14,0.05), rgba(11,11,14,0.92));}
+    .hero-overlay{position:absolute;left:16px;right:16px;bottom:16px;top:auto;z-index:2;display:flex;flex-direction:column;gap:6px;pointer-events:none;}
+    .hero-overlay-title{font-weight:950;letter-spacing:-0.25px;font-size:18px;line-height:1.05;color:rgba(242,242,243,0.98);text-shadow:0 14px 34px rgba(0,0,0,0.70);}
+    .hero-overlay-sub{font-size:14px;line-height:1.3;color:rgba(183,183,194,0.92);max-width:60ch;text-shadow:0 14px 34px rgba(0,0,0,0.70);}
+    .hero-copy{border-radius:var(--radius2);border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));padding:18px;box-shadow:var(--shadow);position:relative;overflow:hidden;}
+    .hero-copy::before{content:"";position:absolute;inset:-2px;background:radial-gradient(700px 320px at 10% 0%, rgba(255,109,33,0.12), rgba(0,0,0,0) 60%),radial-gradient(700px 320px at 90% 20%, rgba(255,174,58,0.10), rgba(0,0,0,0) 60%);pointer-events:none;opacity:0.95;}
+    .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:rgba(183,183,194,0.98);border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:999px;width:max-content;position:relative;z-index:1;}
+    .dot{width:8px;height:8px;border-radius:99px;background:var(--accent);box-shadow:0 0 0 6px rgba(255,109,33,0.10);}
+    h1{margin:12px 0 10px 0;font-size:30px;line-height:1.08;letter-spacing:-0.6px;position:relative;z-index:1;}
+    .lead{margin:0 0 14px 0;color:rgba(220,220,230,0.92);font-size:15px;line-height:1.6;position:relative;z-index:1;}
+    .hero-cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;position:relative;z-index:1;}
+    .proof-bar{margin-top:14px;display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:10px;position:relative;z-index:1;}
+    .proof{border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.03);border-radius:16px;padding:10px 12px;}
+    .proof-num{font-weight:950;letter-spacing:-0.4px;font-size:18px;}
+    .proof-label{font-size:12.5px;color:rgba(183,183,194,0.95);margin-top:2px;}
+    .note{margin-top:12px;color:rgba(255,255,255,0.58);font-size:12.5px;line-height:1.55;position:relative;z-index:1;}
+    .section{padding:18px 0;}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:12px;}
+    h2{margin:0;font-size:18px;letter-spacing:-0.25px;}
+    .section-sub{margin:6px 0 0 0;color:rgba(183,183,194,0.95);font-size:13.5px;line-height:1.6;max-width:70ch;}
+    .cards{display:grid;grid-template-columns:1fr;gap:12px;}
+    .card{border-radius:var(--radius);border:1px solid rgba(255,255,255,0.10);background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));padding:16px;box-shadow:0 14px 34px rgba(0,0,0,0.36);}
+    .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px;}
+    .pill{font-size:12px;color:rgba(255,255,255,0.90);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);padding:6px 10px;border-radius:999px;font-weight:950;white-space:nowrap;}
+    .card h3{margin:0;font-size:16px;letter-spacing:-0.2px;}
+    .card p{margin:8px 0 0 0;color:rgba(183,183,194,0.98);font-size:13.5px;line-height:1.6;}
+    .card .muted{color:rgba(183,183,194,0.82);}
+    .steps{display:grid;grid-template-columns:1fr;gap:10px;}
+    .step{display:flex;gap:12px;align-items:flex-start;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.03);padding:14px;}
+    .step-ico{width:32px;height:32px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:950;background:rgba(255,109,33,0.16);color:var(--accent2);border:1px solid rgba(255,109,33,0.25);flex:0 0 auto;}
+    .step strong{display:block;font-size:14px;margin:0 0 2px 0;}
+    .step span{display:block;color:rgba(183,183,194,0.95);font-size:13.5px;line-height:1.6;}
+    .platform{border-radius:var(--radius2);border:1px solid rgba(255,255,255,0.10);background:radial-gradient(900px 500px at 10% 0%, rgba(255,109,33,0.16), rgba(0,0,0,0.0));padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px;}
+    .platform-title{margin:8px 0 0 0;font-size:18px;letter-spacing:-0.25px;}
+    .bullets{list-style:none;padding:0;margin:12px 0 0 0;display:grid;gap:8px;}
+    .bullets li{display:flex;gap:10px;align-items:flex-start;color:rgba(183,183,194,0.95);font-size:13.5px;line-height:1.6;}
+    .b-ico{width:22px;height:22px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:rgba(242,242,243,0.95);flex:0 0 auto;margin-top:1px;}
+    .platform-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+    .cta-block{border-radius:var(--radius2);border:1px solid rgba(255,255,255,0.10);background:radial-gradient(900px 500px at 10% 0%, rgba(255,109,33,0.16), rgba(0,0,0,0.0));padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;}
+    .cta-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+    .footer{padding:18px 0 28px 0;border-top:1px solid rgba(255,255,255,0.10);margin-top:12px;}
+    .foot{display:flex;flex-direction:column;gap:10px;color:rgba(183,183,194,0.95);font-size:13.5px;}
+    .foot-title{display:block;color:rgba(242,242,243,0.96);font-size:14px;margin-bottom:6px;font-weight:950;}
+    .foot-line{margin-top:2px;}
+    .foot-small{color:rgba(255,255,255,0.55);line-height:1.55;max-width:72ch;}
+    dialog{border:0;padding:0;background:transparent;width:100%;max-width:none;}
+    dialog::backdrop{background:rgba(0,0,0,0.65);}
+    .modal{width:min(720px, 100%);margin:0 auto;padding:14px;}
+    .sheet{border-radius:22px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(18,18,26,0.98), rgba(10,10,14,0.98));box-shadow:0 26px 70px rgba(0,0,0,0.60);overflow:hidden;}
+    .sheet-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 14px;border-bottom:1px solid rgba(255,255,255,0.10);}
+    .sheet-head strong{font-size:14px;letter-spacing:-0.1px;}
+    .icon-btn{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:10px 12px;color:var(--text);cursor:pointer;font-weight:900;}
+    .icon-btn:hover{background:rgba(255,255,255,0.09);}
+    .sheet-body{padding:14px;display:grid;gap:12px;}
+    .grid{display:grid;grid-template-columns:1fr;gap:10px;}
+    label{display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;}
+    input,select,textarea{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;}
+    textarea{min-height:110px;resize:vertical;}
+    input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-shadow:0 0 0 5px rgba(255,109,33,0.14);}
+    .help{color:rgba(255,255,255,0.52);font-size:12px;line-height:1.45;margin:2px 0 0 0;}
+    .sheet-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.10);padding:12px 14px;}
+    .left-actions,.right-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+    .toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:rgba(18,18,26,0.96);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:12px 14px;color:var(--text);box-shadow:0 18px 50px rgba(0,0,0,0.55);width:min(560px, calc(100% - 24px));display:none;z-index:80;}
+    .toast p{margin:0;font-size:13px;color:rgba(183,183,194,0.95);line-height:1.45;}
+    .wa-float{position:fixed;right:14px;bottom:14px;z-index:90;display:none;align-items:center;justify-content:center;padding:12px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.12);background:rgba(18,18,26,0.82);backdrop-filter:blur(10px);color:rgba(242,242,243,0.96);font-weight:950;font-size:13px;box-shadow:0 18px 50px rgba(0,0,0,0.55);transition:transform 160ms ease, background 160ms ease, opacity 160ms ease;opacity:0;}
+    .wa-float:hover{background:rgba(18,18,26,0.92);transform:translateY(-1px);}
+    @media (min-width:860px){:root{--pad:22px;}.brand-title{font-size:15px;}.hero{padding:28px 0 18px 0;}.hero-grid{grid-template-columns:1.25fr 1fr;align-items:stretch;gap:16px;}.hero-media{min-height:390px;}h1{font-size:42px;}.lead{font-size:15.5px;}.cards{grid-template-columns:repeat(2, 1fr);}.steps{grid-template-columns:repeat(2, 1fr);}.platform{flex-direction:row;align-items:flex-start;justify-content:space-between;}.platform-actions{justify-content:flex-end;}.foot{flex-direction:row;align-items:flex-start;justify-content:space-between;}.modal{padding:18px;}.grid{grid-template-columns:1fr 1fr;}.wa-float{right:18px;bottom:18px;}}
+    </style>
+    
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="World of Mixologists home">
+        <span class="logo" aria-hidden="true">WØM</span>
+        <span class="brand-title">World of Mixologists</span>
+      </a>
+
+      <div class="nav-links">
+        <a class="nav-link" href="#offer">Offer</a>
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="#platform">Bartendly OS</a>
+        <button class="btn btn-primary" type="button" data-open-project>Start a project</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-media" aria-label="Hero image">
+          <picture>
+            <source srcset="/assets/hero-600.webp 600w, /assets/hero-900.webp 900w, /assets/hero-1200.webp 1200w" type="image/webp">
+            <source srcset="/assets/hero-600.jpg 600w, /assets/hero-900.jpg 900w, /assets/hero-1200.jpg 1200w" type="image/jpeg">
+            <img src="/assets/hero-900.jpg" alt="Bartender preparing a cocktail before service in a high-end bar" loading="eager" fetchpriority="high">
+          </picture>
+
+          <div class="hero-overlay" aria-hidden="true">
+            <div class="hero-overlay-title">Curated hospitality, executed professionally.</div>
+            <div class="hero-overlay-sub">Guest shifts • brand activations • corporate staffing • partner formats</div>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Curator + global pro network</span>
+          </div>
+
+          <h1>We connect the right bars, brands and bartenders — and make the project real.</h1>
+
+          <p class="lead">
+            World of Mixologists (WØM) is the entry point: we qualify, curate, and frame premium hospitality collaborations worldwide.
+            Projects are <strong>contracted and operated via Bartendly</strong> — the execution layer.
+          </p>
+
+          <div class="hero-cta">
+            <button class="btn btn-primary" type="button" data-open-project>Start a project</button>
+            <a class="btn btn-secondary" href="#offer">See the offer</a>
+          </div>
+
+          <div class="proof-bar" role="list" aria-label="Key proof points">
+            <div class="proof" role="listitem">
+              <div class="proof-num">58k+</div>
+              <div class="proof-label">Hospitality pros reached</div>
+            </div>
+            <div class="proof" role="listitem">
+              <div class="proof-num">Global</div>
+              <div class="proof-label">Network across key cities</div>
+            </div>
+            <div class="proof" role="listitem">
+              <div class="proof-num">Ops</div>
+              <div class="proof-label">Clear scope, contracts, payments</div>
+            </div>
+          </div>
+
+          <p class="note">
+            WØM is not a staffing marketplace. We curate people and concepts — identified professionals execute.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="offer" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Offer (4 lanes)</h2>
+            <p class="section-sub">Pick the lane. We’ll frame the project, match the right people, and run the ops through Bartendly.</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-top">
+              <h3>Curated Guest Shifts & Activations</h3>
+              <span class="pill">Core</span>
+            </div>
+            <p><strong>For:</strong> bars, brands, festivals.</p>
+            <p><strong>Outcome:</strong> a tight concept + the right bartender(s) + a clean run of show + amplification.</p>
+            <p class="muted">Examples: guest shifts, takeover tours, brand nights, cocktail-week collaborations.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Sense & Soul (by Fernando Fastuca)</h3>
+              <span class="pill">Partner</span>
+            </div>
+            <p><strong>For:</strong> venues and brands seeking a signature narrative format.</p>
+            <p><strong>Outcome:</strong> a premium food & cocktail pairing experience led by Fernando.</p>
+            <p class="muted">Sense & Soul is conceived and owned by Fernando; WØM supports framing and amplification when relevant.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Corporate / Fairs / Brand Staffing</h3>
+              <span class="pill">Bartendly</span>
+            </div>
+            <p><strong>For:</strong> agencies, brands, trade shows, corporate events.</p>
+            <p><strong>Outcome:</strong> reliable teams, clear deliverables, smooth logistics — billed through Bartendly.</p>
+            <p class="muted">Ideal for multi-day fairs, VIP stands, product storytelling, mocktail bars.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>BBB “Guest Shifts 4 Good” Tours</h3>
+              <span class="pill">Optional</span>
+            </div>
+            <p><strong>For:</strong> brands and hosts who want impact without killing the vibe.</p>
+            <p><strong>Outcome:</strong> stacked multi-city events, shared flight costs, trackable charity donations.</p>
+            <p class="muted">Powered with Tony / BBB format when a project is a fit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>How it works</h2>
+            <p class="section-sub">Fast qualification. Clean scope. Professional execution.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-ico" aria-hidden="true">1</div>
+            <div>
+              <strong>Brief</strong>
+              <span>Tell us the city, date, format, and what “success” looks like.</span>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-ico" aria-hidden="true">2</div>
+            <div>
+              <strong>Curation</strong>
+              <span>We propose the right talent + a simple structure (scope, roles, budget logic).</span>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-ico" aria-hidden="true">3</div>
+            <div>
+              <strong>Ops via Bartendly</strong>
+              <span>Contracts, invoicing, payments, confirmations — handled through Bartendly OÜ.</span>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-ico" aria-hidden="true">4</div>
+            <div>
+              <strong>Delivery + amplification</strong>
+              <span>Professionals execute; WØM can amplify the project to the global bartender audience.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform" class="section">
+      <div class="wrap">
+        <div class="platform">
+          <div>
+            <div class="kicker">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Bartendly — Operating System</span>
+            </div>
+            <h2 class="platform-title">The execution layer behind WØM</h2>
+            <p class="section-sub">
+              Bartendly is the platform that operationalizes hospitality projects: structured briefs, professional confirmations,
+              and commercial flows through Bartendly OÜ.
+            </p>
+
+            <ul class="bullets">
+              <li><span class="b-ico" aria-hidden="true">✓</span><span>One clear scope + who does what</span></li>
+              <li><span class="b-ico" aria-hidden="true">✓</span><span>Contracts, invoicing and payments handled professionally</span></li>
+              <li><span class="b-ico" aria-hidden="true">✓</span><span>Built to scale city-by-city — not one-off chaos</span></li>
+            </ul>
+          </div>
+
+          <div class="platform-actions">
+            <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Bartendly services</a>
+            <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Open Bartendly app</a>
+            <button class="btn btn-primary" type="button" data-open-project>Start a project</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="section">
+      <div class="wrap">
+        <div class="cta-block">
+          <div>
+            <h2>Start a project</h2>
+            <p class="section-sub">If it’s serious, we’ll structure it fast and reply with next steps.</p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn btn-primary" type="button" data-open-project>Open brief form</button>
+            <a class="btn btn-secondary" href="https://wa.me/34618502493?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn btn-secondary" href="mailto:hello@worldofmixologists.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap foot">
+        <div>
+          <strong class="foot-title">World of Mixologists</strong>
+          <div class="foot-line">Contact: <a href="mailto:hello@worldofmixologists.com">hello@worldofmixologists.com</a></div>
+          <div class="foot-line">Instagram: <a href="https://www.instagram.com/worldofmixologists/" target="_blank" rel="noopener">@worldofmixologists</a></div>
+        </div>
+        <small class="foot-small">
+          WØM curates and frames projects. Identified professionals execute. Projects are contracted and invoiced via Bartendly OÜ.
+          Sense & Soul is a partner-led experience conceived and led by Fernando Fastuca.
+        </small>
+      </div>
+    </footer>
+  </main>
+
+  <dialog id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="modal">
+      <div class="sheet" role="document">
+        <div class="sheet-head">
+          <strong id="dialogTitle">Start a project</strong>
+          <button class="icon-btn" type="button" data-close-project aria-label="Close form">Close</button>
+        </div>
+
+        <form id="projectForm" class="sheet-body" autocomplete="on">
+          <div>
+            <label for="who">Who are you?</label>
+            <select id="who" name="who" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Bar</option>
+              <option>Brand</option>
+              <option>Festival / Event</option>
+              <option>Agency / Producer</option>
+              <option>Hospitality professional</option>
+              <option>Other</option>
+            </select>
+            <p class="help">This helps us route your request correctly.</p>
+          </div>
+
+          <div class="grid">
+            <div>
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" placeholder="Barcelona" required />
+            </div>
+            <div>
+              <label for="country">Country</label>
+              <input id="country" name="country" type="text" placeholder="Spain" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="what">What do you want to create?</label>
+            <textarea id="what" name="what" placeholder="Guest shift / activation / corporate staffing / Sense & Soul / BBB 4 Good tour..." required></textarea>
+          </div>
+
+          <div class="grid">
+            <div>
+              <label for="timeframe">Date / timeframe</label>
+              <input id="timeframe" name="timeframe" type="text" placeholder="Exact dates or month (e.g., March 2026)" required />
+            </div>
+            <div>
+              <label for="budget">Budget range (optional)</label>
+              <input id="budget" name="budget" type="text" placeholder="e.g., 5k–10k EUR" />
+            </div>
+          </div>
+
+          <div class="grid">
+            <div>
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" placeholder="Full name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="name@company.com" required />
+            </div>
+          </div>
+
+          <div class="sheet-actions">
+            <div class="left-actions">
+              <button class="btn btn-secondary" type="button" data-close-project>Cancel</button>
+            </div>
+            <div class="right-actions">
+              <button class="btn btn-primary" type="submit">Submit brief</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <p id="toastMsg">Saved.</p>
+  </div>
+
+  <a class="wa-float" id="waFloat"
+     href="https://wa.me/34618502493?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project."
+     target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    Chat with us
+  </a>
+
+  <script>(()=>{const openButtons=document.querySelectorAll("[data-open-project]");const closeButtons=document.querySelectorAll("[data-close-project]");const dialog=document.getElementById("projectDialog");const form=document.getElementById("projectForm");const toast=document.getElementById("toast");const toastMsg=document.getElementById("toastMsg");const waFloat=document.getElementById("waFloat");const showToast=(msg)=>{if(!toast||!toastMsg)return;toastMsg.textContent=msg;toast.style.display="block";window.clearTimeout(showToast.t);showToast.t=window.setTimeout(()=>{toast.style.display="none";},2600);};const openDialog=()=>{if(!dialog)return;if(typeof dialog.showModal==="function")dialog.showModal();else dialog.setAttribute("open","");document.body.style.overflow="hidden";};const closeDialog=()=>{if(!dialog)return;if(typeof dialog.close==="function")dialog.close();else dialog.removeAttribute("open");document.body.style.overflow="";};openButtons.forEach((b)=>b.addEventListener("click",openDialog));closeButtons.forEach((b)=>b.addEventListener("click",closeDialog));if(dialog){dialog.addEventListener("click",(e)=>{if(e.target===dialog)closeDialog();});}window.addEventListener("keydown",(e)=>{if(e.key==="Escape"&&dialog&&dialog.open)closeDialog();});if(form){form.addEventListener("submit",(e)=>{e.preventDefault();const data=new FormData(form);const payload=Object.fromEntries(data.entries());const subject=encodeURIComponent("WØM Project Brief");const body=encodeURIComponent(`Who: ${payload.who}\nCity: ${payload.city}\nCountry: ${payload.country}\nTimeframe: ${payload.timeframe}\nBudget: ${payload.budget||"-"}\nName: ${payload.name}\nEmail: ${payload.email}\n\nBrief:\n${payload.what}\n\n(Submitted from wom landing page)`);window.location.href=`mailto:hello@worldofmixologists.com?subject=${subject}&body=${body}`;showToast("Opening your email client with the brief.");closeDialog();form.reset();});}window.setTimeout(()=>{if(!waFloat)return;waFloat.style.display="inline-flex";requestAnimationFrame(()=>{waFloat.style.opacity="1";});},2200);})();</script>
+    
+</body>
+</html>
