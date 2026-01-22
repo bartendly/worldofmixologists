@@ -542,6 +542,79 @@ input:focus,select:focus,textarea:focus{box-shadow:0 0 0 5px rgba(255,109,33,0.1
 @media (min-width:860px){.grid{grid-template-columns:1fr 1fr;}}
 @media (min-width:860px){.wa-float{right:18px;}}
 @media (min-width:860px){.wa-float{bottom:18px;}}
+
+:root{--muted:rgba(205,205,214,0.92);}
+body{font-size:16.5px;}
+.section-sub{color:rgba(205,205,214,0.92);}
+.p-lead{color:rgba(205,205,214,0.92);}
+.li{color:rgba(205,205,214,0.92);}
+.help{color:rgba(205,205,214,0.80);}
+.hero-overlay-title{font-size:22px;}
+.hero-overlay-sub{font-size:15.5px;}
+.logo{width:50px;}
+.logo{height:50px;}
+.logo{border-radius:18px;}
+.logo{border:1px solid rgba(255,255,255,0.14);}
+.logo{box-shadow:0 16px 34px rgba(255,109,33,0.22);}
+.nav{padding:10px var(--pad);}
+.nav-links{gap:10px;}
+.nav-links{padding-right:6px;}
+.nav-link{color:rgba(220,220,230,0.92);}
+.btn{font-size:14.5px;}
+.btn{padding:12px 14px;}
+.hero-media::after{background:linear-gradient(180deg, rgba(11,11,14,0.94), rgba(11,11,14,0.10) 52%, rgba(11,11,14,0.94));}
+.card{border:1px solid rgba(255,255,255,0.12);}
+.card{box-shadow:0 16px 40px rgba(0,0,0,0.45);}
+dialog{color-scheme:dark;}
+.modal{max-width:760px;}
+.modal{padding:12px;}
+.sheet{max-height:calc(100vh - 24px);}
+.sheet{overflow:auto;}
+.sheet{-webkit-overflow-scrolling:touch;}
+.sheet-head{position:sticky;}
+.sheet-head{top:0;}
+.sheet-head{z-index:3;}
+.sheet-head{background:linear-gradient(180deg, rgba(18,18,26,0.98), rgba(18,18,26,0.92));}
+.sheet-head{padding-top:calc(14px + env(safe-area-inset-top));}
+.sheet-actions{position:sticky;}
+.sheet-actions{bottom:0;}
+.sheet-actions{z-index:3;}
+.sheet-actions{background:linear-gradient(0deg, rgba(18,18,26,0.98), rgba(18,18,26,0.86));}
+.grid{gap:12px;}
+input,select,textarea{font-size:16px;}
+.wa-float{bottom:18px;}
+.wa-float{right:14px;}
+.wa-float{border-radius:999px;}
+.wa-float{padding:12px 14px;}
+.wa-float{max-width:calc(100% - 24px);}
+.start-float{position:fixed;}
+.start-float{left:14px;}
+.start-float{right:auto;}
+.start-float{bottom:18px;}
+.start-float{z-index:91;}
+.start-float{display:none;}
+.start-float{align-items:center;}
+.start-float{justify-content:center;}
+.start-float{padding:12px 14px;}
+.start-float{border-radius:999px;}
+.start-float{border:1px solid rgba(255,255,255,0.12);}
+.start-float{background:linear-gradient(135deg,var(--accent),var(--accent2));}
+.start-float{color:#111116;}
+.start-float{font-weight:950;}
+.start-float{font-size:13.5px;}
+.start-float{box-shadow:0 18px 50px rgba(0,0,0,0.55);}
+.start-float{opacity:0;}
+.start-float{transition:transform 160ms ease, opacity 160ms ease;}
+.start-float:hover{transform:translateY(-1px);}
+@media (max-width:420px){.hero-overlay-title{font-size:20px;}}
+@media (max-width:420px){.hero-overlay-sub{font-size:15px;}}
+@media (max-width:420px){body{font-size:16px;}}
+@media (min-width:860px){.logo{width:52px;}}
+@media (min-width:860px){.logo{height:52px;}}
+@media (min-width:860px){.start-float{left:18px;}}
+@media (min-width:860px){.start-float{bottom:18px;}}
+
+
   </style>
 </head>
 
@@ -865,14 +938,16 @@ input:focus,select:focus,textarea:focus{box-shadow:0 0 0 5px rgba(255,109,33,0.1
 
           <div class="grid2">
             <div>
-              <label for="name" style="display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;">Your name</label>
-              <input id="name" name="name" type="text" placeholder="Full name" required style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;">
+              <label for="whatsapp">WhatsApp (preferred)</label>
+              <input id="whatsapp" name="whatsapp" type="tel" placeholder="+34 600 000 000" required />
+              <p class="help">We reply faster on WhatsApp. Include country code.</p>
             </div>
             <div>
-              <label for="email" style="display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;">Email</label>
-              <input id="email" name="email" type="email" placeholder="name@company.com" required style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;">
+              <label for="email">Email (optional)</label>
+              <input id="email" name="email" type="email" placeholder="name@company.com" />
             </div>
           </div>
+          
 
           <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.10);padding:12px 0 0 0;">
             <button class="btn btn-secondary" type="button" data-close-project>Cancel</button>
@@ -883,6 +958,7 @@ input:focus,select:focus,textarea:focus{box-shadow:0 0 0 5px rgba(255,109,33,0.1
     </div>
   </dialog>
 
+  <button class="start-float" id="startFloat" type="button" data-open-project aria-label="Start a project">Start a project</button>
   <a class="wa-float" id="waFloat" href="https://wa.me/34618502493?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat with us</a>
 
   <script>
@@ -902,9 +978,14 @@ input:focus,select:focus,textarea:focus{box-shadow:0 0 0 5px rgba(255,109,33,0.1
     closeButtons.forEach((b)=>b.addEventListener("click",closeDialog)); 
     if(dialog){dialog.addEventListener("click",(e)=>{if(e.target===dialog){closeDialog();}});} 
     window.addEventListener("keydown",(e)=>{if(e.key==="Escape" && dialog && dialog.open){closeDialog();}}); 
-    if(form){form.addEventListener("submit",(e)=>{e.preventDefault(); const data=new FormData(form); const payload=Object.fromEntries(data.entries()); const subject=encodeURIComponent("WØM Project Brief"); const body=encodeURIComponent(`Who: ${payload.who}\nCity: ${payload.city}\nCountry: ${payload.country}\nTimeframe: ${payload.timeframe}\nBudget: ${payload.budget||"-"}\nName: ${payload.name}\nEmail: ${payload.email}\n\nBrief:\n${payload.what}\n\n(Submitted from wom landing page)`); window.location.href=`mailto:hello@worldofmixologists.com?subject=${subject}&body=${body}`; showToast("Opening your email client with the brief."); closeDialog(); form.reset();});} 
+    if(form){form.addEventListener("submit",(e)=>{e.preventDefault(); const data=new FormData(form); const payload=Object.fromEntries(data.entries()); const subject=encodeURIComponent("WØM Project Brief"); 
+    const body=encodeURIComponent(`Who: ${payload.who}\nCity: ${payload.city}\nCountry: ${payload.country}\nTimeframe: ${payload.timeframe}\nBudget: ${payload.budget||"-"}\nName: ${payload.name}\nWhatsApp: ${payload.whatsapp}\nEmail: ${payload.email||"-"}\n\nBrief:\n${payload.what}\n\n(Submitted from wom landing page)`);window.location.href=`mailto:hello@worldofmixologists.com?subject=${subject}&body=${body}`; showToast("Opening your email client with the brief."); closeDialog(); form.reset();});} 
     if(waFloat){window.setTimeout(()=>{waFloat.style.display="inline-flex"; window.requestAnimationFrame(()=>{waFloat.style.opacity="1";});},2200);} 
     document.querySelectorAll("[data-acc]").forEach((btn)=>{btn.addEventListener("click",()=>{const panel=document.getElementById(btn.getAttribute("aria-controls")); const expanded=btn.getAttribute("aria-expanded")==="true"; btn.setAttribute("aria-expanded",expanded?"false":"true"); if(panel){panel.style.display=expanded?"none":"block";}});}); 
+ 
+    const startFloat=document.getElementById("startFloat");
+    if(startFloat){window.setTimeout(()=>{startFloat.style.display="inline-flex"; window.requestAnimationFrame(()=>{startFloat.style.opacity="1";});},1600);}
+
  </script>
 </body>
 </html>
