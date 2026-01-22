@@ -614,6 +614,52 @@ input,select,textarea{font-size:16px;}
 @media (min-width:860px){.start-float{left:18px;}}
 @media (min-width:860px){.start-float{bottom:18px;}}
 
+.logo{display:flex;}
+.logo{align-items:center;}
+.logo{justify-content:center;}
+.logo{line-height:1;}
+.logo{padding:0;}
+.logo{transform:translateY(0.5px);}
+.logo{font-size:13px;}
+.logo{letter-spacing:-0.6px;}
+.logo{font-weight:1000;}
+
+.logo{width:52px;}
+.logo{height:52px;}
+.logo{border-radius:18px;}
+
+dialog[open]{align-items:flex-start;}
+.modal{padding-top:calc(10px + env(safe-area-inset-top));}
+.sheet{margin-top:0;}
+.sheet{max-height:calc(100vh - (20px + env(safe-area-inset-top)));} 
+
+
+@media (min-width:860px){.start-float{display:none!important;}}
+@media (min-width:860px){.wa-float{display:none!important;}}
+
+body{font-size:17px;}
+.section-sub{font-size:15px;}
+.p-lead{font-size:15px;}
+.li{font-size:15px;}
+.note{font-size:14.5px;}
+h1{font-size:34px;}
+@media (min-width:860px){h1{font-size:46px;}}
+
+.card{position:relative;}
+.card{overflow:hidden;}
+.card::before{content:"";}
+.card::before{position:absolute;}
+.card::before{inset:-1px;}
+.card::before{border-radius:inherit;}
+.card::before{padding:1px;}
+.card::before{background:linear-gradient(135deg, rgba(255,109,33,0.35), rgba(111,231,255,0.18), rgba(255,174,58,0.22));}
+.card::before{-webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);}
+.card::before{-webkit-mask-composite:xor;}
+.card::before{mask-composite:exclude;}
+.hero-copy{box-shadow:0 26px 80px rgba(0,0,0,0.60);}
+.hero-media{box-shadow:0 26px 80px rgba(0,0,0,0.60);}
+
+
 
   </style>
 </head>
@@ -968,7 +1014,7 @@ input,select,textarea{font-size:16px;}
     const form=document.getElementById("projectForm"); 
     const toast=document.getElementById("toast"); 
     const toastMsg=document.getElementById("toastMsg"); 
-    const waFloat=document.getElementById("waFloat"); 
+
     const showToast=(msg)=>{toastMsg.textContent=msg; toast.style.display="block"; window.clearTimeout(showToast.t); showToast.t=window.setTimeout(()=>{toast.style.display="none";},2600);}; 
     const lockScroll=()=>{document.documentElement.style.overflow="hidden"; document.body.style.overflow="hidden";}; 
     const unlockScroll=()=>{document.documentElement.style.overflow=""; document.body.style.overflow="";}; 
@@ -980,11 +1026,18 @@ input,select,textarea{font-size:16px;}
     window.addEventListener("keydown",(e)=>{if(e.key==="Escape" && dialog && dialog.open){closeDialog();}}); 
     if(form){form.addEventListener("submit",(e)=>{e.preventDefault(); const data=new FormData(form); const payload=Object.fromEntries(data.entries()); const subject=encodeURIComponent("WØM Project Brief"); 
     const body=encodeURIComponent(`Who: ${payload.who}\nCity: ${payload.city}\nCountry: ${payload.country}\nTimeframe: ${payload.timeframe}\nBudget: ${payload.budget||"-"}\nName: ${payload.name}\nWhatsApp: ${payload.whatsapp}\nEmail: ${payload.email||"-"}\n\nBrief:\n${payload.what}\n\n(Submitted from wom landing page)`);window.location.href=`mailto:hello@worldofmixologists.com?subject=${subject}&body=${body}`; showToast("Opening your email client with the brief."); closeDialog(); form.reset();});} 
-    if(waFloat){window.setTimeout(()=>{waFloat.style.display="inline-flex"; window.requestAnimationFrame(()=>{waFloat.style.opacity="1";});},2200);} 
     document.querySelectorAll("[data-acc]").forEach((btn)=>{btn.addEventListener("click",()=>{const panel=document.getElementById(btn.getAttribute("aria-controls")); const expanded=btn.getAttribute("aria-expanded")==="true"; btn.setAttribute("aria-expanded",expanded?"false":"true"); if(panel){panel.style.display=expanded?"none":"block";}});}); 
  
+    const waFloat=document.getElementById("waFloat"); 
+    const isMobile=window.matchMedia("(max-width: 859px)").matches;
+    if(waFloat && isMobile){window.setTimeout(()=>{waFloat.style.display="inline-flex"; window.requestAnimationFrame(()=>{waFloat.style.opacity="1";});},2200);}
     const startFloat=document.getElementById("startFloat");
-    if(startFloat){window.setTimeout(()=>{startFloat.style.display="inline-flex"; window.requestAnimationFrame(()=>{startFloat.style.opacity="1";});},1600);}
+    if(startFloat && isMobile){window.setTimeout(()=>{startFloat.style.display="inline-flex"; window.requestAnimationFrame(()=>{startFloat.style.opacity="1";});},1600);}
+
+    const sheet=document.querySelector(".sheet");
+    if(dialog){dialog.scrollTop=0;}
+    if(sheet){sheet.scrollTop=0;}
+    window.requestAnimationFrame(()=>{if(sheet){sheet.scrollTop=0;}});
 
  </script>
 </body>
