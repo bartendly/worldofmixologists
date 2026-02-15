@@ -1,912 +1,634 @@
-<!DOCTYPE html>
+<!-- index.html -->
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>World of Mixologists | Curated Hospitality Projects — Powered by Bartendly</title>
-  <meta name="description" content="World of Mixologists curates global hospitality projects — guest shifts, signature experiences, and brand activations — powered by the Bartendly platform. Professional bartending services available via Bartendly." />
-  <meta name="robots" content="index,follow" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0B0B0E" />
+
+  <title>World of Mixologists (WØM) | Curated Bartender & Bar Team Features</title>
+  <meta name="description" content="World of Mixologists (WØM) is a curated bartender and bar-team feature page. We repost and highlight bartenders and venues with proper credit, and connect visibility to real opportunities via Bartendly. Selective editorial + paid collaborations." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://www.worldofmixologists.com/" />
-  <meta property="og:title" content="World of Mixologists" />
-  <meta property="og:description" content="Curated hospitality projects worldwide — powered by Bartendly. Guest shifts, signature experiences, and professional staffing for brands & events." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="World of Mixologists (WØM)" />
+  <meta property="og:description" content="Curated bartender & bar team features. Proper credit, real culture — and a bridge to opportunities via Bartendly." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.worldofmixologists.com/" />
   <meta property="og:image" content="https://www.worldofmixologists.com/assets/og.jpg" />
-  <meta name="theme-color" content="#0B0B0E" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="World of Mixologists (WØM)" />
+  <meta name="twitter:description" content="Curated bartender & bar team features with proper credit — connected to opportunities via Bartendly." />
+  <meta name="twitter:image" content="https://www.worldofmixologists.com/assets/og.jpg" />
+
   <link rel="icon" href="/favicon.ico" />
+
+  <!-- Performance -->
+  <link rel="preload" as="image" href="/assets/hero-900.jpg" imagesrcset="/assets/hero-600.jpg 600w, /assets/hero-900.jpg 900w, /assets/hero-1200.jpg 1200w" imagesizes="(max-width: 859px) 100vw, 60vw" />
+
   <style>
-    :root{--bg:#0B0B0E;}
-    :root{--card:#12121A;}
-    :root{--text:#F2F2F3;}
-    :root{--muted:rgba(205,205,214,0.92);}
-    :root{--line:rgba(255,255,255,0.10);}
-    :root{--accent:#FF6D21;}
-    :root{--accent2:#FFAE3A;}
-    :root{--accent3:#6FE7FF;}
-    :root{--shadow:0 18px 48px rgba(0,0,0,0.55);}
-    :root{--radius:18px;}
-    :root{--radius2:22px;}
-    :root{--max:1120px;}
-    :root{--pad:18px;}
-    :root{--font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
-    *{box-sizing:border-box;}
-    html{scroll-behavior:smooth;}
-    body{margin:0;}
-    body{font-family:var(--font);}
-    body{background:radial-gradient(1100px 620px at 10% 0%, rgba(255,109,33,0.18), rgba(11,11,14,0) 58%),radial-gradient(900px 520px at 92% 10%, rgba(255,174,58,0.12), rgba(11,11,14,0) 58%),radial-gradient(900px 520px at 70% 75%, rgba(111,231,255,0.08), rgba(11,11,14,0) 60%),var(--bg);}
-    body{color:var(--text);}
-    body{line-height:1.6;}
-    body{font-size:17px;}
-    body{-webkit-font-smoothing:antialiased;}
-    body{-moz-osx-font-smoothing:grayscale;}
-    a{color:inherit;}
-    a{text-decoration:none;}
-    button{font-family:inherit;}
-    strong{font-weight:900;}
-    .skip{position:absolute;}
-    .skip{left:-9999px;}
-    .skip{top:auto;}
-    .skip{width:1px;}
-    .skip{height:1px;}
-    .skip{overflow:hidden;}
-    .skip:focus{left:12px;}
-    .skip:focus{top:12px;}
-    .skip:focus{width:auto;}
-    .skip:focus{height:auto;}
-    .skip:focus{padding:10px 12px;}
-    .skip:focus{background:var(--card);}
-    .skip:focus{border:1px solid var(--line);}
-    .skip:focus{border-radius:12px;}
-    .skip:focus{z-index:9999;}
-    .wrap{max-width:var(--max);}
-    .wrap{margin:0 auto;}
-    .wrap{padding:0 var(--pad);}
-    header{position:sticky;}
-    header{top:0;}
-    header{z-index:50;}
-    header{background:rgba(11,11,14,0.72);}
-    header{backdrop-filter:blur(10px);}
-    header{border-bottom:1px solid var(--line);}
-    .nav{display:flex;}
-    .nav{align-items:center;}
-    .nav{justify-content:space-between;}
-    .nav{gap:12px;}
-    .nav{padding:12px var(--pad);}
-    .brand{display:flex;}
-    .brand{align-items:center;}
-    .brand{gap:10px;}
-    .brand{min-width:0;}
-    /* FIXED LOGO: no transforms, real centering, better pill size */
-    .logo{width:54px;}
-    .logo{height:42px;}
-    .logo{border-radius:999px;}
-    .logo{background:linear-gradient(135deg,var(--accent),var(--accent2));}
-    .logo{box-shadow:0 14px 30px rgba(255,109,33,0.18);}
-    .logo{display:flex;}
-    .logo{align-items:center;}
-    .logo{justify-content:center;}
-    .logo{color:#111116;}
-    .logo{font-weight:1000;}
-    .logo{font-size:13px;}
-    .logo{letter-spacing:-0.7px;}
-    .logo{line-height:1;}
-    .logo{padding:0;}
-    .logo{border:1px solid rgba(255,255,255,0.14);}
-    .nav-links{display:flex;}
-    .nav-links{align-items:center;}
-    .nav-links{gap:10px;}
-    .nav-links{flex-wrap:nowrap;}
-    .nav-links{white-space:nowrap;}
-    .nav-links{overflow-x:auto;}
-    .nav-links{-webkit-overflow-scrolling:touch;}
-    .nav-links{scrollbar-width:none;}
-    .nav-links::-webkit-scrollbar{display:none;}
-    .nav-link{font-size:13px;}
-    .nav-link{color:rgba(220,220,230,0.92);}
-    .nav-link{padding:8px 10px;}
-    .nav-link{border-radius:12px;}
-    .nav-link{border:1px solid transparent;}
-    .nav-link:hover{border-color:rgba(255,255,255,0.10);}
-    .nav-link:hover{background:rgba(255,255,255,0.03);}
-    .nav-link:focus{outline:2px solid rgba(255,109,33,0.55);}
-    .nav-link:focus{outline-offset:2px;}
-    .btn{border:0;}
-    .btn{cursor:pointer;}
-    .btn{border-radius:14px;}
-    .btn{padding:12px 14px;}
-    .btn{font-weight:950;}
-    .btn{font-size:14.5px;}
-    .btn{display:inline-flex;}
-    .btn{align-items:center;}
-    .btn{justify-content:center;}
-    .btn{gap:10px;}
-    .btn{transition:transform 120ms ease, box-shadow 120ms ease, background 120ms ease, opacity 120ms ease;}
-    .btn:active{transform:translateY(1px);}
-    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));}
-    .btn-primary{color:#111116;}
-    .btn-primary{box-shadow:0 18px 44px rgba(255,109,33,0.18);}
-    .btn-primary:hover{box-shadow:0 22px 56px rgba(255,109,33,0.26);}
-    .btn-secondary{background:rgba(255,255,255,0.07);}
-    .btn-secondary{color:var(--text);}
-    .btn-secondary{border:1px solid rgba(255,255,255,0.12);}
-    .btn-secondary:hover{background:rgba(255,255,255,0.10);}
-    main{display:block;}
-    .section{padding:20px 0;}
-    .hero{padding:22px 0 10px 0;}
-    .hero-grid{display:grid;}
-    .hero-grid{grid-template-columns:1fr;}
-    .hero-grid{gap:14px;}
-    .hero-media{position:relative;}
-    .hero-media{border-radius:var(--radius2);}
-    .hero-media{overflow:hidden;}
-    .hero-media{border:1px solid var(--line);}
-    .hero-media{background:radial-gradient(1200px 620px at 20% 0%, rgba(255,109,33,0.14), rgba(0,0,0,0.0));}
-    .hero-media{min-height:290px;}
-    .hero-media{box-shadow:0 26px 80px rgba(0,0,0,0.60);}
-    .hero-media img{width:100%;}
-    .hero-media img{height:100%;}
-    .hero-media img{object-fit:cover;}
-    .hero-media img{display:block;}
-    .hero-media img{opacity:0.95;}
-    .hero-media img{filter:saturate(1.0) contrast(1.12);}
-    .hero-media::after{content:"";}
-    .hero-media::after{position:absolute;}
-    .hero-media::after{inset:0;}
-    .hero-media::after{background:linear-gradient(180deg, rgba(11,11,14,0.94), rgba(11,11,14,0.10) 52%, rgba(11,11,14,0.94));}
-    .hero-overlay{position:absolute;}
-    .hero-overlay{left:16px;}
-    .hero-overlay{right:16px;}
-    .hero-overlay{top:16px;}
-    .hero-overlay{z-index:2;}
-    .hero-overlay{display:flex;}
-    .hero-overlay{flex-direction:column;}
-    .hero-overlay{gap:6px;}
-    .hero-overlay{pointer-events:none;}
-    .hero-overlay-title{font-weight:950;}
-    .hero-overlay-title{letter-spacing:-0.35px;}
-    .hero-overlay-title{font-size:22px;}
-    .hero-overlay-title{line-height:1.06;}
-    .hero-overlay-title{color:rgba(242,242,243,0.98);}
-    .hero-overlay-title{text-shadow:0 14px 34px rgba(0,0,0,0.80);}
-    .hero-overlay-sub{font-size:15.5px;}
-    .hero-overlay-sub{line-height:1.35;}
-    .hero-overlay-sub{color:rgba(210,210,220,0.92);}
-    .hero-overlay-sub{max-width:70ch;}
-    .hero-overlay-sub{text-shadow:0 14px 34px rgba(0,0,0,0.85);}
-    .hero-copy{position:relative;}
-    .hero-copy{border-radius:var(--radius2);}
-    .hero-copy{border:1px solid var(--line);}
-    .hero-copy{background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));}
-    .hero-copy{padding:18px;}
-    .hero-copy{box-shadow:0 26px 80px rgba(0,0,0,0.60);}
-    .hero-copy{overflow:hidden;}
-    .hero-copy::before{content:"";}
-    .hero-copy::before{position:absolute;}
-    .hero-copy::before{inset:-2px;}
-    .hero-copy::before{background:radial-gradient(720px 340px at 12% 0%, rgba(255,109,33,0.14), rgba(0,0,0,0) 60%),radial-gradient(720px 340px at 92% 20%, rgba(255,174,58,0.12), rgba(0,0,0,0) 60%),radial-gradient(680px 340px at 55% 90%, rgba(111,231,255,0.10), rgba(0,0,0,0) 60%);}
-    .hero-copy::before{pointer-events:none;}
-    .kicker{position:relative;}
-    .kicker{z-index:1;}
-    .kicker{display:inline-flex;}
-    .kicker{align-items:center;}
-    .kicker{gap:8px;}
-    .kicker{font-size:12px;}
-    .kicker{color:rgba(183,183,194,0.98);}
-    .kicker{border:1px solid rgba(255,255,255,0.12);}
-    .kicker{background:rgba(255,255,255,0.04);}
-    .kicker{padding:8px 10px;}
-    .kicker{border-radius:999px;}
-    .kicker{width:max-content;}
-    .dot{width:8px;}
-    .dot{height:8px;}
-    .dot{border-radius:99px;}
-    .dot{background:var(--accent);}
-    .dot{box-shadow:0 0 0 6px rgba(255,109,33,0.10);}
-    h1{position:relative;}
-    h1{z-index:1;}
-    h1{margin:12px 0 10px 0;}
-    h1{font-size:34px;}
-    h1{line-height:1.08;}
-    h1{letter-spacing:-0.8px;}
-    .lead{position:relative;}
-    .lead{z-index:1;}
-    .lead{margin:0 0 14px 0;}
-    .lead{color:rgba(220,220,230,0.94);}
-    .lead{font-size:16.5px;}
-    .lead{line-height:1.65;}
-    .hero-cta{position:relative;}
-    .hero-cta{z-index:1;}
-    .hero-cta{display:flex;}
-    .hero-cta{gap:10px;}
-    .hero-cta{flex-wrap:wrap;}
-    .hero-cta{align-items:center;}
-    .proof{position:relative;}
-    .proof{z-index:1;}
-    .proof{margin-top:14px;}
-    .proof{display:grid;}
-    .proof{grid-template-columns:repeat(3, minmax(0,1fr));}
-    .proof{gap:10px;}
-    .proof-item{border:1px solid rgba(255,255,255,0.10);}
-    .proof-item{background:rgba(255,255,255,0.03);}
-    .proof-item{border-radius:16px;}
-    .proof-item{padding:10px 12px;}
-    .proof-item::after{content:"";}
-    .proof-item::after{display:block;}
-    .proof-item::after{height:1px;}
-    .proof-item::after{margin-top:10px;}
-    .proof-item::after{background:linear-gradient(90deg, rgba(255,109,33,0.0), rgba(255,109,33,0.22), rgba(111,231,255,0.18), rgba(255,109,33,0.0));}
-    .proof-num{font-weight:950;}
-    .proof-num{letter-spacing:-0.4px;}
-    .proof-num{font-size:18px;}
-    .proof-label{margin-top:2px;}
-    .proof-label{font-size:13.5px;}
-    .proof-label{color:rgba(183,183,194,0.95);}
-    .note{position:relative;}
-    .note{z-index:1;}
-    .note{margin-top:12px;}
-    .note{color:rgba(255,255,255,0.60);}
-    .note{font-size:14.5px;}
-    .note{line-height:1.65;}
-    .section-head{display:flex;}
-    .section-head{align-items:flex-end;}
-    .section-head{justify-content:space-between;}
-    .section-head{gap:12px;}
-    .section-head{margin-bottom:12px;}
-    h2{margin:0;}
-    h2{font-size:19px;}
-    h2{letter-spacing:-0.25px;}
-    .section-sub{margin:6px 0 0 0;}
-    .section-sub{color:var(--muted);}
-    .section-sub{font-size:15px;}
-    .section-sub{line-height:1.65;}
-    .section-sub{max-width:76ch;}
-    .grid2{display:grid;}
-    .grid2{grid-template-columns:1fr;}
-    .grid2{gap:12px;}
-    .card{border-radius:var(--radius);}
-    .card{border:1px solid rgba(255,255,255,0.12);}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));}
-    .card{padding:16px;}
-    .card{box-shadow:0 16px 40px rgba(0,0,0,0.45);}
-    .card{position:relative;}
-    .card{overflow:hidden;}
-    .card::before{content:"";}
-    .card::before{position:absolute;}
-    .card::before{inset:-1px;}
-    .card::before{border-radius:inherit;}
-    .card::before{padding:1px;}
-    .card::before{background:linear-gradient(135deg, rgba(255,109,33,0.30), rgba(111,231,255,0.16), rgba(255,174,58,0.20));}
-    .card::before{pointer-events:none;}
-    .card::before{opacity:0.85;}
-    .card::before{pointer-events:none;}
-    .card-top{display:flex;}
-    .card-top{align-items:flex-start;}
-    .card-top{justify-content:space-between;}
-    .card-top{gap:12px;}
-    .card-title{margin:0;}
-    .card-title{font-size:16.5px;}
-    .card-title{letter-spacing:-0.2px;}
-    .pill{font-size:12px;}
-    .pill{color:rgba(255,255,255,0.92);}
-    .pill{background:rgba(255,255,255,0.06);}
-    .pill{border:1px solid rgba(255,255,255,0.14);}
-    .pill{padding:6px 10px;}
-    .pill{border-radius:999px;}
-    .pill{font-weight:950;}
-    .pill{white-space:nowrap;}
-    .p-lead{margin:8px 0 0 0;}
-    .p-lead{color:var(--muted);}
-    .p-lead{font-size:15px;}
-    .p-lead{line-height:1.7;}
-    .list{margin:12px 0 0 0;}
-    .list{padding:0;}
-    .list{list-style:none;}
-    .list{display:grid;}
-    .list{gap:8px;}
-    .li{display:flex;}
-    .li{gap:10px;}
-    .li{align-items:flex-start;}
-    .li{color:var(--muted);}
-    .li{font-size:15px;}
-    .li{line-height:1.7;}
-    .ico{width:22px;}
-    .ico{height:22px;}
-    .ico{border-radius:10px;}
-    .ico{display:grid;}
-    .ico{place-items:center;}
-    .ico{background:rgba(255,255,255,0.06);}
-    .ico{border:1px solid rgba(255,255,255,0.12);}
-    .ico{color:rgba(242,242,243,0.95);}
-    .ico{flex:0 0 auto;}
-    .ico{margin-top:1px;}
-    .card-actions{display:flex;}
-    .card-actions{gap:10px;}
-    .card-actions{flex-wrap:wrap;}
-    .card-actions{align-items:center;}
-    .hr{height:1px;}
-    .hr{background:var(--line);}
-    .hr{margin:12px 0;}
-    .accordion{margin-top:12px;}
-    .accordion-btn{width:100%;}
-    .accordion-btn{display:flex;}
-    .accordion-btn{align-items:center;}
-    .accordion-btn{justify-content:space-between;}
-    .accordion-btn{gap:12px;}
-    .accordion-btn{text-align:left;}
-    .accordion-btn{background:rgba(255,255,255,0.03);}
-    .accordion-btn{border:1px solid rgba(255,255,255,0.10);}
-    .accordion-btn{border-radius:14px;}
-    .accordion-btn{padding:12px 12px;}
-    .accordion-btn{color:rgba(242,242,243,0.96);}
-    .accordion-btn{font-weight:950;}
-    .accordion-btn{font-size:14.5px;}
-    .accordion-btn:hover{background:rgba(255,255,255,0.05);}
-    .accordion-btn:focus{outline:2px solid rgba(255,109,33,0.55);}
-    .accordion-btn:focus{outline-offset:2px;}
-    .chev{display:inline-flex;}
-    .chev{align-items:center;}
-    .chev{justify-content:center;}
-    .chev{width:34px;}
-    .chev{height:34px;}
-    .chev{border-radius:12px;}
-    .chev{background:rgba(255,255,255,0.06);}
-    .chev{border:1px solid rgba(255,255,255,0.10);}
-    .chev{color:rgba(242,242,243,0.94);}
-    .panel{display:none;}
-    .panel{margin-top:10px;}
-    .panel{border-radius:16px;}
-    .panel{border:1px solid rgba(255,255,255,0.10);}
-    .panel{background:rgba(255,255,255,0.03);}
-    .panel{padding:14px;}
-    .panel{color:var(--muted);}
-    .panel{font-size:15px;}
-    .panel{line-height:1.75;}
-    .panel h4{margin:0 0 8px 0;}
-    .panel h4{font-size:14.5px;}
-    .panel h4{letter-spacing:-0.2px;}
-    .panel p{margin:8px 0 0 0;}
-    .panel .mini{color:rgba(255,255,255,0.58);}
-    .panel .mini{font-size:13.5px;}
-    .panel .mini{line-height:1.65;}
-    .platform{border-radius:var(--radius2);}
-    .platform{border:1px solid rgba(255,255,255,0.10);}
-    .platform{background:radial-gradient(900px 520px at 10% 0%, rgba(255,109,33,0.16), rgba(0,0,0,0.0));}
-    .platform{padding:16px;}
-    .platform{box-shadow:var(--shadow);}
-    .steps{display:grid;}
-    .steps{grid-template-columns:1fr;}
-    .steps{gap:10px;}
-    .step{display:flex;}
-    .step{gap:12px;}
-    .step{align-items:flex-start;}
-    .step{border-radius:var(--radius);}
-    .step{border:1px solid rgba(255,255,255,0.10);}
-    .step{background:rgba(255,255,255,0.03);}
-    .step{padding:14px;}
-    .step-ico{width:32px;}
-    .step-ico{height:32px;}
-    .step-ico{border-radius:12px;}
-    .step-ico{display:flex;}
-    .step-ico{align-items:center;}
-    .step-ico{justify-content:center;}
-    .step-ico{font-weight:950;}
-    .step-ico{background:rgba(255,109,33,0.16);}
-    .step-ico{color:var(--accent2);}
-    .step-ico{border:1px solid rgba(255,109,33,0.25);}
-    .step strong{display:block;}
-    .step strong{font-size:14.5px;}
-    .step strong{margin:0 0 2px 0;}
-    .step span{display:block;}
-    .step span{color:var(--muted);}
-    .step span{font-size:15px;}
-    .step span{line-height:1.7;}
-    .cta{border-radius:var(--radius2);}
-    .cta{border:1px solid rgba(255,255,255,0.10);}
-    .cta{background:radial-gradient(900px 520px at 10% 0%, rgba(255,109,33,0.16), rgba(0,0,0,0.0));}
-    .cta{padding:16px;}
-    .cta{box-shadow:var(--shadow);}
-    .cta-actions{display:flex;}
-    .cta-actions{gap:10px;}
-    .cta-actions{flex-wrap:wrap;}
-    .cta-actions{align-items:center;}
-    footer{padding:18px 0 28px 0;}
-    footer{border-top:1px solid rgba(255,255,255,0.10);}
-    footer{margin-top:12px;}
-    .foot{display:flex;}
-    .foot{flex-direction:column;}
-    .foot{gap:10px;}
-    .foot{color:var(--muted);}
-    .foot{font-size:14.5px;}
-    .foot-title{display:block;}
-    .foot-title{color:rgba(242,242,243,0.96);}
-    .foot-title{font-size:14.5px;}
-    .foot-title{margin-bottom:6px;}
-    .foot-title{font-weight:950;}
-    .foot-small{color:rgba(255,255,255,0.55);}
-    .foot-small{line-height:1.65;}
-    /* Dialog / modal */
-    dialog{border:0;}
-    dialog{padding:0;}
-    dialog{background:transparent;}
-    dialog{width:100%;}
-    dialog{max-width:none;}
-    dialog::backdrop{background:rgba(0,0,0,0.72);}
-    dialog[open]{display:flex;}
-    dialog[open]{align-items:flex-start;}
-    dialog[open]{justify-content:center;}
-    dialog[open]{padding-top:calc(10px + env(safe-area-inset-top));}
-    label{display:block;}
-    label{font-size:12.5px;}
-    label{color:rgba(255,255,255,0.72);}
-    label{margin:0 0 6px 0;}
-    input,select,textarea{width:100%;}
-    input,select,textarea{border-radius:14px;}
-    input,select,textarea{border:1px solid rgba(255,255,255,0.12);}
-    input,select,textarea{background:rgba(255,255,255,0.05);}
-    input,select,textarea{color:var(--text);}
-    input,select,textarea{padding:12px 12px;}
-    input,select,textarea{font-size:16px;}
-    input,select,textarea{outline:none;}
-    textarea{min-height:120px;}
-    textarea{resize:vertical;}
-    input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);}
-    input:focus,select:focus,textarea:focus{box-shadow:0 0 0 5px rgba(255,109,33,0.14);}
-    .help{color:rgba(255,255,255,0.60);}
-    .help{font-size:13px;}
-    .help{line-height:1.55;}
-    .help{margin:2px 0 0 0;}
-    /* Floating CTAs */
-    .wa-float{position:fixed;}
-    .wa-float{right:14px;}
-    .wa-float{bottom:14px;}
-    .wa-float{z-index:90;}
-    .wa-float{display:none;}
-    .wa-float{align-items:center;}
-    .wa-float{justify-content:center;}
-    .wa-float{padding:12px 14px;}
-    .wa-float{border-radius:999px;}
-    .wa-float{border:1px solid rgba(255,255,255,0.12);}
-    .wa-float{background:rgba(18,18,26,0.82);}
-    .wa-float{backdrop-filter:blur(10px);}
-    .wa-float{color:rgba(242,242,243,0.96);}
-    .wa-float{font-weight:950;}
-    .wa-float{font-size:13px;}
-    .wa-float{box-shadow:0 18px 50px rgba(0,0,0,0.55);}
-    .wa-float{transition:transform 160ms ease, background 160ms ease, opacity 160ms ease;}
-    .wa-float{opacity:0;}
-    .wa-float:hover{background:rgba(18,18,26,0.92);}
-    .wa-float:hover{transform:translateY(-1px);}
-    .start-float{position:fixed;}
-    .start-float{left:14px;}
-    .start-float{bottom:14px;}
-    .start-float{z-index:91;}
-    .start-float{display:none;}
-    .start-float{align-items:center;}
-    .start-float{justify-content:center;}
-    .start-float{padding:12px 14px;}
-    .start-float{border-radius:999px;}
-    .start-float{border:1px solid rgba(255,255,255,0.12);}
-    .start-float{background:linear-gradient(135deg,var(--accent),var(--accent2));}
-    .start-float{color:#111116;}
-    .start-float{font-weight:950;}
-    .start-float{font-size:13.5px;}
-    .start-float{box-shadow:0 18px 50px rgba(0,0,0,0.55);}
-    .start-float{opacity:0;}
-    .start-float{transition:transform 160ms ease, opacity 160ms ease;}
-    .start-float:hover{transform:translateY(-1px);}
-    @media (max-width:420px){.btn{padding:10px 12px;}}
-    @media (max-width:420px){.btn{font-size:13px;}}
-    @media (max-width:420px){.logo{width:52px;}}
-    @media (max-width:420px){.logo{height:40px;}}
-    @media (max-width:420px){.hero-overlay-title{font-size:20px;}}
-    @media (max-width:420px){.hero-overlay-sub{font-size:15px;}}
-    @media (min-width:860px){:root{--pad:22px;}}
-    @media (min-width:860px){.hero{padding:28px 0 12px 0;}}
-    @media (min-width:860px){.hero-grid{grid-template-columns:1.25fr 1fr;}}
-    @media (min-width:860px){.hero-grid{gap:16px;}}
-    @media (min-width:860px){.hero-media{min-height:430px;}}
-    @media (min-width:860px){h1{font-size:46px;}}
-    @media (min-width:860px){.grid2{grid-template-columns:repeat(2, 1fr);}}
-    @media (min-width:860px){.steps{grid-template-columns:repeat(2, 1fr);}}
-    @media (min-width:860px){.wa-float{display:none!important;}}
-    @media (min-width:860px){.start-float{display:none!important;}}
+    :root{--bg:#0B0B0E;--card:#12121A;--text:#F2F2F3;--muted:rgba(205,205,214,0.92);--muted2:rgba(255,255,255,0.60);--line:rgba(255,255,255,0.10);--accent:#FF6D21;--accent2:#FFAE3A;--accent3:#6FE7FF;--shadow:0 18px 48px rgba(0,0,0,0.55);--radius:18px;--radius2:22px;--max:1120px;--pad:18px;--font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:var(--font);color:var(--text);background:radial-gradient(1100px 620px at 10% 0%, rgba(255,109,33,0.18), rgba(11,11,14,0) 58%),radial-gradient(900px 520px at 92% 10%, rgba(255,174,58,0.12), rgba(11,11,14,0) 58%),radial-gradient(900px 520px at 70% 75%, rgba(111,231,255,0.08), rgba(11,11,14,0) 60%),var(--bg);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;}
+strong{font-weight:900;}
+.skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+.skip:focus{left:12px;top:12px;width:auto;height:auto;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:12px;z-index:9999;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad);}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(11,11,14,0.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--pad);}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;}
+.logo{width:54px;height:42px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 14px 30px rgba(255,109,33,0.18);display:flex;align-items:center;justify-content:center;color:#111116;font-weight:1000;font-size:13px;letter-spacing:-0.7px;border:1px solid rgba(255,255,255,0.14);}
+.brand-name{font-weight:900;letter-spacing:-0.3px;font-size:14px;color:rgba(242,242,243,0.95);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
+.btn{border:0;cursor:pointer;border-radius:14px;padding:12px 14px;font-weight:950;font-size:14.5px;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:transform 120ms ease, box-shadow 120ms ease, background 120ms ease, opacity 120ms ease;}
+.btn:active{transform:translateY(1px);}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111116;box-shadow:0 18px 44px rgba(255,109,33,0.18);}
+.btn-primary:hover{box-shadow:0 22px 56px rgba(255,109,33,0.26);}
+.btn-secondary{background:rgba(255,255,255,0.07);color:var(--text);border:1px solid rgba(255,255,255,0.12);}
+.btn-secondary:hover{background:rgba(255,255,255,0.10);}
+.icon-btn{border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);width:44px;height:44px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;}
+.icon-btn:hover{background:rgba(255,255,255,0.08);}
+.burger{width:18px;height:2px;background:rgba(242,242,243,0.95);position:relative;border-radius:2px;}
+.burger::before{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:rgba(242,242,243,0.95);top:-6px;}
+.burger::after{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:rgba(242,242,243,0.95);top:6px;}
+.hide-mobile{display:none;}
+.hero{padding:22px 0 10px;}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:14px;}
+.hero-media{position:relative;border-radius:var(--radius2);overflow:hidden;border:1px solid var(--line);background:radial-gradient(1200px 620px at 20% 0%, rgba(255,109,33,0.14), rgba(0,0,0,0.0));min-height:320px;box-shadow:0 26px 80px rgba(0,0,0,0.60);}
+.hero-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.0) contrast(1.12);}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,11,14,0.94), rgba(11,11,14,0.10) 52%, rgba(11,11,14,0.94));}
+.hero-overlay{position:absolute;left:16px;right:16px;top:16px;z-index:2;display:flex;flex-direction:column;gap:10px;max-width:78ch;}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:rgba(183,183,194,0.98);border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:999px;width:max-content;}
+.hero-overlay h1{margin:0;font-weight:950;letter-spacing:-0.9px;font-size:34px;line-height:1.08;text-shadow:0 14px 34px rgba(0,0,0,0.80);}
+.hero-sub{margin:0;color:rgba(220,220,230,0.94);font-size:16.5px;line-height:1.65;text-shadow:0 14px 34px rgba(0,0,0,0.85);}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.hero-card{border-radius:var(--radius2);border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));padding:16px;box-shadow:0 26px 80px rgba(0,0,0,0.60);}
+.pill{display:inline-flex;align-items:center;font-size:12px;font-weight:950;color:rgba(255,255,255,0.92);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);padding:6px 10px;border-radius:999px;}
+.lead{margin:10px 0 10px;color:var(--muted);font-size:15px;line-height:1.7;}
+.mini-list{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:8px;}
+.mini-list li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:15px;line-height:1.7;}
+.mini-ico{width:22px;height:22px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);flex:0 0 auto;}
+.fine{margin:12px 0 0;color:var(--muted2);font-size:13.5px;line-height:1.65;}
+.section{padding:20px 0;}
+.section-head{margin-bottom:12px;}
+.section-head h2{margin:0;font-size:19px;letter-spacing:-0.25px;}
+.section-sub{margin:6px 0 0;color:var(--muted);font-size:15px;line-height:1.65;max-width:76ch;}
+.grid2{display:grid;grid-template-columns:1fr;gap:12px;}
+.card{border-radius:var(--radius);border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));padding:16px;box-shadow:0 16px 40px rgba(0,0,0,0.45);}
+.card-title{margin:0 0 8px;font-size:16.5px;letter-spacing:-0.2px;}
+.p{margin:0;color:var(--muted);font-size:15px;line-height:1.75;}
+.list{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:8px;}
+.list li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:15px;line-height:1.7;}
+.ico{width:22px;height:22px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:rgba(242,242,243,0.95);flex:0 0 auto;margin-top:1px;}
+.card-actions{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.platform{border-radius:var(--radius2);border:1px solid rgba(255,255,255,0.10);background:radial-gradient(900px 520px at 10% 0%, rgba(255,109,33,0.16), rgba(0,0,0,0.0));padding:16px;box-shadow:var(--shadow);}
+.cta{border-radius:var(--radius2);border:1px solid rgba(255,255,255,0.10);background:radial-gradient(900px 520px at 10% 0%, rgba(255,109,33,0.16), rgba(0,0,0,0.0));padding:16px;box-shadow:var(--shadow);}
+.cta-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.site-footer{padding:18px 0 28px;border-top:1px solid rgba(255,255,255,0.10);margin-top:12px;}
+.foot{display:flex;flex-direction:column;gap:10px;color:var(--muted);font-size:14.5px;}
+.foot-title{display:block;color:rgba(242,242,243,0.96);font-size:14.5px;margin-bottom:6px;font-weight:950;}
+.foot-line{margin:0;}
+.foot-small{margin:0;color:rgba(255,255,255,0.55);line-height:1.65;}
+dialog{border:0;padding:0;background:transparent;width:100%;max-width:none;}
+dialog::backdrop{background:rgba(0,0,0,0.72);}
+.request-dialog[open],.menu-dialog[open]{display:flex;align-items:flex-start;justify-content:center;padding:calc(10px + env(safe-area-inset-top)) var(--pad) 0;}
+.dialog-card,.menu-card{width:min(680px, 100%);border-radius:22px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(18,18,26,0.98), rgba(10,10,14,0.98));box-shadow:0 26px 70px rgba(0,0,0,0.60);overflow:hidden;}
+.dialog-head,.menu-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;border-bottom:1px solid rgba(255,255,255,0.10);}
+.form{padding:14px;display:grid;gap:12px;}
+.field label{display:block;font-size:12.5px;color:rgba(255,255,255,0.72);margin:0 0 6px;}
+input,select,textarea{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:16px;outline:none;}
+textarea{min-height:120px;resize:vertical;}
+input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-shadow:0 0 0 5px rgba(255,109,33,0.14);}
+.help{margin:6px 0 0;color:rgba(255,255,255,0.60);font-size:13px;line-height:1.55;}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.10);padding-top:12px;}
+.form-fine{margin:0;color:rgba(255,255,255,0.55);}
+.menu-links{padding:14px;display:grid;gap:10px;}
+.menu-links a{padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.03);color:rgba(242,242,243,0.96);font-weight:900;}
+.menu-links a:hover{background:rgba(255,255,255,0.05);}
+.menu-cta{padding:14px;border-top:1px solid rgba(255,255,255,0.10);display:flex;gap:10px;flex-wrap:wrap;}
+.wa-float,.start-float{position:fixed;bottom:14px;z-index:91;display:none;align-items:center;justify-content:center;border-radius:999px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 18px 50px rgba(0,0,0,0.55);opacity:0;transition:transform 160ms ease, opacity 160ms ease, background 160ms ease;}
+.start-float{left:14px;padding:12px 14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111116;font-weight:950;font-size:13.5px;}
+.wa-float{right:14px;padding:12px 14px;background:rgba(18,18,26,0.82);backdrop-filter:blur(10px);color:rgba(242,242,243,0.96);font-weight:950;font-size:13px;}
+.start-float:hover,.wa-float:hover{transform:translateY(-1px);}
+@media (max-width:420px){.btn{padding:10px 12px;font-size:13px;}.logo{width:52px;height:40px;}.brand-name{display:none;}.hero-overlay h1{font-size:30px;}}
+@media (min-width:860px){:root{--pad:22px;}.hide-mobile{display:inline-flex;}.icon-btn{display:none;}.hero{padding:28px 0 12px;}.hero-grid{grid-template-columns:1.25fr 1fr;gap:16px;}.grid2{grid-template-columns:repeat(2, 1fr);}.hero-overlay h1{font-size:46px;}.hero-media{min-height:460px;}.wa-float,.start-float{display:none!important;}}
 
-    /* details reset */
-.accordion{ margin-top:12px; }
-.accordion > summary{ list-style:none; }
-.accordion > summary::-webkit-details-marker{ display:none; }
+  </style>
 
-/* details controls visibility */
-details.accordion > .panel { display:none; }
-details.accordion[open] > .panel { display:block; }
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"World of Mixologists",
+      "alternateName":"WØM",
+      "url":"https://www.worldofmixologists.com/",
+      "logo":"https://www.worldofmixologists.com/assets/og.jpg",
+      "description":"Curated bartender and bar team features. Proper credit, honest visibility, and a bridge to professional opportunities via Bartendly.",
+      "email":"hello@worldofmixologists.com",
+      "sameAs":[
+        "https://www.instagram.com/worldofmixologists/"
+      ]
+    }
+    </script>
+  
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"WebSite",
+      "name":"World of Mixologists",
+      "url":"https://www.worldofmixologists.com/",
+      "inLanguage":"en"
+    }
+    </script>
+  
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"How do I request a feature on World of Mixologists?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Use the Get featured / collaborate form and include Instagram handles, who to credit, and 1–3 strong photos (bartender portrait or bar team)."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Is World of Mixologists an agency?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"No. WØM curates and connects. We do not employ talent or operate events."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Are collaborations paid?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Some features are editorial, some are paid. We’re transparent and we only take collaborations that feel relevant to bartenders."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"What is the link between WØM and Bartendly?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"WØM is the visibility layer. Bartendly is the professional layer where profiles and opportunities live beyond social posts."
+          }
+        }
+      ]
+    }
+    </script>
 
-
-.chev{ font-size:18px; line-height:1; }
-.accordion[open] .chev{ transform:translateY(-1px); }
-.chev::after{ content:"+"; }
-.accordion[open] .chev::after{ content:"−"; }
-
-
-    </style>
-    
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header>
-    <nav class="nav wrap" aria-label="Primary">
+  <header class="site-header" id="top">
+    <nav class="nav wrap" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="World of Mixologists home">
         <span class="logo" aria-hidden="true">WØM</span>
+        <span class="brand-name">World of Mixologists</span>
       </a>
-      <div class="nav-links">
-        <a class="nav-link" href="#services">Services</a>
-        <a class="nav-link" href="#curation">Curated projects</a>
-        <a class="nav-link" href="#platform">Bartendly platform</a>
-        <button class="btn btn-primary" type="button" data-open-project>Start a project</button>
-        <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Bartendly services</a>
+
+      <div class="nav-actions">
+        <a class="btn btn-secondary hide-mobile" href="#work">Ways to work</a>
+        <a class="btn btn-secondary hide-mobile" href="#platform">Bartendly</a>
+        <button class="btn btn-primary" type="button" data-open-dialog>Get featured</button>
+        <button class="icon-btn" type="button" aria-label="Open menu" data-open-menu>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
       </div>
     </nav>
   </header>
 
+  <!-- Mobile menu dialog -->
+  <dialog class="menu-dialog" id="menuDialog" aria-label="Menu">
+    <div class="menu-card">
+      <div class="menu-head">
+        <strong>Menu</strong>
+        <button class="btn btn-secondary" type="button" data-close-menu>Close</button>
+      </div>
+      <div class="menu-links" role="navigation" aria-label="Menu links">
+        <a href="#about" data-close-menu>What we do</a>
+        <a href="#bartenders" data-close-menu>For bartenders</a>
+        <a href="#bars" data-close-menu>For bars</a>
+        <a href="#brands" data-close-menu>For brands</a>
+        <a href="#work" data-close-menu>Ways to work</a>
+        <a href="#platform" data-close-menu>Bartendly</a>
+        <a href="#faq" data-close-menu>FAQ</a>
+        <a href="#contact" data-close-menu>Contact</a>
+      </div>
+      <div class="menu-cta">
+        <button class="btn btn-primary" type="button" data-open-dialog>Get featured / collaborate</button>
+        <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Open Bartendly</a>
+      </div>
+    </div>
+  </dialog>
+
   <main id="main">
-    <section class="hero" id="top">
+    <!-- HERO -->
+    <section class="hero">
       <div class="wrap hero-grid">
-        <div class="hero-media" aria-label="Hero image">
+        <div class="hero-media">
           <picture>
             <source srcset="/assets/hero-600.webp 600w, /assets/hero-900.webp 900w, /assets/hero-1200.webp 1200w" type="image/webp">
             <source srcset="/assets/hero-600.jpg 600w, /assets/hero-900.jpg 900w, /assets/hero-1200.jpg 1200w" type="image/jpeg">
-            <img src="/assets/hero-900.jpg" alt="Bartender preparing a cocktail before service in a high-end bar" loading="eager" fetchpriority="high">
+            <img src="/assets/hero-900.jpg" alt="Bartender portrait-style moment behind the bar" width="1200" height="800" loading="eager" fetchpriority="high">
           </picture>
           <div class="hero-overlay">
-            <span class="hero-overlay-title">World of Mixologists</span>
-            <span class="hero-overlay-sub">Curated global hospitality projects — powered by the Bartendly platform.</span>
+            <span class="hero-kicker">Curated bartender & bar team features</span>
+            <h1>World of Mixologists (WØM)</h1>
+            <p class="hero-sub">
+              We repost and highlight bartenders and bar teams we genuinely respect — with proper credit.
+              When it makes sense, we connect visibility to real opportunities via <strong>Bartendly</strong>.
+            </p>
+            <div class="hero-cta">
+              <button class="btn btn-primary" type="button" data-open-dialog>Request a feature</button>
+              <a class="btn btn-secondary" href="#work">Ways to work with us</a>
+            </div>
           </div>
         </div>
 
-        <div class="hero-copy">
-          <div class="kicker"><span class="dot" aria-hidden="true"></span><span>Curated projects • platform-powered execution</span></div>
-          <h1>Curated hospitality projects worldwide — powered by Bartendly.</h1>
-          <p class="lead">Guest shifts, brand activations, corporate staffing, and signature experiences — curated with taste, executed professionally.</p>
-          <div class="hero-cta">
-            <button class="btn btn-primary" type="button" data-open-project>Start a project</button>
-            <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Professional bartending services</a>
-          </div>
-          <div class="proof" aria-label="Proof points">
-            <div class="proof-item">
-              <div class="proof-num">58k</div>
-              <div class="proof-label">Followers worldwide</div>
+        <aside class="hero-card" aria-label="Quick facts">
+          <div class="pill">What this is</div>
+          <p class="lead">
+            A people-first hospitality feature page — focused on bartenders, bar teams, and the culture behind the counter.
+          </p>
+          <ul class="mini-list">
+            <li><span class="mini-ico" aria-hidden="true">✓</span><span>Curated reposts (editorial)</span></li>
+            <li><span class="mini-ico" aria-hidden="true">✓</span><span>Selective paid placements (transparent)</span></li>
+            <li><span class="mini-ico" aria-hidden="true">✓</span><span>Bridge to Bartendly profiles</span></li>
+          </ul>
+          <p class="fine">
+            No agency promises. We curate and connect — we don’t employ talent or operate events.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>What we do</h2>
+          <p class="section-sub">One clear mission: highlight the right people and make visibility useful.</p>
+        </header>
+
+        <div class="grid2">
+          <article class="card">
+            <h3 class="card-title">1) Curate & repost with proper credit</h3>
+            <p class="p">
+              We feature bartender portraits, bar teams and behind-the-bar moments — always credited, always tagged.
+              Being featured is a signal of respect, not a ranking, not a certification.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">2) Help visibility last longer than 24 hours</h3>
+            <p class="p">
+              Social posts are ephemeral. When relevant, we guide featured bartenders to create a professional profile on Bartendly,
+              so opportunities can live somewhere structured — not in DMs.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">3) Offer a clean, selective collaboration channel</h3>
+            <p class="p">
+              Bars and brands can request features or discuss collaborations. Some are editorial, some are paid.
+              We keep it simple, selective, and transparent.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">What to send (minimum)</h3>
+            <ul class="list">
+              <li><span class="ico" aria-hidden="true">•</span><span>1–3 strong photos (portrait / team / service)</span></li>
+              <li><span class="ico" aria-hidden="true">•</span><span>Instagram handles + who to credit</span></li>
+              <li><span class="ico" aria-hidden="true">•</span><span>Bar name + city (if relevant)</span></li>
+              <li><span class="ico" aria-hidden="true">•</span><span>Any timing constraints (optional)</span></li>
+            </ul>
+            <div class="card-actions">
+              <button class="btn btn-primary" type="button" data-open-dialog>Send a request</button>
+              <a class="btn btn-secondary" href="#faq">Read FAQ</a>
             </div>
-            <div class="proof-item">
-              <div class="proof-num">Global</div>
-              <div class="proof-label">Known in the industry</div>
-            </div>
-            <div class="proof-item">
-              <div class="proof-num">Platform</div>
-              <div class="proof-label">Projects structured via Bartendly</div>
-            </div>
-          </div>
-          <p class="note">No vague “agency talk”. Clear offers, the right people, and professional execution.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services">
+    <!-- BARTENDERS -->
+    <section class="section" id="bartenders">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <h2>Professional bartending services (Bartendly)</h2>
-            <p class="section-sub">Our operational service arm for brands, agencies and organizers — reliable staffing for corporate events, fairs and activations.</p>
-          </div>
-        </div>
+        <header class="section-head">
+          <h2>For bartenders</h2>
+          <p class="section-sub">Get featured. Stay reachable. Convert visibility into opportunities (when relevant).</p>
+        </header>
 
         <article class="card">
-          <div class="card-top">
-            <h3 class="card-title">Staffing for corporate events, fairs & brand activations</h3>
-            <span class="pill">Live</span>
-          </div>
-          <p class="p-lead">We staff bartenders and hospitality teams for demanding environments where reliability matters more than storytelling.</p>
+          <h3 class="card-title">Why it helps</h3>
           <ul class="list">
-            <li class="li"><span class="ico" aria-hidden="true">✓</span><span>Corporate events & luxury private events</span></li>
-            <li class="li"><span class="ico" aria-hidden="true">✓</span><span>International fairs & exhibitions (multi-day staffing)</span></li>
-            <li class="li"><span class="ico" aria-hidden="true">✓</span><span>Brand activations, pop-ups, VIP experiences</span></li>
-            <li class="li"><span class="ico" aria-hidden="true">✓</span><span>Professional confirmation, coordination, and payment handling</span></li>
+            <li><span class="ico" aria-hidden="true">✓</span><span>Visibility on a bartender-focused platform (people who care)</span></li>
+            <li><span class="ico" aria-hidden="true">✓</span><span>Association with quality bars, teams and peers</span></li>
+            <li><span class="ico" aria-hidden="true">✓</span><span>Optional: build a Bartendly profile so you’re reachable for gigs</span></li>
           </ul>
-          <div class="hr"></div>
+          <p class="p">
+            If you want your feature to lead somewhere useful, Bartendly is the professional layer where your profile can live.
+          </p>
           <div class="card-actions">
-            <a class="btn btn-primary" href="https://www.bartendly.com" target="_blank" rel="noopener">Go to Bartendly services</a>
-            <button class="btn btn-secondary" type="button" data-open-project>Request staffing</button>
+            <button class="btn btn-primary" type="button" data-open-dialog>Request a bartender feature</button>
+            <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Create a Bartendly profile</a>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section" id="curation">
+    <!-- BARS -->
+    <section class="section" id="bars">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <h2>Curated hospitality projects (WØM × Bartendly)</h2>
-            <p class="section-sub">For bars, brands and festivals looking for cultural relevance — not generic staffing. Expand any card for full details.</p>
-          </div>
-        </div>
+        <header class="section-head">
+          <h2>For bars & bar teams</h2>
+          <p class="section-sub">Team features that highlight people, culture and service — not just cocktails.</p>
+        </header>
 
         <div class="grid2">
           <article class="card">
-            <div class="card-top">
-              <h3 class="card-title">Curated guest shifts & international events</h3>
-              <span class="pill">Core</span>
-            </div>
-            <p class="p-lead">International guest shifts, festivals, bar takeovers and masterclasses — curated case by case.</p>
-           
-            <details class="accordion">
-              <summary class="accordion-btn">
-                <span>More information</span>
-                <span class="chev" aria-hidden="true"></span>
-              </summary>
-            
-              <div class="panel">
-                <h4>What it is</h4>
-                <p>Guest shifts and hospitality events involving international bartenders, designed to create meaningful collaboration rather than one-off appearances.</p>
-                <h4 style="margin-top:12px;">Why curation matters</h4>
-                <p>Not every bartender fits every bar. We focus on cultural alignment, audience relevance, and context — not random availability.</p>
-                <h4 style="margin-top:12px;">How Bartendly is used</h4>
-                <p>Events are structured and visible inside the Bartendly platform through bartender profiles and event listings, creating visibility beyond the night itself.</p>
-                <h4 style="margin-top:12px;">Who executes</h4>
-                <p>Independent bartenders and hosts. World of Mixologists curates and connects — it does not employ talent.</p>
-              </div>
-            </details>
-            
+            <h3 class="card-title">Team spotlights</h3>
+            <p class="p">
+              Great bars are built by people. We feature teams, service energy, and the humans behind the counter.
+            </p>
+            <ul class="list">
+              <li><span class="ico" aria-hidden="true">•</span><span>Team portraits and service moments</span></li>
+              <li><span class="ico" aria-hidden="true">•</span><span>Clean credits + tags for your staff</span></li>
+              <li><span class="ico" aria-hidden="true">•</span><span>Optional: link to Bartendly for jobs / opportunities</span></li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="card-top">
-              <h3 class="card-title">Sense & Soul — by Fernando Fastuca</h3>
-              <span class="pill">Partner</span>
+            <h3 class="card-title">Employer brand pack (optional)</h3>
+            <p class="p">
+              If you’re hiring or building reputation, we can structure a small pack: a team feature + story frames + clear crediting.
+              Always discussed upfront (editorial vs paid).
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-primary" type="button" data-open-dialog>Discuss a bar feature</button>
+              <a class="btn btn-secondary" href="#work">See collaboration options</a>
             </div>
-            <p class="p-lead">A signature food & cocktail experience built around narrative, pairing and human connection.</p>
-         
-            <details class="accordion">
-              <summary class="accordion-btn">
-                <span>More information</span>
-                <span class="chev" aria-hidden="true"></span>
-              </summary>
-            
-              <div class="panel">
-                <h4>What Sense & Soul is</h4>
-                <p>Sense & Soul is a defined hospitality experience combining gastronomy, cocktails, and storytelling. It is not generic consulting and not menu engineering — it is an experience delivered in person.</p>
-                <h4 style="margin-top:12px;">Who it’s for</h4>
-                <p>Premium venues and brands seeking a narrative-driven format and a high-touch guest experience.</p>
-                <h4 style="margin-top:12px;">Who does what</h4>
-                <p><strong>Fernando Fastuca</strong> creates and delivers the experience. <strong>World of Mixologists</strong> curates, positions and connects. <strong>Bartendly</strong> supports the commercial and operational flow.</p>
-                <p class="mini" style="margin-top:10px;">Sense & Soul is conceived, owned and led by Fernando Fastuca.</p>
-              </div>
-            </details>
-            
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3 class="card-title">Curated formats & tours (BBB)</h3>
-              <span class="pill">Selective</span>
-            </div>
-            <p class="p-lead">Multi-city formats combining guest shifts, travel and impact-driven initiatives.</p>
-           
-            <details class="accordion">
-              <summary class="accordion-btn">
-                <span>More information</span>
-                <span class="chev" aria-hidden="true"></span>
-              </summary>
-            
-              <div class="panel">
-                <h4>What this is</h4>
-                <p>Bartenders Beyond Borders (BBB) is a curated format developed in partnership with Tony Pescatori, combining guest shifts, travel, and impact-driven initiatives.</p>
-                <h4 style="margin-top:12px;">When it makes sense</h4>
-                <p>Long-term brand storytelling, multi-city activations, or projects where community and impact are part of the objective.</p>
-                <h4 style="margin-top:12px;">Important clarity</h4>
-                <p>BBB-style formats are activated selectively when aligned with the project — they are not the default offer.</p>
-              </div>
-            </details>
-
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="platform">
+    <!-- BRANDS -->
+    <section class="section" id="brands">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <h2>Bartendly — the platform behind everything</h2>
-            <p class="section-sub">World of Mixologists is the curatorial front door. Bartendly is the digital engine that connects professionals, venues and opportunities globally.</p>
-          </div>
-        </div>
+        <header class="section-head">
+          <h2>For brands</h2>
+          <p class="section-sub">Selective bartender-facing visibility — no generic influencer noise.</p>
+        </header>
 
-        <div class="platform">
-          <p class="p-lead" style="margin:0;">Bartendly connects bartender profiles, bars, events, jobs, gigs, private requests and corporate staffing inside one structured system — instead of scattered DMs, WhatsApp groups and spreadsheets.</p>
+        <article class="card">
+          <h3 class="card-title">Brand collaborations (case by case)</h3>
+          <p class="p">
+            Some brands reach out for reposts, amplification or bartender-facing visibility. We only engage when it feels relevant to bartenders and bars.
+          </p>
           <ul class="list">
-            <li class="li"><span class="ico" aria-hidden="true">•</span><span>Global bartender profiles (visibility that persists)</span></li>
-            <li class="li"><span class="ico" aria-hidden="true">•</span><span>Events calendar (guest shifts, festivals, masterclasses — and later all bar events)</span></li>
-            <li class="li"><span class="ico" aria-hidden="true">•</span><span>Jobs & gigs + private and corporate requests</span></li>
-            <li class="li"><span class="ico" aria-hidden="true">•</span><span>Bars, festivals and experiences connected to real opportunities</span></li>
+            <li><span class="ico" aria-hidden="true">✓</span><span>Clear scope and deliverables (no vague “campaigns”)</span></li>
+            <li><span class="ico" aria-hidden="true">✓</span><span>Transparent terms (editorial vs paid)</span></li>
+            <li><span class="ico" aria-hidden="true">✓</span><span>Optional: operational follow-up through Bartendly where relevant</span></li>
           </ul>
-          <div class="card-actions" style="margin-top:12px;">
-            <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Open Bartendly app</a>
-            <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Bartendly services</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="how">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <h2>How it works</h2>
-            <p class="section-sub">Simple flow. Fast qualification. Professional execution.</p>
-          </div>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step-ico" aria-hidden="true">1</div>
-            <div>
-              <strong>You reach out</strong>
-              <span>Share what you want to create, where, and when.</span>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-ico" aria-hidden="true">2</div>
-            <div>
-              <strong>We qualify & curate</strong>
-              <span>We define the right format and the right people.</span>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-ico" aria-hidden="true">3</div>
-            <div>
-              <strong>Structured execution</strong>
-              <span>Projects are handled through the Bartendly platform and confirmed professionally.</span>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-ico" aria-hidden="true">4</div>
-            <div>
-              <strong>Professionals deliver</strong>
-              <span>Independent bartenders, creators and partners execute on site.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="start">
-      <div class="wrap">
-        <div class="cta">
-          <div class="section-head" style="margin-bottom:10px;">
-            <div>
-              <h2>Start a project</h2>
-              <p class="section-sub">Tell us what you’re building. We’ll reply with next steps.</p>
-            </div>
-          </div>
-          <div class="cta-actions">
-            <button class="btn btn-primary" type="button" data-open-project>Start a project</button>
-            <a class="btn btn-secondary" href="https://wa.me/34618502493?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <div class="card-actions">
+            <button class="btn btn-primary" type="button" data-open-dialog>Discuss a brand collaboration</button>
             <a class="btn btn-secondary" href="mailto:hello@worldofmixologists.com">Email us</a>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WAYS TO WORK -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Ways to work with us</h2>
+          <p class="section-sub">Straight options that match what WØM actually does today — with room to grow.</p>
+        </header>
+
+        <div class="grid2">
+          <article class="card">
+            <h3 class="card-title">Editorial feature (curated)</h3>
+            <p class="p">
+              You send a strong photo + credits. If it fits our curation, we repost and feature.
+              No guarantees on timing — curation comes first.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Paid placement (limited, transparent)</h3>
+            <p class="p">
+              For bars and brands that need a specific timing or extra visibility: limited paid slots, always labeled and discussed upfront.
+              We only accept placements that feel credible to bartenders.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Bar employer brand pack</h3>
+            <p class="p">
+              A structured feature designed to highlight your team (and optionally link to hiring / opportunities).
+              Useful when you want visibility for staff, culture and recruitment.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Profile bridge to Bartendly</h3>
+            <p class="p">
+              When relevant, we encourage featured bartenders to create a Bartendly profile so opportunities can be structured.
+              This is the “visibility → utility” path.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Open Bartendly</a>
+              <button class="btn btn-primary" type="button" data-open-dialog>Start</button>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <footer>
+    <!-- PLATFORM -->
+    <section class="section" id="platform">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Bartendly — the professional layer</h2>
+          <p class="section-sub">WØM is the visibility layer. Bartendly is where profiles and opportunities live.</p>
+        </header>
+
+        <div class="platform">
+          <p class="p">
+            Bartendly connects bartender profiles, venues, events, jobs and requests in a structured system — instead of scattered DMs and WhatsApp chaos.
+          </p>
+          <ul class="list">
+            <li><span class="ico" aria-hidden="true">•</span><span>Professional bartender profiles</span></li>
+            <li><span class="ico" aria-hidden="true">•</span><span>Events and guest shifts (structured listings)</span></li>
+            <li><span class="ico" aria-hidden="true">•</span><span>Jobs, gigs and requests (when relevant)</span></li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Open Bartendly app</a>
+            <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Bartendly website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>FAQ</h2>
+          <p class="section-sub">Quick answers. No ambiguity.</p>
+        </header>
+
+        <div class="grid2">
+          <article class="card">
+            <h3 class="card-title">Is WØM an agency?</h3>
+            <p class="p">No. We curate and connect. We don’t employ talent or operate events.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Are collaborations paid?</h3>
+            <p class="p">Some are editorial, some are paid. We’re transparent, and we keep it selective.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">What should I send to request a feature?</h3>
+            <p class="p">1–3 strong photos, Instagram handles, who to credit/tag, and the bar name + city (if relevant).</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">How does Bartendly fit in?</h3>
+            <p class="p">WØM is the visibility layer. Bartendly is where professional profiles and opportunities can live beyond a post.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="cta">
+          <header class="section-head">
+            <h2>Get featured / collaborate</h2>
+            <p class="section-sub">Tell us who you are and what you want. We reply with clear next steps.</p>
+          </header>
+
+          <div class="cta-actions">
+            <button class="btn btn-primary" type="button" data-open-dialog>Open request form</button>
+            <a class="btn btn-secondary" href="https://wa.me/34618502493?text=Hi%20W%C3%98M%20%E2%80%94%20I%E2%80%99d%20like%20to%20request%20a%20feature%20or%20discuss%20a%20collaboration." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-secondary" href="mailto:hello@worldofmixologists.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
       <div class="wrap foot">
         <div>
-          <span class="foot-title">World of Mixologists</span>
-          <div class="foot-line">Contact: <a href="mailto:hello@worldofmixologists.com">hello@worldofmixologists.com</a></div>
+          <span class="foot-title">World of Mixologists (WØM)</span>
+          <p class="foot-line">Contact: <a href="mailto:hello@worldofmixologists.com">hello@worldofmixologists.com</a></p>
         </div>
-        <div class="foot-small">World of Mixologists curates and connects hospitality projects worldwide. Projects are executed by independent professionals and operated via Bartendly. Sense & Soul is conceived and led by Fernando Fastuca. BBB formats are developed in partnership with Tony Pescatori.</div>
+        <p class="foot-small">
+          World of Mixologists curates bartender and bar team visibility. We curate and connect — we do not employ talent or operate events.
+          When a professional layer is needed (profiles, opportunities), it lives in Bartendly.
+        </p>
       </div>
     </footer>
   </main>
 
-  <dialog id="projectDialog" aria-labelledby="dialogTitle">
-    <div class="wrap" style="padding:14px;">
-      <div style="border-radius:22px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(18,18,26,0.98), rgba(10,10,14,0.98));box-shadow:0 26px 70px rgba(0,0,0,0.60);overflow:hidden;">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 14px;border-bottom:1px solid rgba(255,255,255,0.10);">
-          <strong id="dialogTitle" style="font-size:14px;letter-spacing:-0.1px;">Start a project</strong>
-          <button class="btn btn-secondary" type="button" data-close-project style="padding:10px 12px;font-size:13px;">Close</button>
+  <!-- REQUEST DIALOG -->
+  <dialog class="request-dialog" id="requestDialog" aria-labelledby="requestTitle">
+    <div class="dialog-card">
+      <div class="dialog-head">
+        <strong id="requestTitle">Get featured / collaborate</strong>
+        <button class="btn btn-secondary" type="button" data-close-dialog>Close</button>
+      </div>
+
+      <form id="requestForm" class="form" autocomplete="on">
+        <div class="field">
+          <label for="who">Who are you?</label>
+          <select id="who" name="who" required>
+            <option value="" selected disabled>Select one</option>
+            <option>Bartender</option>
+            <option>Bar / Venue</option>
+            <option>Brand</option>
+            <option>Agency</option>
+            <option>Other</option>
+          </select>
+          <p class="help">This helps us route your request.</p>
         </div>
 
-        <form id="projectForm" autocomplete="on" style="padding:14px;display:grid;gap:12px;">
-          <div>
-            <label for="who" style="display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;">Who are you?</label>
-            <select id="who" name="who" required style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;">
-              <option value="" selected disabled>Select one</option>
-              <option>Bar</option>
-              <option>Brand</option>
-              <option>Festival / Event</option>
-              <option>Agency</option>
-              <option>Hospitality professional</option>
-              <option>Other</option>
-            </select>
-            <p style="color:rgba(255,255,255,0.52);font-size:12px;line-height:1.45;margin:6px 0 0 0;">This helps us route your request correctly.</p>
+        <div class="grid2">
+          <div class="field">
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="Barcelona" required />
           </div>
+          <div class="field">
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Spain" required />
+          </div>
+        </div>
 
-          <div class="grid2">
-            <div>
-              <label for="city" style="display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;">City</label>
-              <input id="city" name="city" type="text" placeholder="Barcelona" required style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;">
-            </div>
-            <div>
-              <label for="country" style="display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;">Country</label>
-              <input id="country" name="country" type="text" placeholder="Spain" required style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;">
-            </div>
-          </div>
+        <div class="field">
+          <label for="what">What do you want?</label>
+          <textarea id="what" name="what" placeholder="Feature request / team spotlight / brand collaboration… Include links + credits." required></textarea>
+          <p class="help">Add Instagram handles + who to credit/tag. Links are helpful.</p>
+        </div>
 
-          <div>
-            <label for="what" style="display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;">What do you want to create?</label>
-            <textarea id="what" name="what" placeholder="Corporate staffing / guest shift / activation / Sense & Soul / festival collaboration..." required style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;min-height:110px;resize:vertical;"></textarea>
+        <div class="grid2">
+          <div class="field">
+            <label for="timeframe">Timeframe</label>
+            <input id="timeframe" name="timeframe" type="text" placeholder="Anytime / next week / specific dates" required />
           </div>
+          <div class="field">
+            <label for="budget">Budget (optional)</label>
+            <input id="budget" name="budget" type="text" placeholder="If paid placement: range" />
+          </div>
+        </div>
 
-          <div class="grid2">
-            <div>
-              <label for="timeframe" style="display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;">Timeframe</label>
-              <input id="timeframe" name="timeframe" type="text" placeholder="e.g., March 2026 / next month / exact dates" required style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;">
-            </div>
-            <div>
-              <label for="budget" style="display:block;font-size:12px;color:rgba(255,255,255,0.72);margin:0 0 6px 0;">Budget range (optional)</label>
-              <input id="budget" name="budget" type="text" placeholder="e.g., 5k–10k EUR" style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:14px;outline:none;">
-            </div>
+        <div class="grid2">
+          <div class="field">
+            <label for="whatsapp">WhatsApp (preferred)</label>
+            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+34 600 000 000" required />
+            <p class="help">We reply faster on WhatsApp. Include country code.</p>
           </div>
+          <div class="field">
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" type="email" placeholder="name@company.com" />
+          </div>
+        </div>
 
-          <div class="grid2">
-            <div>
-              <label for="whatsapp">WhatsApp (preferred)</label>
-              <input id="whatsapp" name="whatsapp" type="tel" placeholder="+34 600 000 000" required />
-              <p class="help">We reply faster on WhatsApp. Include country code.</p>
-            </div>
-            <div>
-              <label for="email">Email (optional)</label>
-              <input id="email" name="email" type="email" placeholder="name@company.com" />
-            </div>
-          </div>
-          
+        <div class="form-actions">
+          <button class="btn btn-secondary" type="button" data-close-dialog>Cancel</button>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
 
-          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.10);padding:12px 0 0 0;">
-            <button class="btn btn-secondary" type="button" data-close-project>Cancel</button>
-            <button class="btn btn-primary" type="submit">Submit brief</button>
-          </div>
-        </form>
-      </div>
+        <p class="fine form-fine">
+          Note: Some features are editorial, some are paid. We keep it transparent and selective.
+        </p>
+      </form>
     </div>
   </dialog>
 
-  <button class="start-float" id="startFloat" type="button" data-open-project aria-label="Start a project">Start a project</button>
-  <a class="wa-float" id="waFloat" href="https://wa.me/34618502493?text=Hi%20W%E2%88%85M%20%E2%80%94%20I%E2%80%99d%20like%20to%20discuss%20a%20hospitality%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat with us</a>
-
-  <script>
-    const qsa=(s,r=document)=>Array.from(r.querySelectorAll(s));
-    const qs=(s,r=document)=>r.querySelector(s);
-    const openButtons=qsa("[data-open-project]");
-    const closeButtons=qsa("[data-close-project]");
-    const dialog=qs("#projectDialog");
-    const form=qs("#projectForm");
-    const lockScroll=()=>{document.documentElement.style.overflow="hidden"; document.body.style.overflow="hidden";};
-    const unlockScroll=()=>{document.documentElement.style.overflow=""; document.body.style.overflow="";};
-    const openDialog=()=>{if(!dialog) return; if(typeof dialog.showModal==="function"){dialog.showModal();} else {dialog.setAttribute("open","");} lockScroll(); window.requestAnimationFrame(()=>{dialog.scrollTop=0; const sc=qs("form",dialog); if(sc){sc.scrollTop=0;} window.scrollTo({top:0,behavior:"instant"});});};
-    const closeDialog=()=>{if(!dialog) return; if(typeof dialog.close==="function"){dialog.close();} else {dialog.removeAttribute("open");} unlockScroll();};
-    openButtons.forEach(b=>b.addEventListener("click",openDialog));
-    closeButtons.forEach(b=>b.addEventListener("click",closeDialog));
-    if(dialog){dialog.addEventListener("click",(e)=>{if(e.target===dialog){closeDialog();}});}
-    window.addEventListener("keydown",(e)=>{if(e.key==="Escape" && dialog && dialog.open){closeDialog();}});
-    /* Mobile-only floating CTAs */
-    const waFloat=qs("#waFloat");
-    const startFloat=qs("#startFloat");
-    const isMobile=window.matchMedia("(max-width: 859px)").matches;
-    if(waFloat && isMobile){window.setTimeout(()=>{waFloat.style.display="inline-flex"; window.requestAnimationFrame(()=>{waFloat.style.opacity="1";});},2200);}
-    if(startFloat && isMobile){window.setTimeout(()=>{startFloat.style.display="inline-flex"; window.requestAnimationFrame(()=>{startFloat.style.opacity="1";});},1600);}
-    /* Form submit -> mailto (WhatsApp preferred is already in the form) */
-    if(form){form.addEventListener("submit",(e)=>{e.preventDefault(); const data=new FormData(form); const payload=Object.fromEntries(data.entries()); const subject=encodeURIComponent("WØM Project Brief"); const body=encodeURIComponent(`Who: ${payload.who}\nCity: ${payload.city}\nCountry: ${payload.country}\nTimeframe: ${payload.timeframe}\nBudget: ${payload.budget||"-"}\nWhatsApp: ${payload.whatsapp}\nEmail: ${payload.email||"-"}\n\nBrief:\n${payload.what}\n\n(Submitted from wom landing page)`); window.location.href=`mailto:hello@worldofmixologists.com?subject=${subject}&body=${body}`; closeDialog(); form.reset();});}
-    </script>
-  
+  <!-- Floating mobile CTAs -->
+  <button class="start-float" id="startFloat" type="button" data-open-dialog aria-label="Get featured">Get featured</button>
+  <a class="wa-float" id="waFloat" href="https://wa.me/34618502493?text=Hi%20W%C3%98M%20%E2%80%94%20I%E2%80%99d%20like%20to%20request%20a%20feature%20or%20discuss%20a%20collaboration." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <script>(() => {const qs=(s,r=document)=>r.querySelector(s),qsa=(s,r=document)=>Array.from(r.querySelectorAll(s));const requestDialog=qs("#requestDialog"),menuDialog=qs("#menuDialog"),openDialogBtns=qsa("[data-open-dialog]"),closeDialogBtns=qsa("[data-close-dialog]"),openMenuBtn=qs("[data-open-menu]"),closeMenuBtns=qsa("[data-close-menu]"),form=qs("#requestForm");const lock=()=>{document.documentElement.style.overflow="hidden";document.body.style.overflow="hidden";},unlock=()=>{document.documentElement.style.overflow="";document.body.style.overflow="";};const show=(dlg)=>{if(!dlg)return;if(typeof dlg.showModal==="function")dlg.showModal();else dlg.setAttribute("open","");lock();requestAnimationFrame(()=>{dlg.scrollTop=0;});},hide=(dlg)=>{if(!dlg)return;if(typeof dlg.close==="function")dlg.close();else dlg.removeAttribute("open");unlock();};openDialogBtns.forEach(b=>b.addEventListener("click",()=>{if(menuDialog&&menuDialog.open)hide(menuDialog);show(requestDialog);}));closeDialogBtns.forEach(b=>b.addEventListener("click",()=>hide(requestDialog)));if(requestDialog)requestDialog.addEventListener("click",(e)=>{if(e.target===requestDialog)hide(requestDialog);});if(openMenuBtn)openMenuBtn.addEventListener("click",()=>show(menuDialog));closeMenuBtns.forEach(el=>el.addEventListener("click",()=>hide(menuDialog)));if(menuDialog)menuDialog.addEventListener("click",(e)=>{if(e.target===menuDialog)hide(menuDialog);});window.addEventListener("keydown",(e)=>{if(e.key!=="Escape")return;if(requestDialog&&requestDialog.open)hide(requestDialog);if(menuDialog&&menuDialog.open)hide(menuDialog);});const wa=qs("#waFloat"),start=qs("#startFloat"),isMobile=window.matchMedia("(max-width: 859px)").matches;if(isMobile&&wa)setTimeout(()=>{wa.style.display="inline-flex";requestAnimationFrame(()=>{wa.style.opacity="1";});},2200);if(isMobile&&start)setTimeout(()=>{start.style.display="inline-flex";requestAnimationFrame(()=>{start.style.opacity="1";});},1600);if(form)form.addEventListener("submit",(e)=>{e.preventDefault();const data=new FormData(form),p=Object.fromEntries(data.entries());const subject=encodeURIComponent("WØM — Feature / Collaboration Request");const body=encodeURIComponent(`Who: ${p.who}\nCity: ${p.city}\nCountry: ${p.country}\nTimeframe: ${p.timeframe}\nBudget: ${p.budget||"-"}\nWhatsApp: ${p.whatsapp}\nEmail: ${p.email||"-"}\n\nMessage:\n${p.what}\n\n(Submitted from worldofmixologists.com)`);window.location.href=`mailto:hello@worldofmixologists.com?subject=${subject}&body=${body}`;hide(requestDialog);form.reset();});})();</script> 
 </body>
 </html>
