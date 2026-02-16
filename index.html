@@ -125,6 +125,13 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
 .ig-grid a{display:block;border-radius:14px;overflow:hidden;}
 .ig-grid img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;}
 
+.proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px;}
+.proof-item{background:rgba(18,18,26,0.78);border:1px solid var(--line);border-radius:16px;padding:12px 12px;box-shadow:0 10px 26px rgba(0,0,0,0.32);}
+.proof-num{font-weight:900;font-size:1.06rem;letter-spacing:-0.01em;}
+.proof-label{margin-top:4px;color:var(--muted2);font-size:0.86rem;line-height:1.2;}
+@media (max-width:520px){.proof{gap:10px;}.proof-item{padding:10px 10px;}.proof-num{font-size:0.98rem;}.proof-label{font-size:0.82rem;}}
+
+
   </style>
 
   <!-- Structured data -->
@@ -293,6 +300,23 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
           <p class="fine">
             No inflated promises. Clear offers, real people, and a platform that scales beyond DMs.
           </p>
+
+          <div class="proof" aria-label="Key facts">
+            <div class="proof-item">
+              <div class="proof-num">58k+</div>
+              <div class="proof-label">Followers worldwide</div>
+            </div>
+            <div class="proof-item">
+              <div class="proof-num">Global</div>
+              <div class="proof-label">Bartenders, bars & brands</div>
+            </div>
+            <div class="proof-item">
+              <div class="proof-num">Platform</div>
+              <div class="proof-label">Opportunities via Bartendly</div>
+            </div>
+          </div>
+          
+
         </aside>
       </div>
     </section>
