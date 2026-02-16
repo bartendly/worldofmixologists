@@ -131,7 +131,7 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
       "url":"https://www.worldofmixologists.com/",
       "logo":"https://www.worldofmixologists.com/assets/og.jpg",
       "description":"Curated bartender and bar team features. Proper credit, honest visibility, and a bridge to professional opportunities via Bartendly.",
-      "email":"hello@worldofmixologists.com",
+      "email":"martial@worldofmixologists.com",
       "sameAs":[
         "https://www.instagram.com/worldofmixologists/"
       ]
@@ -792,7 +792,7 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
             </ul>
             <div class="card-actions">
               <button class="btn btn-primary" type="button" data-open-dialog>Get involved</button>
-              <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Join Bartendly</a>
+              <a class="btn btn-secondary" href="https://app.bartendly.com/" target="_blank" rel="noopener">Join Bartendly</a>
             </div>
           </article>
 
@@ -828,7 +828,6 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
             <p class="p">Birthdays, home parties, premium gatherings — professional bartenders, clear expectations, smooth coordination.</p>
             <div class="card-actions">
               <a class="btn btn-primary" href="https://www.bartendly.com" target="_blank" rel="noopener">Hire via Bartendly</a>
-              <button class="btn btn-secondary" type="button" data-open-dialog>Describe your event</button>
             </div>
           </article>
 
@@ -926,7 +925,7 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
       <div class="wrap foot">
         <div>
           <span class="foot-title">World of Mixologists</span>
-          <p class="foot-line">Email: <a href="mailto:hello@worldofmixologists.com">hello@worldofmixologists.com</a></p>
+          <p class="foot-line">Email: <a href="mailto:martial@worldofmixologists.com">martial@worldofmixologists.com</a></p>
         </div>
         <p class="foot-small">
           WØM surfaces people and ideas. Bartendly makes hospitality visible, connected and operational — worldwide.
@@ -946,7 +945,7 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
       <form id="requestForm" class="form" autocomplete="on">
         <div class="field">
           <label for="who">Who are you?</label>
-          <select id="who" name="who" required>
+          <select id="who" name="who" >
             <option value="" selected disabled>Select one</option>
             <option>Bartender / hospitality professional</option>
             <option>Bar / Venue</option>
@@ -963,10 +962,6 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
             <label for="city">City</label>
             <input id="city" name="city" type="text" placeholder="Barcelona" required>
           </div>
-          <div class="field">
-            <label for="country">Country</label>
-            <input id="country" name="country" type="text" placeholder="Spain" required>
-          </div>
         </div>
 
         <div class="field">
@@ -978,7 +973,7 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
         <div class="grid2">
           <div class="field">
             <label for="timeframe">Timeframe</label>
-            <input id="timeframe" name="timeframe" type="text" placeholder="Anytime / next week / specific dates" required>
+            <input id="timeframe" name="timeframe" type="text" placeholder="Anytime / next week / specific dates">
           </div>
           <div class="field">
             <label for="budget">Budget (optional)</label>
@@ -989,7 +984,7 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
         <div class="grid2">
           <div class="field">
             <label for="whatsapp">WhatsApp (preferred)</label>
-            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+34 600 000 000" required>
+            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+34 600 000 000">
             <p class="help">We reply faster on WhatsApp. Include country code.</p>
           </div>
           <div class="field">
@@ -1013,7 +1008,7 @@ input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-s
   <!-- Floating mobile CTAs -->
   <button class="start-float" id="startFloat" type="button" data-open-dialog aria-label="Get involved">Get involved</button>
   <a class="wa-float" id="waFloat" href="https://wa.me/34618502493?text=Hi%20W%C3%98M%20%E2%80%94%20I%E2%80%99d%20like%20to%20get%20featured%2C%20hire%20a%20bartender%2C%20or%20propose%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
-  <script>(() => {const qs=(s,r=document)=>r.querySelector(s),qsa=(s,r=document)=>Array.from(r.querySelectorAll(s));const requestDialog=qs("#requestDialog"),menuDialog=qs("#menuDialog"),openDialogBtns=qsa("[data-open-dialog]"),closeDialogBtns=qsa("[data-close-dialog]"),openMenuBtn=qs("[data-open-menu]"),closeMenuBtns=qsa("[data-close-menu]"),form=qs("#requestForm");const lock=()=>{document.documentElement.style.overflow="hidden";document.body.style.overflow="hidden";},unlock=()=>{document.documentElement.style.overflow="";document.body.style.overflow="";};const show=(dlg)=>{if(!dlg)return;if(typeof dlg.showModal==="function")dlg.showModal();else dlg.setAttribute("open","");lock();requestAnimationFrame(()=>{dlg.scrollTop=0;});},hide=(dlg)=>{if(!dlg)return;if(typeof dlg.close==="function")dlg.close();else dlg.removeAttribute("open");unlock();};openDialogBtns.forEach(b=>b.addEventListener("click",()=>{if(menuDialog&&menuDialog.open)hide(menuDialog);show(requestDialog);}));closeDialogBtns.forEach(b=>b.addEventListener("click",()=>hide(requestDialog)));if(requestDialog)requestDialog.addEventListener("click",(e)=>{if(e.target===requestDialog)hide(requestDialog);});if(openMenuBtn)openMenuBtn.addEventListener("click",()=>show(menuDialog));closeMenuBtns.forEach(el=>el.addEventListener("click",()=>hide(menuDialog)));if(menuDialog)menuDialog.addEventListener("click",(e)=>{if(e.target===menuDialog)hide(menuDialog);});window.addEventListener("keydown",(e)=>{if(e.key!=="Escape")return;if(requestDialog&&requestDialog.open)hide(requestDialog);if(menuDialog&&menuDialog.open)hide(menuDialog);});const wa=qs("#waFloat"),start=qs("#startFloat"),isMobile=window.matchMedia("(max-width: 859px)").matches;if(isMobile&&wa)setTimeout(()=>{wa.style.display="inline-flex";requestAnimationFrame(()=>{wa.style.opacity="1";});},2200);if(isMobile&&start)setTimeout(()=>{start.style.display="inline-flex";requestAnimationFrame(()=>{start.style.opacity="1";});},1600);if(form)form.addEventListener("submit",(e)=>{e.preventDefault();const data=new FormData(form),p=Object.fromEntries(data.entries());const subject=encodeURIComponent("WØM — Feature / Collaboration Request");const body=encodeURIComponent(`Who: ${p.who}\nCity: ${p.city}\nCountry: ${p.country}\nTimeframe: ${p.timeframe}\nBudget: ${p.budget||"-"}\nWhatsApp: ${p.whatsapp}\nEmail: ${p.email||"-"}\n\nMessage:\n${p.what}\n\n(Submitted from worldofmixologists.com)`);window.location.href=`mailto:hello@worldofmixologists.com?subject=${subject}&body=${body}`;hide(requestDialog);form.reset();});})();</script> 
+  <script>(() => {const qs=(s,r=document)=>r.querySelector(s),qsa=(s,r=document)=>Array.from(r.querySelectorAll(s));const requestDialog=qs("#requestDialog"),menuDialog=qs("#menuDialog"),openDialogBtns=qsa("[data-open-dialog]"),closeDialogBtns=qsa("[data-close-dialog]"),openMenuBtn=qs("[data-open-menu]"),closeMenuBtns=qsa("[data-close-menu]"),form=qs("#requestForm");const lock=()=>{document.documentElement.style.overflow="hidden";document.body.style.overflow="hidden";},unlock=()=>{document.documentElement.style.overflow="";document.body.style.overflow="";};const show=(dlg)=>{if(!dlg)return;if(typeof dlg.showModal==="function")dlg.showModal();else dlg.setAttribute("open","");lock();requestAnimationFrame(()=>{dlg.scrollTop=0;});},hide=(dlg)=>{if(!dlg)return;if(typeof dlg.close==="function")dlg.close();else dlg.removeAttribute("open");unlock();};openDialogBtns.forEach(b=>b.addEventListener("click",()=>{if(menuDialog&&menuDialog.open)hide(menuDialog);show(requestDialog);}));closeDialogBtns.forEach(b=>b.addEventListener("click",()=>hide(requestDialog)));if(requestDialog)requestDialog.addEventListener("click",(e)=>{if(e.target===requestDialog)hide(requestDialog);});if(openMenuBtn)openMenuBtn.addEventListener("click",()=>show(menuDialog));closeMenuBtns.forEach(el=>el.addEventListener("click",()=>hide(menuDialog)));if(menuDialog)menuDialog.addEventListener("click",(e)=>{if(e.target===menuDialog)hide(menuDialog);});window.addEventListener("keydown",(e)=>{if(e.key!=="Escape")return;if(requestDialog&&requestDialog.open)hide(requestDialog);if(menuDialog&&menuDialog.open)hide(menuDialog);});const wa=qs("#waFloat"),start=qs("#startFloat"),isMobile=window.matchMedia("(max-width: 859px)").matches;if(isMobile&&wa)setTimeout(()=>{wa.style.display="inline-flex";requestAnimationFrame(()=>{wa.style.opacity="1";});},2200);if(isMobile&&start)setTimeout(()=>{start.style.display="inline-flex";requestAnimationFrame(()=>{start.style.opacity="1";});},1600);if(form)form.addEventListener("submit",(e)=>{e.preventDefault();const data=new FormData(form),p=Object.fromEntries(data.entries());const subject=encodeURIComponent("WØM — Feature / Collaboration Request");const body=encodeURIComponent(`Who: ${p.who}\nCity: ${p.city}\nCountry: ${p.country}\nTimeframe: ${p.timeframe}\nBudget: ${p.budget||"-"}\nWhatsApp: ${p.whatsapp}\nEmail: ${p.email||"-"}\n\nMessage:\n${p.what}\n\n(Submitted from worldofmixologists.com)`);window.location.href=`mailto:martial@worldofmixologists.com?subject=${subject}&body=${body}`;hide(requestDialog);form.reset();});})();</script> 
   
 </body>
 
