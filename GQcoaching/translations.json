@@ -1,101 +1,272 @@
 {
     "en": {
-      "meta": {
-        "title": "GQ Coaching — Performance Coaching for Hospitality Professionals",
-        "description": "Online performance coaching designed for bartenders, chefs, and hospitality professionals who want more energy, a stronger physique, and real discipline despite late shifts."
+      "brand": {
+        "name": "GQ Coaching"
       },
-  
       "nav": {
-        "logo": "GQ Coaching",
-        "program": "Program",
-        "about": "About",
-        "apply": "Apply"
+        "method": "Method",
+        "offers": "Offers",
+        "about": "Giuseppe",
+        "results": "Results",
+        "cta": "Apply"
       },
-  
       "hero": {
+        "eyebrow": "Performance Coaching for Hospitality Professionals",
         "title": "Built for people who work when others sleep",
-        "subtitle": "Performance coaching for hospitality professionals who want more energy, a stronger body, and real discipline — despite late shifts and inconsistent routines.",
-        "ctaPrimary": "Apply for Coaching",
-        "ctaSecondary": "Chat on WhatsApp",
-        "note": "Based in London — in-person coaching available on request"
+        "subtitle": "Performance coaching for hospitality professionals who want more energy, a stronger body, and real discipline despite late shifts and inconsistent routines.",
+        "primaryCta": "Apply for Coaching",
+        "secondaryCta": "Chat on WhatsApp",
+        "support": "Based in London. Online coaching worldwide. In-person coaching available on request.",
+        "badge": "Hospitality-first coaching"
       },
-  
-      "hook": {
+      "problem": {
+        "eyebrow": "You already know the problem",
         "line1": "Late nights.",
         "line2": "No routine.",
         "line3": "Low energy.",
-        "line4": "You already know the problem.",
-        "line5": "This is built for you."
+        "copy": "Long shifts, poor sleep, irregular meals, alcohol around you, and no real structure. Hospitality makes it hard to stay lean, strong, and consistent."
       },
-  
       "benefits": {
-        "title": "What you get",
-        "b1": "More energy despite late shifts",
-        "b2": "Leaner, stronger physique",
-        "b3": "Structure without a perfect routine",
-        "b4": "Better recovery and discipline"
+        "eyebrow": "Who this is for",
+        "title": "This is built for you",
+        "items": [
+          "More energy despite late shifts",
+          "Leaner, stronger physique",
+          "Structure without a perfect routine",
+          "Better recovery and discipline"
+        ]
       },
-  
       "method": {
-        "title": "A system adapted to your lifestyle",
-        "m1": "Training built around your schedule",
-        "m2": "Nutrition that works in real hospitality life",
-        "m3": "Recovery and energy optimization",
-        "m4": "Accountability and structure"
+        "eyebrow": "The Method",
+        "title": "A system adapted to real hospitality life",
+        "intro": "No unrealistic routines. No generic fitness coaching. Just a system built to work with late shifts, changing schedules, and the reality of hospitality.",
+        "cards": [
+          {
+            "title": "Training around your schedule",
+            "copy": "A plan built to work with late finishes, changing shifts, and real life."
+          },
+          {
+            "title": "Nutrition that works in the real world",
+            "copy": "No unrealistic meal prep fantasy. Just a strategy you can actually follow."
+          },
+          {
+            "title": "Recovery and energy optimization",
+            "copy": "Better sleep, better recovery, better output."
+          },
+          {
+            "title": "Accountability and structure",
+            "copy": "Support, check-ins, and a system that keeps you moving forward."
+          }
+        ]
       },
-  
-      "offer": {
-        "title": "Coaching options",
-  
+      "offers": {
+        "eyebrow": "Coaching Options",
+        "title": "Choose your level of support",
+        "intro": "Start online from anywhere, or choose a closer level of support with optional in-person sessions in London.",
         "online": {
+          "label": "Main Option",
           "title": "Online Coaching",
-          "d1": "Personalized training plan",
-          "d2": "Nutrition guidance",
-          "d3": "Weekly check-ins",
-          "d4": "Progress tracking",
+          "items": [
+            "Personalized training plan",
+            "Nutrition guidance",
+            "Weekly check-ins",
+            "Progress tracking"
+          ],
           "cta": "Apply for Coaching"
         },
-  
         "premium": {
+          "label": "Premium Option",
           "title": "Premium / London Coaching",
-          "d1": "Everything included in Online Coaching",
-          "d2": "Closer follow-up and support",
-          "d3": "Optional in-person sessions in London",
+          "items": [
+            "Everything included in Online Coaching",
+            "Closer follow-up and support",
+            "Optional in-person sessions in London"
+          ],
           "cta": "Apply for Coaching"
         }
       },
-  
       "about": {
+        "eyebrow": "About Giuseppe",
         "title": "Built by someone who knows the lifestyle",
-        "p1": "Giuseppe Quartararo has spent years working in hospitality, experiencing firsthand the challenges of late shifts, inconsistent routines, and demanding environments.",
-        "p2": "With a background as a personal trainer, he combines real-world experience with proven training methods to help hospitality professionals regain control of their body, energy, and discipline.",
-        "p3": "This coaching is not built for perfect lifestyles. It is built for real ones."
+        "paragraph1": "Giuseppe Quartararo has spent years working in hospitality and knows firsthand the reality of late shifts, inconsistent routines, and high-pressure environments.",
+        "paragraph2": "With a background in personal training, he combines real-world experience with proven methods to help hospitality professionals regain control of their body, energy, and discipline.",
+        "paragraph3": "This coaching is not built for perfect lifestyles. It is built for real ones."
       },
-  
       "results": {
-        "title": "Real results",
-        "subtitle": "Transformations built through consistency, not perfection"
+        "eyebrow": "Results",
+        "title": "Results that speak for themselves",
+        "intro": "Real progress. Real structure. Real change.",
+        "captions": [
+          "Transformation / physique result",
+          "Transformation / physique result",
+          "Transformation / physique result",
+          "Transformation / physique result"
+        ]
       },
-  
-      "form": {
+      "application": {
+        "eyebrow": "Apply",
         "title": "Apply for coaching",
-        "name": "Your name",
-        "contact": "Email or WhatsApp",
-        "goal": "Your goal",
-        "message": "Tell me about your situation",
-        "submit": "Submit application",
-        "success": "Your request has been sent. Giuseppe will contact you soon.",
-        "error": "Something went wrong. Please try again."
+        "intro": "Tell me a bit about your goal and your current situation. I’ll review your application and get back to you personally.",
+        "points": [
+          "Online coaching available worldwide",
+          "In-person coaching available in London on request",
+          "Hospitality professionals first, but not limited to them"
+        ],
+        "form": {
+          "nameLabel": "Your name",
+          "namePlaceholder": "Your name",
+          "contactLabel": "Email or WhatsApp",
+          "contactPlaceholder": "Email or WhatsApp",
+          "goalLabel": "Your goal",
+          "goalPlaceholder": "Your goal",
+          "messageLabel": "Tell me about your situation",
+          "messagePlaceholder": "Tell me about your situation",
+          "submit": "Submit application",
+          "whatsapp": "Prefer to talk directly? Chat on WhatsApp",
+          "note": "You can also contact Giuseppe directly on WhatsApp if you prefer a faster conversation."
+        }
       },
-  
-      "whatsapp": {
-        "cta": "Prefer a direct conversation?",
-        "button": "Chat on WhatsApp",
-        "prefill": "Hi Giuseppe, I’m interested in your coaching."
-      },
-  
       "footer": {
-        "copy": "© GQ Coaching — All rights reserved"
-      }
+        "left": "© GQ Coaching — All rights reserved",
+        "worldOfMixologists": "World of Mixologists",
+        "instagram": "Instagram",
+        "whatsapp": "WhatsApp"
+      },
+      "floatingWhatsapp": "WhatsApp"
+    },
+    "it": {
+      "brand": {
+        "name": "GQ Coaching"
+      },
+      "nav": {
+        "method": "Metodo",
+        "offers": "Programmi",
+        "about": "Giuseppe",
+        "results": "Risultati",
+        "cta": "Candidati"
+      },
+      "hero": {
+        "eyebrow": "Coaching per professionisti dell’ospitalità",
+        "title": "Pensato per chi lavora quando gli altri dormono",
+        "subtitle": "Coaching della performance per professionisti dell’ospitalità che vogliono più energia, un corpo più forte e vera disciplina nonostante turni serali e routine irregolari.",
+        "primaryCta": "Candidati al Coaching",
+        "secondaryCta": "Scrivimi su WhatsApp",
+        "support": "Base a Londra. Coaching online ovunque. Sessioni in presenza disponibili su richiesta.",
+        "badge": "Coaching pensato per l’hospitality"
+      },
+      "problem": {
+        "eyebrow": "Il problema lo conosci già",
+        "line1": "Notti lunghe.",
+        "line2": "Nessuna routine.",
+        "line3": "Poca energia.",
+        "copy": "Turni lunghi, sonno scarso, pasti irregolari, alcol sempre intorno e nessuna vera struttura. L’hospitality rende difficile restare definiti, forti e costanti."
+      },
+      "benefits": {
+        "eyebrow": "Per chi è pensato",
+        "title": "Questo è costruito per te",
+        "items": [
+          "Più energia nonostante i turni serali",
+          "Un fisico più asciutto e più forte",
+          "Struttura anche senza una routine perfetta",
+          "Recupero e disciplina migliori"
+        ]
+      },
+      "method": {
+        "eyebrow": "Il Metodo",
+        "title": "Un sistema adattato alla vera vita nell’hospitality",
+        "intro": "Niente routine irrealistiche. Niente coaching fitness generico. Solo un sistema costruito per funzionare con turni serali, orari variabili e la realtà dell’hospitality.",
+        "cards": [
+          {
+            "title": "Allenamento intorno ai tuoi orari",
+            "copy": "Un piano pensato per funzionare con chiusure tardive, turni che cambiano e vita reale."
+          },
+          {
+            "title": "Alimentazione che funziona davvero",
+            "copy": "Niente fantasie da meal prep perfetto. Solo una strategia che puoi seguire davvero."
+          },
+          {
+            "title": "Recupero ed energia ottimizzati",
+            "copy": "Sonno migliore, recupero migliore, rendimento migliore."
+          },
+          {
+            "title": "Responsabilità e struttura",
+            "copy": "Supporto, check-in e un sistema che ti fa andare avanti."
+          }
+        ]
+      },
+      "offers": {
+        "eyebrow": "Programmi",
+        "title": "Scegli il livello di supporto",
+        "intro": "Inizia online da ovunque ti trovi, oppure scegli un supporto più vicino con sessioni in presenza opzionali a Londra.",
+        "online": {
+          "label": "Opzione Principale",
+          "title": "Coaching Online",
+          "items": [
+            "Piano di allenamento personalizzato",
+            "Linee guida nutrizionali",
+            "Check-in settimanali",
+            "Monitoraggio dei progressi"
+          ],
+          "cta": "Candidati al Coaching"
+        },
+        "premium": {
+          "label": "Opzione Premium",
+          "title": "Coaching Premium / Londra",
+          "items": [
+            "Tutto ciò che è incluso nel Coaching Online",
+            "Supporto e follow-up più ravvicinati",
+            "Sessioni in presenza opzionali a Londra"
+          ],
+          "cta": "Candidati al Coaching"
+        }
+      },
+      "about": {
+        "eyebrow": "Giuseppe",
+        "title": "Creato da qualcuno che conosce davvero questo stile di vita",
+        "paragraph1": "Giuseppe Quartararo ha trascorso anni lavorando nell’hospitality e conosce in prima persona la realtà di turni serali, routine irregolari e ambienti ad alta pressione.",
+        "paragraph2": "Con un background da personal trainer, unisce esperienza reale e metodi comprovati per aiutare i professionisti dell’ospitalità a riprendere il controllo del proprio corpo, della propria energia e della propria disciplina.",
+        "paragraph3": "Questo coaching non è pensato per vite perfette. È pensato per vite reali."
+      },
+      "results": {
+        "eyebrow": "Risultati",
+        "title": "Risultati che parlano da soli",
+        "intro": "Progressi reali. Struttura reale. Cambiamento reale.",
+        "captions": [
+          "Risultato di trasformazione / fisico",
+          "Risultato di trasformazione / fisico",
+          "Risultato di trasformazione / fisico",
+          "Risultato di trasformazione / fisico"
+        ]
+      },
+      "application": {
+        "eyebrow": "Candidati",
+        "title": "Candidati al coaching",
+        "intro": "Raccontami il tuo obiettivo e la tua situazione attuale. Valuterò personalmente la tua candidatura e ti risponderò direttamente.",
+        "points": [
+          "Coaching online disponibile in tutto il mondo",
+          "Coaching in presenza disponibile a Londra su richiesta",
+          "Pensato prima di tutto per professionisti dell’hospitality, ma non solo"
+        ],
+        "form": {
+          "nameLabel": "Il tuo nome",
+          "namePlaceholder": "Il tuo nome",
+          "contactLabel": "Email o WhatsApp",
+          "contactPlaceholder": "Email o WhatsApp",
+          "goalLabel": "Il tuo obiettivo",
+          "goalPlaceholder": "Il tuo obiettivo",
+          "messageLabel": "Parlami della tua situazione",
+          "messagePlaceholder": "Parlami della tua situazione",
+          "submit": "Invia candidatura",
+          "whatsapp": "Preferisci parlare direttamente? Scrivimi su WhatsApp",
+          "note": "Puoi anche contattare Giuseppe direttamente su WhatsApp se preferisci una conversazione più veloce."
+        }
+      },
+      "footer": {
+        "left": "© GQ Coaching — Tutti i diritti riservati",
+        "worldOfMixologists": "World of Mixologists",
+        "instagram": "Instagram",
+        "whatsapp": "WhatsApp"
+      },
+      "floatingWhatsapp": "WhatsApp"
     }
   }
