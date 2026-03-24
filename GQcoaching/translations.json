@@ -96,11 +96,19 @@
         "eyebrow": "Results",
         "title": "Results that speak for themselves",
         "intro": "Real progress. Real structure. Real change.",
-        "captions": [
-          "Transformation / physique result",
-          "Transformation / physique result",
-          "Transformation / physique result",
-          "Transformation / physique result"
+        "items": [
+          {
+            "title": "Leaner body. Better structure.",
+            "copy": "A clearer routine, better food choices, and consistent training can transform both body composition and day-to-day energy."
+          },
+          {
+            "title": "Performance inside real hospitality life",
+            "copy": "This coaching is built to work with late shifts, demanding environments, and the physical reality of hospitality."
+          },
+          {
+            "title": "Stronger physique. Stronger discipline.",
+            "copy": "The goal is not just to look better. It is to regain control, confidence, and long-term consistency."
+          }
         ]
       },
       "application": {
@@ -146,7 +154,7 @@
         "cta": "Candidati"
       },
       "hero": {
-        "eyebrow": "Coaching per professionisti dell’ospitalità",
+        "eyebrow": "Performance coaching per professionisti dell’ospitalità",
         "title": "Pensato per chi lavora quando gli altri dormono",
         "subtitle": "Coaching della performance per professionisti dell’ospitalità che vogliono più energia, un corpo più forte e vera disciplina nonostante turni serali e routine irregolari.",
         "primaryCta": "Candidati al Coaching",
@@ -231,11 +239,19 @@
         "eyebrow": "Risultati",
         "title": "Risultati che parlano da soli",
         "intro": "Progressi reali. Struttura reale. Cambiamento reale.",
-        "captions": [
-          "Risultato di trasformazione / fisico",
-          "Risultato di trasformazione / fisico",
-          "Risultato di trasformazione / fisico",
-          "Risultato di trasformazione / fisico"
+        "items": [
+          {
+            "title": "Fisico più asciutto. Struttura migliore.",
+            "copy": "Una routine più chiara, scelte alimentari migliori e allenamento costante possono trasformare sia la composizione corporea sia l’energia quotidiana."
+          },
+          {
+            "title": "Performance dentro la vera vita dell’hospitality",
+            "copy": "Questo coaching è costruito per funzionare con turni serali, ambienti impegnativi e la realtà fisica del lavoro nell’ospitalità."
+          },
+          {
+            "title": "Fisico più forte. Disciplina più forte.",
+            "copy": "L’obiettivo non è solo apparire meglio. È riprendere controllo, fiducia e costanza nel lungo termine."
+          }
         ]
       },
       "application": {
