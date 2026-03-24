@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GQ Coaching</title>
+<meta name="description" content="Performance coaching for hospitality professionals">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* { margin: 0; }
+* { padding: 0; }
+* { box-sizing: border-box; }
+
+/* BODY */
+body { font-family: 'Inter', sans-serif; }
+body { background-color: #0b0b0f; }
+body { color: #eaeaea; }
+body { line-height: 1.6; }
+body { -webkit-font-smoothing: antialiased; }
+
+/* CONTAINER */
+.container { width: 100%; }
+.container { max-width: 1100px; }
+.container { margin: 0 auto; }
+.container { padding: 24px; }
+
+/* HEADER */
+.header { display: flex; }
+.header { justify-content: space-between; }
+.header { align-items: center; }
+.header { margin-bottom: 48px; }
+
+.logo { font-family: 'Playfair Display', serif; }
+.logo { font-size: 20px; }
+.logo { letter-spacing: 1px; }
+
+.lang-switch { display: flex; }
+.lang-switch { gap: 10px; }
+.lang-switch span { font-size: 12px; }
+.lang-switch span { opacity: 0.4; }
+.lang-switch span { cursor: pointer; }
+.lang-switch span.active { opacity: 1; }
+.lang-switch span.active { color: #c6a96b; }
+
+/* HERO */
+.hero { display: flex; }
+.hero { flex-direction: column; }
+.hero { gap: 24px; }
+.hero { margin-bottom: 80px; }
+
+.hero img { width: 100%; }
+.hero img { height: 420px; }
+.hero img { object-fit: cover; }
+
+.hero h1 { font-family: 'Playfair Display', serif; }
+.hero h1 { font-size: 36px; }
+.hero h1 { line-height: 1.2; }
+
+.hero p { font-size: 15px; }
+.hero p { color: #aaa; }
+
+.button { display: inline-block; }
+.button { padding: 14px 22px; }
+.button { border: 1px solid #c6a96b; }
+.button { color: #c6a96b; }
+.button { text-decoration: none; }
+.button { transition: all 0.3s ease; }
+.button:hover { background-color: #c6a96b; }
+.button:hover { color: #000; }
+
+.secondary { font-size: 13px; }
+.secondary { color: #777; }
+.secondary { margin-top: 8px; }
+
+/* SECTION */
+.section { margin-bottom: 80px; }
+
+/* HOOK */
+.hook p { font-family: 'Playfair Display', serif; }
+.hook p { font-size: 28px; }
+.hook p { margin-bottom: 10px; }
+
+/* BENEFITS */
+.benefits li { font-size: 15px; }
+.benefits li { margin-bottom: 12px; }
+
+/* METHOD */
+.method li { font-size: 15px; }
+.method li { margin-bottom: 10px; }
+
+/* OFFER */
+.offer { margin-bottom: 32px; }
+.offer h3 { font-size: 18px; }
+.offer h3 { margin-bottom: 12px; }
+.offer ul { margin-bottom: 16px; }
+.offer li { font-size: 14px; }
+.offer li { margin-bottom: 6px; }
+
+/* IMAGE BLOCK */
+.image-block img { width: 100%; }
+.image-block img { height: 280px; }
+.image-block img { object-fit: cover; }
+
+/* ABOUT */
+.about p { font-size: 15px; }
+.about p { color: #aaa; }
+.about p { margin-bottom: 14px; }
+
+/* FORM */
+.form input { width: 100%; }
+.form input { padding: 14px; }
+.form input { margin-bottom: 12px; }
+.form input { background: transparent; }
+.form input { border: 1px solid #333; }
+.form input { color: #fff; }
+
+.form textarea { width: 100%; }
+.form textarea { padding: 14px; }
+.form textarea { margin-bottom: 12px; }
+.form textarea { background: transparent; }
+.form textarea { border: 1px solid #333; }
+.form textarea { color: #fff; }
+
+/* FOOTER */
+.footer { text-align: center; }
+.footer { font-size: 12px; }
+.footer { color: #666; }
+.footer { margin-top: 60px; }
+
+/* DESKTOP */
+@media (min-width: 768px) {
+
+.hero { flex-direction: row; }
+.hero { align-items: center; }
+
+.hero img { width: 50%; }
+.hero img { height: 500px; }
+
+.hero-content { width: 50%; }
+.hero-content { padding-left: 40px; }
+
+.image-block img { height: 400px; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+<div class="logo" data-i18n="nav.logo"></div>
+
+<div class="lang-switch">
+<span data-lang="en">EN</span>
+<span data-lang="es">ES</span>
+<span data-lang="it">IT</span>
+</div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<img src="hero.jpg" alt="">
+<div class="hero-content">
+<h1 data-i18n="hero.title"></h1>
+<p data-i18n="hero.subtitle"></p>
+<a href="#form" class="button" data-i18n="hero.ctaPrimary"></a>
+<div class="secondary" data-i18n="hero.ctaSecondary"></div>
+</div>
+</section>
+
+<!-- HOOK -->
+<section class="section hook">
+<p data-i18n="hook.line1"></p>
+<p data-i18n="hook.line2"></p>
+<p data-i18n="hook.line3"></p>
+<p data-i18n="hook.line4"></p>
+<p data-i18n="hook.line5"></p>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+<ul class="benefits">
+<li data-i18n="benefits.b1"></li>
+<li data-i18n="benefits.b2"></li>
+<li data-i18n="benefits.b3"></li>
+<li data-i18n="benefits.b4"></li>
+</ul>
+</section>
+
+<!-- IMAGE -->
+<section class="section image-block">
+<img src="fitness.jpg" alt="">
+</section>
+
+<!-- METHOD -->
+<section class="section method">
+<ul>
+<li data-i18n="method.m1"></li>
+<li data-i18n="method.m2"></li>
+<li data-i18n="method.m3"></li>
+<li data-i18n="method.m4"></li>
+</ul>
+</section>
+
+<!-- OFFERS -->
+<section class="section">
+
+<div class="offer">
+<h3 data-i18n="offer.online.title"></h3>
+<ul>
+<li data-i18n="offer.online.d1"></li>
+<li data-i18n="offer.online.d2"></li>
+<li data-i18n="offer.online.d3"></li>
+<li data-i18n="offer.online.d4"></li>
+</ul>
+<a href="#form" class="button" data-i18n="offer.online.cta"></a>
+</div>
+
+<div class="offer">
+<h3 data-i18n="offer.premium.title"></h3>
+<ul>
+<li data-i18n="offer.premium.d1"></li>
+<li data-i18n="offer.premium.d2"></li>
+<li data-i18n="offer.premium.d3"></li>
+</ul>
+<a href="#form" class="button" data-i18n="offer.premium.cta"></a>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section about">
+<p data-i18n="about.p1"></p>
+<p data-i18n="about.p2"></p>
+<p data-i18n="about.p3"></p>
+</section>
+
+<!-- IMAGE -->
+<section class="section image-block">
+<img src="lifestyle.jpg" alt="">
+</section>
+
+<!-- FORM -->
+<section id="form" class="section">
+<form class="form">
+<input type="text" data-i18n-placeholder="form.name">
+<input type="text" data-i18n-placeholder="form.contact">
+<input type="text" data-i18n-placeholder="form.goal">
+<textarea rows="4" data-i18n-placeholder="form.message"></textarea>
+<button type="submit" class="button" data-i18n="form.submit"></button>
+</form>
+
+<div class="secondary" data-i18n="whatsapp.button"></div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer" data-i18n="footer.copy"></div>
+
+</div>
+
+<script src="i18n.js"></script>
+
+</body>
+</html>

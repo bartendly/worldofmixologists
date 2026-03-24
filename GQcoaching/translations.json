@@ -1,0 +1,101 @@
+{
+    "en": {
+      "meta": {
+        "title": "GQ Coaching — Performance Coaching for Hospitality Professionals",
+        "description": "Online performance coaching designed for bartenders, chefs, and hospitality professionals who want more energy, a stronger physique, and real discipline despite late shifts."
+      },
+  
+      "nav": {
+        "logo": "GQ Coaching",
+        "program": "Program",
+        "about": "About",
+        "apply": "Apply"
+      },
+  
+      "hero": {
+        "title": "Built for people who work when others sleep",
+        "subtitle": "Performance coaching for hospitality professionals who want more energy, a stronger body, and real discipline — despite late shifts and inconsistent routines.",
+        "ctaPrimary": "Apply for Coaching",
+        "ctaSecondary": "Chat on WhatsApp",
+        "note": "Based in London — in-person coaching available on request"
+      },
+  
+      "hook": {
+        "line1": "Late nights.",
+        "line2": "No routine.",
+        "line3": "Low energy.",
+        "line4": "You already know the problem.",
+        "line5": "This is built for you."
+      },
+  
+      "benefits": {
+        "title": "What you get",
+        "b1": "More energy despite late shifts",
+        "b2": "Leaner, stronger physique",
+        "b3": "Structure without a perfect routine",
+        "b4": "Better recovery and discipline"
+      },
+  
+      "method": {
+        "title": "A system adapted to your lifestyle",
+        "m1": "Training built around your schedule",
+        "m2": "Nutrition that works in real hospitality life",
+        "m3": "Recovery and energy optimization",
+        "m4": "Accountability and structure"
+      },
+  
+      "offer": {
+        "title": "Coaching options",
+  
+        "online": {
+          "title": "Online Coaching",
+          "d1": "Personalized training plan",
+          "d2": "Nutrition guidance",
+          "d3": "Weekly check-ins",
+          "d4": "Progress tracking",
+          "cta": "Apply for Coaching"
+        },
+  
+        "premium": {
+          "title": "Premium / London Coaching",
+          "d1": "Everything included in Online Coaching",
+          "d2": "Closer follow-up and support",
+          "d3": "Optional in-person sessions in London",
+          "cta": "Apply for Coaching"
+        }
+      },
+  
+      "about": {
+        "title": "Built by someone who knows the lifestyle",
+        "p1": "Giuseppe Quartararo has spent years working in hospitality, experiencing firsthand the challenges of late shifts, inconsistent routines, and demanding environments.",
+        "p2": "With a background as a personal trainer, he combines real-world experience with proven training methods to help hospitality professionals regain control of their body, energy, and discipline.",
+        "p3": "This coaching is not built for perfect lifestyles. It is built for real ones."
+      },
+  
+      "results": {
+        "title": "Real results",
+        "subtitle": "Transformations built through consistency, not perfection"
+      },
+  
+      "form": {
+        "title": "Apply for coaching",
+        "name": "Your name",
+        "contact": "Email or WhatsApp",
+        "goal": "Your goal",
+        "message": "Tell me about your situation",
+        "submit": "Submit application",
+        "success": "Your request has been sent. Giuseppe will contact you soon.",
+        "error": "Something went wrong. Please try again."
+      },
+  
+      "whatsapp": {
+        "cta": "Prefer a direct conversation?",
+        "button": "Chat on WhatsApp",
+        "prefill": "Hi Giuseppe, I’m interested in your coaching."
+      },
+  
+      "footer": {
+        "copy": "© GQ Coaching — All rights reserved"
+      }
+    }
+  }
