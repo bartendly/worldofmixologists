@@ -125,8 +125,8 @@ body.nav-open .mobile-nav {opacity:1;visibility:visible;transform:translateY(0);
 .quote-line {font-size:clamp(1.4rem,5vw,2.5rem);line-height:1.18;font-weight:900;letter-spacing:-0.045em;color:#fff;}
 .badge-grid {display:grid;gap:18px;margin-top:18px;}
 .badge-card {display:grid;gap:18px;padding:24px;border-radius:30px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);}
-.badge-visual {display:inline-flex;align-items:center;justify-content:center;width:124px;height:124px;border-radius:50%;border:1px solid rgba(213,176,108,0.24);background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.18),transparent 38%),linear-gradient(180deg,rgba(213,176,108,0.12),rgba(255,255,255,0.03));box-shadow:inset 0 0 0 8px rgba(255,255,255,0.03);}
-.badge-visual img {width:68px;height:68px;object-fit:contain;}
+.badge-visual {display:flex;align-items:center;justify-content:center;width:140px;height:140px;border-radius:0;border:none;background:none;box-shadow:none;}
+.badge-visual img {width:140px;height:140px;object-fit:contain;}
 .badge-title {font-size:1.45rem;line-height:1.12;font-weight:900;}
 .badge-text {font-size:0.98rem;line-height:1.8;color:var(--muted);}
 .pill-grid {display:flex;flex-wrap:wrap;gap:10px;}
@@ -194,6 +194,8 @@ body.nav-open .mobile-nav {opacity:1;visibility:visible;transform:translateY(0);
 .whatsapp-float {position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 35px rgba(0,0,0,0.4);z-index:50;opacity:0;transform:translateY(20px);transition:all 0.3s ease;border:1px solid rgba(255,255,255,0.12);}
 .whatsapp-float svg {width:30px;height:30px;}
 .whatsapp-float.visible {opacity:1;transform:translateY(0);}
+@media (max-width:1099px) {.header-cta {display:none !important;}}
+@media (max-width:767px) {.hero-image {min-height:820px;object-fit:cover;object-position:58% 20%;transform:none;} .hero-media::after {background:linear-gradient(180deg,rgba(8,8,12,0.22) 0%,rgba(8,8,12,0.34) 28%,rgba(8,8,12,0.78) 68%,rgba(8,8,12,0.96) 100%),linear-gradient(90deg,rgba(8,8,12,0.72) 0%,rgba(8,8,12,0.26) 46%,rgba(8,8,12,0.22) 100%);}}
 </style>
 </head>
 <body>
