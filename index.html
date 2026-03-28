@@ -1,678 +1,737 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0B0B0E" />
-  <title>World of Mixologists (WØM) | Hire a Bartender + Bartender Jobs & Gigs via Bartendly</title>
-  <meta name="description" content="World of Mixologists (WØM) features bartenders & bar teams worldwide. Hire a bartender for private/corporate events or find bartender jobs, gigs and opportunities via Bartendly." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World of Mixologists | A Global View of Cocktail Culture</title>
+<meta name="description" content="World of Mixologists is a premium editorial platform for cocktail culture, bars, bartenders, guest shifts, cities and hospitality experiences. World of Mixologists reveals the cocktail world. Bartendly structures it.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0b0b0f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="World of Mixologists | A Global View of Cocktail Culture">
+<meta property="og:description" content="Real people. Real places. Real stories. No rankings. No pay-to-play. No artificial systems.">
+<meta property="og:image" content="images/wom-og-cover.jpg">
+<meta property="og:url" content="https://worldofmixologists.com/">
+<meta property="og:site_name" content="World of Mixologists">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="World of Mixologists | A Global View of Cocktail Culture">
+<meta name="twitter:description" content="World of Mixologists reveals the cocktail world. Bartendly structures it.">
+<meta name="twitter:image" content="images/wom-og-cover.jpg">
+<link rel="canonical" href="https://worldofmixologists.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"World of Mixologists","url":"https://worldofmixologists.com/","logo":"https://worldofmixologists.com/images/wom-logo-mark.png","sameAs":["https://www.instagram.com/worldofmixologists/"],"description":"A global editorial hospitality platform highlighting bars, bartenders, guest shifts, creators, cities and cocktail culture."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"World of Mixologists","url":"https://worldofmixologists.com/","description":"A global view of cocktail culture.","publisher":{"@type":"Organization","name":"World of Mixologists"}}
+</script>
+<style>
+:root {--bg:#0b0b0f;--bg-soft:#111117;--bg-soft-2:#17171d;--card:rgba(255,255,255,0.05);--card-strong:rgba(255,255,255,0.08);--line:rgba(255,255,255,0.10);--line-strong:rgba(255,255,255,0.16);--text:#f7f3ea;--muted:#b7b0a1;--muted-2:#8d887c;--gold:#d5b06c;--gold-soft:rgba(213,176,108,0.18);--orange:#ff7a1a;--white:#ffffff;--shadow:0 24px 80px rgba(0,0,0,0.34);--radius:22px;--radius-lg:32px;--max:1360px;--nav-h:74px;}
+* {box-sizing:border-box;}
+html {scroll-behavior:smooth;}
+body {margin:0;font-family:"Inter",sans-serif;background:radial-gradient(circle at top left,rgba(255,122,26,0.10),transparent 30%),radial-gradient(circle at top right,rgba(213,176,108,0.09),transparent 22%),linear-gradient(180deg,#09090c 0%,#0b0b0f 48%,#121217 100%);color:var(--text);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+img {display:block;width:100%;height:auto;}
+a {color:inherit;text-decoration:none;}
+button {font:inherit;}
+body.nav-open {overflow:hidden;}
+.skip-link {position:absolute;left:-9999px;top:0;}
+.skip-link:focus {left:16px;top:16px;z-index:999;padding:12px 16px;border-radius:12px;background:#fff;color:#000;}
+.site-header {position:sticky;top:0;z-index:120;background:rgba(10,10,14,0.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,0.06);}
+.header-inner {display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:var(--nav-h);width:min(calc(100% - 32px),var(--max));margin:0 auto;}
+.brand {display:flex;align-items:center;gap:12px;min-width:0;}
+.brand-mark {width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);object-fit:cover;background:linear-gradient(180deg,rgba(255,255,255,0.14),rgba(255,255,255,0.03));}
+.brand-copy {display:flex;flex-direction:column;gap:2px;min-width:0;}
+.brand-name {font-size:0.92rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;}
+.brand-tag {font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
+.header-actions {display:flex;align-items:center;gap:12px;}
+.lang-wrap {display:flex;align-items:center;}
+.lang-select {display:none;min-width:84px;height:40px;padding:0 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);color:var(--text);outline:none;}
+.lang-wrap.is-visible .lang-select {display:block;}
+.desktop-nav {display:none;}
+.nav-list {display:flex;align-items:center;gap:24px;list-style:none;margin:0;padding:0;}
+.nav-link {font-size:0.92rem;font-weight:600;color:var(--muted);transition:color 0.25s ease;}
+.nav-link:hover,.nav-link.is-active {color:var(--white);}
+.header-cta {display:none;}
+.menu-toggle {display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:1px solid rgba(255,255,255,0.10);border-radius:999px;background:rgba(255,255,255,0.04);color:#fff;}
+.menu-icon {position:relative;width:18px;height:12px;}
+.menu-icon::before,.menu-icon::after,.menu-icon span {content:"";position:absolute;left:0;width:100%;height:2px;border-radius:999px;background:#fff;transition:transform 0.25s ease,top 0.25s ease,opacity 0.25s ease;}
+.menu-icon::before {top:0;}
+.menu-icon span {top:5px;}
+.menu-icon::after {top:10px;}
+body.nav-open .menu-icon::before {top:5px;transform:rotate(45deg);}
+body.nav-open .menu-icon span {opacity:0;}
+body.nav-open .menu-icon::after {top:5px;transform:rotate(-45deg);}
+.mobile-nav {position:fixed;inset:var(--nav-h) 0 0 0;display:grid;align-content:start;gap:16px;padding:22px 16px 30px;background:linear-gradient(180deg,rgba(10,10,14,0.98),rgba(10,10,14,0.98));opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity 0.25s ease,visibility 0.25s ease,transform 0.25s ease;z-index:110;}
+body.nav-open .mobile-nav {opacity:1;visibility:visible;transform:translateY(0);}
+.mobile-nav-links {display:grid;gap:10px;}
+.mobile-nav-link {display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-radius:18px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);font-weight:700;color:var(--text);}
+.mobile-nav-actions {display:grid;gap:10px;}
+.container {width:min(calc(100% - 32px),var(--max));margin:0 auto;}
+.section {padding:84px 0;}
+.section-head {display:grid;gap:14px;margin-bottom:32px;}
+.eyebrow {display:inline-flex;align-items:center;gap:10px;width:max-content;max-width:100%;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);font-size:0.78rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);}
+.section h1,.section h2,.section h3,.section h4,.section p {margin:0;}
+.section h1 {font-size:clamp(3rem,12vw,7rem);line-height:0.92;letter-spacing:-0.055em;font-weight:900;}
+.section h2 {font-size:clamp(2rem,8vw,4.2rem);line-height:0.96;letter-spacing:-0.045em;font-weight:900;}
+.section-intro {max-width:900px;font-size:1.02rem;line-height:1.8;color:var(--muted);}
+.hero {padding:18px 0 42px;min-height:calc(100vh - var(--nav-h));}
+.hero-shell {position:relative;overflow:hidden;border-radius:34px;border:1px solid rgba(255,255,255,0.08);background:#101015;box-shadow:var(--shadow);}
+.hero-media {position:absolute;inset:0;}
+.hero-media::after {content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,12,0.18) 0%,rgba(8,8,12,0.24) 24%,rgba(8,8,12,0.72) 72%,rgba(8,8,12,0.96) 100%),linear-gradient(90deg,rgba(8,8,12,0.84) 0%,rgba(8,8,12,0.36) 44%,rgba(8,8,12,0.18) 100%);}
+.hero-image {width:100%;height:100%;min-height:700px;object-fit:cover;object-position:center center;transform:scale(1.03);}
+.hero-content {position:relative;z-index:1;display:grid;align-content:end;min-height:700px;padding:24px 18px 20px;}
+.hero-grid {display:grid;gap:26px;}
+.hero-main {display:grid;gap:18px;max-width:860px;}
+.hero-kicker {display:inline-flex;align-items:center;gap:10px;width:max-content;max-width:100%;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.05);font-size:0.78rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#f6ddb0;}
+.hero-title {max-width:9ch;}
+.hero-subtitle {font-size:clamp(1.08rem,4.2vw,1.7rem);line-height:1.35;font-weight:700;color:var(--white);}
+.hero-statement {max-width:720px;font-size:1rem;line-height:1.8;color:var(--muted);}
+.hero-actions {display:flex;flex-wrap:wrap;gap:12px;}
+.hero-side {display:grid;gap:12px;}
+.hero-panel {display:grid;gap:14px;padding:18px;border-radius:22px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.05);backdrop-filter:blur(8px);}
+.hero-panel-label {font-size:0.78rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);}
+.hero-panel-quote {font-size:1.12rem;line-height:1.42;font-weight:800;color:#fff;}
+.hero-panel-text {font-size:0.95rem;line-height:1.75;color:var(--muted);}
+.hero-facts {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.fact-card {display:grid;gap:6px;padding:18px;border-radius:20px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);}
+.fact-title {font-size:1.12rem;font-weight:900;letter-spacing:-0.03em;}
+.fact-text {font-size:0.84rem;line-height:1.55;color:var(--muted);}
+.btn {display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 18px;border-radius:999px;border:1px solid transparent;font-size:0.95rem;font-weight:800;letter-spacing:0.02em;transition:transform 0.25s ease,background 0.25s ease,border-color 0.25s ease,color 0.25s ease;}
+.btn:hover {transform:translateY(-1px);}
+.btn-primary {background:#fff;color:#0d0d12;}
+.btn-secondary {background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.16);color:#fff;}
+.btn-secondary:hover {border-color:rgba(255,255,255,0.32);}
+.grid-2 {display:grid;gap:18px;}
+.editorial-card {overflow:hidden;border-radius:var(--radius-lg);border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);box-shadow:var(--shadow);}
+.editorial-media {position:relative;overflow:hidden;aspect-ratio:4/4.7;}
+.editorial-media::after {content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,12,0.04) 0%,rgba(8,8,12,0.16) 54%,rgba(8,8,12,0.56) 100%);}
+.editorial-image {width:100%;height:100%;object-fit:cover;transition:transform 0.8s ease;}
+.editorial-card:hover .editorial-image {transform:scale(1.05);}
+.editorial-body {display:grid;gap:12px;padding:20px;}
+.editorial-tag {font-size:0.76rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);}
+.editorial-title {font-size:1.24rem;line-height:1.18;font-weight:800;}
+.editorial-text {font-size:0.95rem;line-height:1.75;color:var(--muted);}
+.text-card {display:grid;gap:14px;padding:24px;border-radius:26px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);}
+.text-card-title {font-size:1.22rem;line-height:1.2;font-weight:800;}
+.text-card-text {font-size:0.98rem;line-height:1.8;color:var(--muted);}
+.manifesto-grid {display:grid;gap:18px;}
+.manifesto-card {display:grid;gap:16px;padding:24px;border-radius:30px;border:1px solid rgba(255,255,255,0.08);background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.03));}
+.manifesto-list {display:grid;gap:10px;}
+.manifesto-item {display:flex;align-items:flex-start;gap:12px;font-size:0.98rem;line-height:1.75;color:var(--muted);}
+.manifesto-item strong {color:var(--text);}
+.manifesto-quote {display:grid;gap:16px;padding:24px;border-radius:30px;border:1px solid rgba(213,176,108,0.18);background:linear-gradient(180deg,rgba(213,176,108,0.12),rgba(255,255,255,0.03)),rgba(255,255,255,0.02);}
+.quote-line {font-size:clamp(1.4rem,5vw,2.5rem);line-height:1.18;font-weight:900;letter-spacing:-0.045em;color:#fff;}
+.badge-grid {display:grid;gap:18px;margin-top:18px;}
+.badge-card {display:grid;gap:18px;padding:24px;border-radius:30px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);}
+.badge-visual {display:inline-flex;align-items:center;justify-content:center;width:124px;height:124px;border-radius:50%;border:1px solid rgba(213,176,108,0.24);background:radial-gradient(circle at 50% 35%,rgba(255,255,255,0.18),transparent 38%),linear-gradient(180deg,rgba(213,176,108,0.12),rgba(255,255,255,0.03));box-shadow:inset 0 0 0 8px rgba(255,255,255,0.03);}
+.badge-visual img {width:68px;height:68px;object-fit:contain;}
+.badge-title {font-size:1.45rem;line-height:1.12;font-weight:900;}
+.badge-text {font-size:0.98rem;line-height:1.8;color:var(--muted);}
+.pill-grid {display:flex;flex-wrap:wrap;gap:10px;}
+.pill {display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);font-size:0.9rem;font-weight:700;color:var(--text);}
+.discovery-grid {display:grid;gap:18px;}
+.discovery-card {position:relative;overflow:hidden;min-height:300px;border-radius:28px;border:1px solid rgba(255,255,255,0.08);background:#101015;}
+.discovery-card::after {content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,12,0.08) 0%,rgba(8,8,12,0.18) 40%,rgba(8,8,12,0.80) 100%);}
+.discovery-image {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.discovery-body {position:relative;z-index:1;display:grid;align-content:end;gap:10px;min-height:300px;padding:20px;}
+.discovery-title {font-size:1.3rem;line-height:1.16;font-weight:800;}
+.discovery-text {font-size:0.96rem;line-height:1.75;color:#d7d1c6;}
+.bridge-shell {display:grid;gap:18px;}
+.bridge-card {display:grid;gap:16px;padding:26px;border-radius:30px;border:1px solid rgba(255,255,255,0.09);background:rgba(255,255,255,0.04);}
+.bridge-label {font-size:0.76rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);}
+.bridge-title {font-size:clamp(1.6rem,5vw,2.8rem);line-height:1.06;font-weight:900;letter-spacing:-0.05em;}
+.bridge-text {font-size:0.98rem;line-height:1.8;color:var(--muted);}
+.bridge-list {display:grid;gap:10px;}
+.bridge-item {display:flex;align-items:flex-start;gap:12px;font-size:0.98rem;line-height:1.75;color:var(--muted);}
+.bridge-item strong {color:var(--text);}
+.reveal {opacity:0;transform:translateY(22px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.reveal.is-visible {opacity:1;transform:translateY(0);}
+@media (min-width:768px) {.section {padding:110px 0;} .hero-content {padding:40px 32px 28px;} .hero-grid {grid-template-columns:minmax(0,1.08fr) minmax(300px,0.62fr);align-items:end;} .grid-2 {grid-template-columns:repeat(2,minmax(0,1fr));} .manifesto-grid {grid-template-columns:minmax(0,1.15fr) minmax(0,0.85fr);} .badge-grid {grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);} .discovery-grid {grid-template-columns:repeat(2,minmax(0,1fr));} .bridge-shell {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (min-width:1100px) {.desktop-nav {display:block;} .header-cta {display:inline-flex;} .menu-toggle {display:none;} .mobile-nav {display:none;} .discovery-grid {grid-template-columns:1.06fr 0.94fr 0.94fr;} .discovery-card:nth-child(1) {grid-row:span 2;min-height:600px;} .discovery-card:nth-child(1) .discovery-body {min-height:600px;}}
+@media (prefers-reduced-motion:reduce) {html {scroll-behavior:auto;} * {animation:none !important;transition:none !important;}}
 
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <link rel="canonical" href="https://www.worldofmixologists.com/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="World of Mixologists (WØM)" />
-  <meta property="og:description" content="Curated bartender & bar team features. Proper credit, real culture — and a bridge to opportunities via Bartendly." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.worldofmixologists.com/" />
-  <meta property="og:image" content="https://www.worldofmixologists.com/assets/og.jpg" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="World of Mixologists (WØM)" />
-  <meta name="twitter:description" content="Curated bartender & bar team features with proper credit — connected to opportunities via Bartendly." />
-  <meta name="twitter:image" content="https://www.worldofmixologists.com/assets/og.jpg" />
-
-  <link rel="icon" href="/favicon.ico" />
-
-  <!-- Performance -->
-  <link rel="preload" as="image" href="/assets/hero-900.jpg" imagesrcset="/assets/hero-600.jpg 600w, /assets/hero-900.jpg 900w, /assets/hero-1200.jpg 1200w" imagesizes="(max-width: 859px) 100vw, 60vw" />
-
-  <style>
-    :root{--bg:#0B0B0E;--card:#12121A;--text:#F2F2F3;--muted:rgba(205,205,214,0.92);--muted2:rgba(255,255,255,0.60);--line:rgba(255,255,255,0.10);--accent:#FF6D21;--accent2:#FFAE3A;--accent3:#6FE7FF;--shadow:0 18px 48px rgba(0,0,0,0.55);--radius:18px;--radius2:22px;--max:1120px;--pad:18px;--font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{margin:0;font-family:var(--font);color:var(--text);background:radial-gradient(1100px 620px at 10% 0%, rgba(255,109,33,0.18), rgba(11,11,14,0) 58%),radial-gradient(900px 520px at 92% 10%, rgba(255,174,58,0.12), rgba(11,11,14,0) 58%),radial-gradient(900px 520px at 70% 75%, rgba(111,231,255,0.08), rgba(11,11,14,0) 60%),var(--bg);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-a{color:inherit;text-decoration:none;}
-button{font-family:inherit;}
-strong{font-weight:900;}
-.skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
-.skip:focus{left:12px;top:12px;width:auto;height:auto;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:12px;z-index:9999;}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad);}
-.site-header{position:sticky;top:0;z-index:50;background:rgba(11,11,14,0.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--pad);}
-.brand{display:flex;align-items:center;gap:10px;min-width:0;}
-.logo{width:54px;height:42px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 14px 30px rgba(255,109,33,0.18);display:flex;align-items:center;justify-content:center;color:#111116;font-weight:1000;font-size:13px;letter-spacing:-0.7px;border:1px solid rgba(255,255,255,0.14);}
-.brand-name{font-weight:900;letter-spacing:-0.3px;font-size:14px;color:rgba(242,242,243,0.95);}
-.nav-actions{display:flex;align-items:center;gap:10px;}
-.btn{border:0;cursor:pointer;border-radius:14px;padding:12px 14px;font-weight:950;font-size:14.5px;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:transform 120ms ease, box-shadow 120ms ease, background 120ms ease, opacity 120ms ease;}
-.btn:active{transform:translateY(1px);}
-.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111116;box-shadow:0 18px 44px rgba(255,109,33,0.18);}
-.btn-primary:hover{box-shadow:0 22px 56px rgba(255,109,33,0.26);}
-.btn-secondary{background:rgba(255,255,255,0.07);color:var(--text);border:1px solid rgba(255,255,255,0.12);}
-.btn-secondary:hover{background:rgba(255,255,255,0.10);}
-.icon-btn{border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);width:44px;height:44px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;}
-.icon-btn:hover{background:rgba(255,255,255,0.08);}
-.burger{width:18px;height:2px;background:rgba(242,242,243,0.95);position:relative;border-radius:2px;}
-.burger::before{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:rgba(242,242,243,0.95);top:-6px;}
-.burger::after{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:rgba(242,242,243,0.95);top:6px;}
-.hide-mobile{display:none;}
-.hero{padding:22px 0 10px;}
-.hero-grid{display:grid;grid-template-columns:1fr;gap:14px;}
-.hero-media{position:relative;border-radius:var(--radius2);overflow:hidden;border:1px solid var(--line);background:radial-gradient(1200px 620px at 20% 0%, rgba(255,109,33,0.14), rgba(0,0,0,0.0));min-height:320px;box-shadow:0 26px 80px rgba(0,0,0,0.60);}
-.hero-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.0) contrast(1.12);}
-.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,11,14,0.94), rgba(11,11,14,0.10) 52%, rgba(11,11,14,0.94));}
-.hero-overlay{position:absolute;left:16px;right:16px;top:16px;z-index:2;display:flex;flex-direction:column;gap:10px;max-width:78ch;}
-.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:rgba(183,183,194,0.98);border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:999px;width:max-content;}
-.hero-overlay h1{margin:0;font-weight:950;letter-spacing:-0.9px;font-size:34px;line-height:1.08;text-shadow:0 14px 34px rgba(0,0,0,0.80);}
-.hero-sub{margin:0;color:rgba(220,220,230,0.94);font-size:16.5px;line-height:1.65;text-shadow:0 14px 34px rgba(0,0,0,0.85);}
-.hero-cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
-.hero-card{border-radius:var(--radius2);border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));padding:16px;box-shadow:0 26px 80px rgba(0,0,0,0.60);}
-.pill{display:inline-flex;align-items:center;font-size:12px;font-weight:950;color:rgba(255,255,255,0.92);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);padding:6px 10px;border-radius:999px;}
-.lead{margin:10px 0 10px;color:var(--muted);font-size:15px;line-height:1.7;}
-.mini-list{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:8px;}
-.mini-list li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:15px;line-height:1.7;}
-.mini-ico{width:22px;height:22px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);flex:0 0 auto;}
-.fine{margin:12px 0 0;color:var(--muted2);font-size:13.5px;line-height:1.65;}
-.section{padding:20px 0;}
-.section-head{margin-bottom:12px;}
-.section-head h2{margin:0;font-size:19px;letter-spacing:-0.25px;}
-.section-sub{margin:6px 0 0;color:var(--muted);font-size:15px;line-height:1.65;max-width:76ch;}
-.grid2{display:grid;grid-template-columns:1fr;gap:12px;}
-.card{border-radius:var(--radius);border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));padding:16px;box-shadow:0 16px 40px rgba(0,0,0,0.45);}
-.card-title{margin:0 0 8px;font-size:16.5px;letter-spacing:-0.2px;}
-.p{margin:0;color:var(--muted);font-size:15px;line-height:1.75;}
-.list{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:8px;}
-.list li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:15px;line-height:1.7;}
-.ico{width:22px;height:22px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:rgba(242,242,243,0.95);flex:0 0 auto;margin-top:1px;}
-.card-actions{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
-.platform{border-radius:var(--radius2);border:1px solid rgba(255,255,255,0.10);background:radial-gradient(900px 520px at 10% 0%, rgba(255,109,33,0.16), rgba(0,0,0,0.0));padding:16px;box-shadow:var(--shadow);}
-.cta{border-radius:var(--radius2);border:1px solid rgba(255,255,255,0.10);background:radial-gradient(900px 520px at 10% 0%, rgba(255,109,33,0.16), rgba(0,0,0,0.0));padding:16px;box-shadow:var(--shadow);}
-.cta-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
-.site-footer{padding:18px 0 28px;border-top:1px solid rgba(255,255,255,0.10);margin-top:12px;}
-.foot{display:flex;flex-direction:column;gap:10px;color:var(--muted);font-size:14.5px;}
-.foot-title{display:block;color:rgba(242,242,243,0.96);font-size:14.5px;margin-bottom:6px;font-weight:950;}
-.foot-line{margin:0;}
-.foot-small{margin:0;color:rgba(255,255,255,0.55);line-height:1.65;}
-dialog{border:0;padding:0;background:transparent;width:100%;max-width:none;}
-dialog::backdrop{background:rgba(0,0,0,0.72);}
-.request-dialog[open],.menu-dialog[open]{display:flex;align-items:flex-start;justify-content:center;padding:calc(10px + env(safe-area-inset-top)) var(--pad) 0;}
-.dialog-card,.menu-card{width:min(680px, 100%);border-radius:22px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(18,18,26,0.98), rgba(10,10,14,0.98));box-shadow:0 26px 70px rgba(0,0,0,0.60);overflow:hidden;}
-.dialog-head,.menu-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;border-bottom:1px solid rgba(255,255,255,0.10);}
-.form{padding:14px;display:grid;gap:12px;}
-.field label{display:block;font-size:12.5px;color:rgba(255,255,255,0.72);margin:0 0 6px;}
-input,select,textarea{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:var(--text);padding:12px 12px;font-size:16px;outline:none;}
-textarea{min-height:120px;resize:vertical;}
-input:focus,select:focus,textarea:focus{border-color:rgba(255,109,33,0.55);box-shadow:0 0 0 5px rgba(255,109,33,0.14);}
-.help{margin:6px 0 0;color:rgba(255,255,255,0.60);font-size:13px;line-height:1.55;}
-.form-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.10);padding-top:12px;}
-.form-fine{margin:0;color:rgba(255,255,255,0.55);}
-.menu-links{padding:14px;display:grid;gap:10px;}
-.menu-links a{padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.03);color:rgba(242,242,243,0.96);font-weight:900;}
-.menu-links a:hover{background:rgba(255,255,255,0.05);}
-.menu-cta{padding:14px;border-top:1px solid rgba(255,255,255,0.10);display:flex;gap:10px;flex-wrap:wrap;}
-.wa-float,.start-float{position:fixed;bottom:14px;z-index:91;display:none;align-items:center;justify-content:center;border-radius:999px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 18px 50px rgba(0,0,0,0.55);opacity:0;transition:transform 160ms ease, opacity 160ms ease, background 160ms ease;}
-.start-float{left:14px;padding:12px 14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111116;font-weight:950;font-size:13.5px;}
-.wa-float{right:14px;padding:12px 14px;background:rgba(18,18,26,0.82);backdrop-filter:blur(10px);color:rgba(242,242,243,0.96);font-weight:950;font-size:13px;}
-.start-float:hover,.wa-float:hover{transform:translateY(-1px);}
-@media (max-width:420px){.btn{padding:10px 12px;font-size:13px;}.logo{width:52px;height:40px;}.brand-name{display:none;}.hero-overlay h1{font-size:30px;}}
-@media (min-width:860px){:root{--pad:22px;}.hide-mobile{display:inline-flex;}.icon-btn{display:none;}.hero{padding:28px 0 12px;}.hero-grid{grid-template-columns:1.25fr 1fr;gap:16px;}.grid2{grid-template-columns:repeat(2, 1fr);}.hero-overlay h1{font-size:46px;}.hero-media{min-height:460px;}.wa-float,.start-float{display:none!important;}}
-
-.ig-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
-@media(max-width:900px){.ig-grid{grid-template-columns:repeat(3,1fr);}}
-@media(max-width:520px){.ig-grid{grid-template-columns:repeat(2,1fr);}}
-.ig-grid a{display:block;border-radius:14px;overflow:hidden;}
-.ig-grid img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;}
-
-.proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px;}
-.proof-item{background:rgba(18,18,26,0.78);border:1px solid var(--line);border-radius:16px;padding:12px 12px;box-shadow:0 10px 26px rgba(0,0,0,0.32);}
-.proof-num{font-weight:900;font-size:1.06rem;letter-spacing:-0.01em;}
-.proof-label{margin-top:4px;color:var(--muted2);font-size:0.86rem;line-height:1.2;}
-@media (max-width:520px){.proof{gap:10px;}.proof-item{padding:10px 10px;}.proof-num{font-size:0.98rem;}.proof-label{font-size:0.82rem;}}
-
-
-  </style>
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "name":"World of Mixologists",
-      "alternateName":"WØM",
-      "url":"https://www.worldofmixologists.com/",
-      "logo":"https://www.worldofmixologists.com/assets/og.jpg",
-      "description":"Curated bartender and bar team features. Proper credit, honest visibility, and a bridge to professional opportunities via Bartendly.",
-      "email":"martial@worldofmixologists.com",
-      "sameAs":[
-        "https://www.instagram.com/worldofmixologists/"
-      ]
-    }
-    </script>
-  
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"WebSite",
-      "name":"World of Mixologists",
-      "url":"https://www.worldofmixologists.com/",
-      "inLanguage":"en"
-    }
-    </script>
-  
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"FAQPage",
-      "mainEntity":[
-        {
-          "@type":"Question",
-          "name":"How do I request a feature on World of Mixologists?",
-          "acceptedAnswer":{
-            "@type":"Answer",
-            "text":"Use the Get featured / collaborate form and include Instagram handles, who to credit, and 1–3 strong photos (bartender portrait or bar team)."
-          }
-        },
-        {
-          "@type":"Question",
-          "name":"Is World of Mixologists an agency?",
-          "acceptedAnswer":{
-            "@type":"Answer",
-            "text":"No. WØM curates and connects. We do not employ talent or operate events."
-          }
-        },
-        {
-          "@type":"Question",
-          "name":"Are collaborations paid?",
-          "acceptedAnswer":{
-            "@type":"Answer",
-            "text":"Some features are editorial, some are paid. We’re transparent and we only take collaborations that feel relevant to bartenders."
-          }
-        },
-        {
-          "@type":"Question",
-          "name":"What is the link between WØM and Bartendly?",
-          "acceptedAnswer":{
-            "@type":"Answer",
-            "text":"WØM is the visibility layer. Bartendly is the professional layer where profiles and opportunities live beyond social posts."
-          }
-        }
-      ]
-    }
-    </script>
- 
+.pro-grid {display:grid;gap:18px;}
+.pro-card {display:grid;gap:16px;padding:24px;border-radius:26px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);}
+.pro-title {font-size:1.34rem;line-height:1.16;font-weight:800;}
+.pro-list {display:grid;gap:10px;}
+.pro-item {display:flex;align-items:flex-start;gap:12px;font-size:0.98rem;line-height:1.75;color:var(--muted);}
+.pro-item strong {color:var(--text);}
+.services-shell {display:grid;gap:18px;}
+.services-main {display:grid;gap:18px;}
+.service-card {display:grid;gap:12px;padding:22px;border-radius:24px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);}
+.service-title {font-size:1.1rem;line-height:1.2;font-weight:800;}
+.service-text {font-size:0.96rem;line-height:1.78;color:var(--muted);}
+.services-side {display:grid;gap:18px;padding:24px;border-radius:30px;border:1px solid rgba(213,176,108,0.18);background:linear-gradient(180deg,rgba(213,176,108,0.10),rgba(255,255,255,0.03)),rgba(255,255,255,0.02);}
+.signature-tag {font-size:0.76rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);}
+.signature-name {font-size:1.55rem;line-height:1.06;font-weight:900;}
+.signature-text {font-size:0.98rem;line-height:1.8;color:var(--muted);}
+.btn-gold {background:rgba(213,176,108,0.10);border-color:rgba(213,176,108,0.26);color:#f8e0af;}
+.experiences-shell {position:relative;overflow:hidden;display:grid;gap:18px;padding:26px;border-radius:32px;border:1px solid rgba(255,255,255,0.09);background:rgba(255,255,255,0.04);}
+.experiences-media {position:absolute;inset:0;opacity:0.18;}
+.experiences-media img {width:100%;height:100%;object-fit:cover;}
+.experiences-media::after {content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,12,0.96) 0%,rgba(8,8,12,0.78) 42%,rgba(8,8,12,0.92) 100%);}
+.experiences-body {position:relative;z-index:1;display:grid;gap:18px;}
+.instagram-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.insta-card {position:relative;overflow:hidden;aspect-ratio:1/1;border-radius:20px;border:1px solid rgba(255,255,255,0.08);background:#101015;}
+.insta-card::after {content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,12,0.02) 0%,rgba(8,8,12,0.16) 56%,rgba(8,8,12,0.56) 100%);}
+.insta-image {width:100%;height:100%;object-fit:cover;transition:transform 0.7s ease;}
+.insta-card:hover .insta-image {transform:scale(1.04);}
+.insta-copy {position:absolute;left:14px;right:14px;bottom:12px;z-index:1;display:grid;gap:5px;}
+.insta-copy strong {font-size:0.78rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:#fff;}
+.insta-copy span {font-size:0.85rem;line-height:1.4;color:#d7d2c8;}
+.final-shell {display:grid;gap:18px;padding:28px;border-radius:32px;border:1px solid rgba(255,255,255,0.09);background:radial-gradient(circle at 15% 20%,rgba(255,122,26,0.10),transparent 24%),radial-gradient(circle at 100% 0%,rgba(213,176,108,0.10),transparent 20%),rgba(255,255,255,0.04);}
+.final-title {font-size:clamp(2rem,8vw,4rem);line-height:0.98;font-weight:900;letter-spacing:-0.05em;}
+.final-text {max-width:820px;font-size:1rem;line-height:1.8;color:var(--muted);}
+.footer {padding:30px 0 48px;}
+.footer-inner {display:flex;flex-direction:column;gap:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.08);}
+.footer-copy {font-size:0.92rem;line-height:1.7;color:var(--muted-2);}
+.footer-links {display:flex;flex-wrap:wrap;gap:16px;}
+.footer-link {font-size:0.92rem;font-weight:600;color:var(--muted);}
+@media (min-width:768px) {.pro-grid {grid-template-columns:repeat(3,minmax(0,1fr));} .services-shell {grid-template-columns:minmax(0,1.12fr) minmax(320px,0.88fr);} .instagram-grid {grid-template-columns:repeat(4,minmax(0,1fr));} .footer-inner {flex-direction:row;align-items:center;justify-content:space-between;}}
+.services-side {position:relative;overflow:hidden;min-height:100%;background:linear-gradient(180deg,rgba(10,10,14,0.45),rgba(10,10,14,0.85)),url('images/wom-gq-coaching.jpg') center top/cover no-repeat;border:1px solid rgba(213,176,108,0.18);border-radius:30px;padding:24px;display:grid;gap:18px;}
+.whatsapp-float {position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 35px rgba(0,0,0,0.4);z-index:50;opacity:0;transform:translateY(20px);transition:all 0.3s ease;border:1px solid rgba(255,255,255,0.12);}
+.whatsapp-float svg {width:30px;height:30px;}
+.whatsapp-float.visible {opacity:1;transform:translateY(0);}
+</style>
 </head>
-
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="global.skipToContent">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <nav class="nav wrap" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="World of Mixologists home">
-        <span class="logo" aria-hidden="true">WØM</span>
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="World of Mixologists home">
+      <img class="brand-mark" src="images/wom-logo-mark.png" alt="World of Mixologists logo">
+      <span class="brand-copy">
         <span class="brand-name">World of Mixologists</span>
-      </a>
+        <span class="brand-tag" data-i18n="header.tag">Cocktail Culture Worldwide</span>
+      </span>
+    </a>
 
-      <div class="nav-actions">
-        <a class="btn btn-secondary hide-mobile" href="#hire">Hire a bartender</a>
-        <a class="btn btn-secondary hide-mobile" href="#bartendly">What is Bartendly</a>
-        <button class="btn btn-primary hide-mobile" type="button" data-open-dialog>Get involved</button>
-        <button class="icon-btn" type="button" aria-label="Open menu" data-open-menu>
-          <span class="burger" aria-hidden="true"></span>
-        </button>
-      </div>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+        <li><a class="nav-link" href="#difference" data-i18n="nav.difference">Difference</a></li>
+        <li><a class="nav-link" href="#discover" data-i18n="nav.discover">Discover</a></li>
+        <li><a class="nav-link" href="#bartendly" data-i18n="nav.bartendly">Bartendly</a></li>
+      </ul>
     </nav>
-  </header>
 
-  <!-- Mobile menu dialog -->
-  <dialog class="menu-dialog" id="menuDialog" aria-label="Menu">
-    <div class="menu-card">
-      <div class="menu-head">
-        <strong>Menu</strong>
-        <button class="btn btn-secondary" type="button" data-close-menu>Close</button>
+    <div class="header-actions">
+      <div class="lang-wrap" id="langWrap">
+        <select class="lang-select" id="languageSwitcher" aria-label="Language selector"></select>
       </div>
-      <div class="menu-links" role="navigation" aria-label="Menu links">
-        <a href="#what" data-close-menu>What we do</a>
-        <a href="#bartendly" data-close-menu>What is Bartendly</a>
-        <a href="#pros" data-close-menu>For hospitality pros</a>
-        <a href="#hire" data-close-menu>Hire a bartender</a>
-        <a href="#projects" data-close-menu>Projects (incl. digital)</a>
-        <a href="#brands" data-close-menu>For brands</a>
-        <a href="#contact" data-close-menu>Get involved</a>
-      </div>
-      <div class="menu-cta">
-        <button class="btn btn-primary" type="button" data-open-dialog>Get involved</button>
-        <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Open Bartendly</a>
-      </div>
+      <a class="btn btn-secondary header-cta" href="https://www.bartendly.com/what-is-bartendly" target="_blank" rel="noopener noreferrer" data-i18n="header.cta">Discover Bartendly</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">
+        <span class="menu-icon"><span></span></span>
+      </button>
     </div>
-  </dialog>
+  </div>
+</header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="wrap hero-grid">
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <div class="mobile-nav-links">
+    <a class="mobile-nav-link" href="#about"><span data-i18n="nav.about">About</span><span>↗</span></a>
+    <a class="mobile-nav-link" href="#difference"><span data-i18n="nav.difference">Difference</span><span>↗</span></a>
+    <a class="mobile-nav-link" href="#discover"><span data-i18n="nav.discover">Discover</span><span>↗</span></a>
+    <a class="mobile-nav-link" href="#bartendly"><span data-i18n="nav.bartendly">Bartendly</span><span>↗</span></a>
+  </div>
+  <div class="mobile-nav-actions">
+    <a class="btn btn-primary" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaInstagram">Follow on Instagram</a>
+    <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaBartendly">Explore Bartendly</a>
+  </div>
+</nav>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-shell">
         <div class="hero-media">
-          <picture>
-            <source srcset="/assets/hero-600.webp 600w, /assets/hero-900.webp 900w, /assets/hero-1200.webp 1200w" type="image/webp">
-            <source srcset="/assets/hero-600.jpg 600w, /assets/hero-900.jpg 900w, /assets/hero-1200.jpg 1200w" type="image/jpeg">
-            <img src="/assets/hero-900.jpg" alt="Bartender behind the bar during service" width="1200" height="800" loading="eager" fetchpriority="high">
-          </picture>
-
-          <div class="hero-overlay">
-            <span class="hero-kicker">Hospitality is live. Not content.</span>
-            <h1>World of Mixologists (WØM)</h1>
-            <!--<p class="hero-sub">
-              We feature bartenders, bar teams and hospitality ideas worth attention.
-              <a href="#bartendly">Bartendly</a> is the global hospitality platform layer: publish events worldwide, access <strong>jobs & gigs</strong>, offer <strong>private bartending services</strong>, and connect with hospitality professionals globally.
-              For clients: you can also <a href="#services">hire a bartender</a> for private or corporate events via Bartendly.
-            </p>-->
-            <p class="hero-sub">
-              World of Mixologists features bartenders & bar teams worldwide.
-              <strong>Clients:</strong> hire a bartender for private or corporate events via <a href="https://www.bartendly.com" target="_blank" rel="noopener">Bartendly</a>.
-              <strong>Professionals:</strong> get jobs, gigs, event visibility and global networking via <a href="https://app.bartendly.com" target="_blank" rel="noopener">the Bartendly app</a>.
-            </p>
-                               
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="https://www.bartendly.com" target="_blank" rel="noopener">Hire a bartender</a>
-              <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Bartenders: get opportunities</a>
-            </div>
-            
-
-            <p class="hero-social">
-              Follow the editorial work on Instagram:
-              <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener">@world.of.mixologists</a>
-            </p>            
-          </div>
+          <img class="hero-image" src="images/wom-hero-cocktail-culture.jpg" alt="Premium editorial cocktail culture scene">
         </div>
-
-        <aside class="hero-card" aria-label="Quick overview">
-          <div class="pill">WØM × Bartendly</div>
-          <p class="lead">
-            WØM creates visibility and trust. Bartendly makes it actionable — globally.
-          </p>
-          <ul class="mini-list">
-            <li><span class="mini-ico" aria-hidden="true">✓</span><span>Editorial features (credited, tagged)</span></li>
-            <li><span class="mini-ico" aria-hidden="true">✓</span><span>Events visibility worldwide (on Bartendly)</span></li>
-            <li><span class="mini-ico" aria-hidden="true">✓</span><span>Jobs, gigs & private services opportunities</span></li>
-            <li><span class="mini-ico" aria-hidden="true">✓</span><span>Brands: global bartender reach + event promotion</span></li>
-          </ul>
-          <p class="fine">
-            No inflated promises. Clear offers, real people, and a platform that scales beyond DMs.
-          </p>
-
-          <div class="proof" aria-label="Key facts">
-            <div class="proof-item">
-              <div class="proof-num">58k+</div>
-              <div class="proof-label">Followers worldwide</div>
+        <div class="hero-content">
+          <div class="hero-grid">
+            <div class="hero-main reveal">
+              <div class="hero-kicker" data-i18n="hero.kicker">A flagship platform for cocktail culture</div>
+              <h1 class="hero-title" data-i18n="hero.title">A global view of cocktail culture</h1>
+              <p class="hero-subtitle" data-i18n="hero.subtitle">Real people. Real places. Real stories.</p>
+              <p class="hero-statement" data-i18n="hero.statement">No rankings. No pay-to-play. No artificial systems.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaInstagram">Follow on Instagram</a>
+                <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaBartendly">Explore Bartendly</a>
+              </div>
             </div>
-            <div class="proof-item">
-              <div class="proof-num">Global</div>
-              <div class="proof-label">Bartenders, bars & brands</div>
-            </div>
-            <div class="proof-item">
-              <div class="proof-num">Platform</div>
-              <div class="proof-label">Opportunities via Bartendly</div>
+
+            <div class="hero-side reveal">
+              <div class="hero-panel">
+                <div class="hero-panel-label" data-i18n="hero.panelLabel">Core positioning</div>
+                <div class="hero-panel-quote" data-i18n="global.positioning">World of Mixologists reveals the cocktail world. Bartendly structures it.</div>
+                <div class="hero-panel-text" data-i18n="hero.panelText">WØM creates visibility, storytelling and cultural authority. Bartendly turns that visibility into structure, discovery, event history, connection and long-term ecosystem value.</div>
+              </div>
+              <div class="hero-facts">
+                <div class="fact-card">
+                  <div class="fact-title" data-i18n="hero.fact1Title">Bars</div>
+                  <div class="fact-text" data-i18n="hero.fact1Text">Places worth discovering, remembering and returning to.</div>
+                </div>
+                <div class="fact-card">
+                  <div class="fact-title" data-i18n="hero.fact2Title">People</div>
+                  <div class="fact-text" data-i18n="hero.fact2Text">Bartenders, creators, founders and hospitality professionals.</div>
+                </div>
+                <div class="fact-card">
+                  <div class="fact-title" data-i18n="hero.fact3Title">Moments</div>
+                  <div class="fact-text" data-i18n="hero.fact3Text">Guest shifts, launches, cities, scenes and stories.</div>
+                </div>
+                <div class="fact-card">
+                  <div class="fact-title" data-i18n="hero.fact4Title">Ecosystem</div>
+                  <div class="fact-text" data-i18n="hero.fact4Text">Visibility today. Structure, tools and opportunity tomorrow.</div>
+                </div>
+              </div>
             </div>
           </div>
-          
-
-        </aside>
-      </div>
-    </section>
-
-    <!-- WHAT -->
-    <section class="section" id="what">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>What we do</h2>
-          <p class="section-sub">
-            World of Mixologists is editorial: we highlight people and moments shaping modern hospitality.
-            When something needs to go further (event, gig, project), Bartendly is the place where it can live and grow.
-          </p>
-          <p class="section-note">
-            World of Mixologists started as an editorial Instagram page highlighting bartenders and bar teams worldwide.
-            Today, it connects that visibility to real opportunities through Bartendly.
-          </p>          
-        </header>
-
-        <div class="grid2">
-          <article class="card">
-            <h3 class="card-title">1) Feature bartenders & bar teams (proper credit)</h3>
-            <p class="p">
-              We repost and highlight bartenders and teams we respect. Always credited. Always tagged. No rankings, no fake awards.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3 class="card-title">2) Make hospitality visible beyond one city</h3>
-            <p class="p">
-              We highlight events and initiatives — and Bartendly makes them discoverable in a structured way (not just a story that disappears).
-            </p>
-          </article>
         </div>
       </div>
-    </section>
-
-    <!-- BARTENDLY -->
-    <section class="section" id="bartendly">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>What is Bartendly</h2>
-          <p class="section-sub">
-            Bartendly is a global hospitality platform + a real staffing service arm (private & corporate). Built for hospitality professionals, bars, brands — and clients who want to hire pros.
-          </p>
-        </header>
-
-        <div class="platform">
-          <p class="p">
-            <strong>Bartendly makes hospitality visible and connected worldwide.</strong>
-            Your profile, events and opportunities can be discovered across cities — and it becomes easier to connect with other professionals globally.
-          </p>
-          <p class="p">
-            <strong>Bartendly is a global bartender and hospitality platform</strong> connecting bartenders, bars, brands and clients.
-            Bartenders can publish events worldwide, access jobs and gigs, and offer private bartending services.
-            Clients can hire professional bartenders for private and corporate events through Bartendly.
-          </p>          
-
-          <ul class="list">
-            <li><span class="ico" aria-hidden="true">•</span><span><strong>Global visibility:</strong> publish events and be discoverable outside your own network</span></li>
-            <li><span class="ico" aria-hidden="true">•</span><span><strong>Jobs & gigs:</strong> connect to work opportunities and staffing needs</span></li>
-            <li><span class="ico" aria-hidden="true">•</span><span><strong>Private services:</strong> get hired for private and corporate events</span></li>
-            <li><span class="ico" aria-hidden="true">•</span><span><strong>Networking:</strong> easier connections between bartenders, bars and brands globally</span></li>
-          </ul>
-
-          <p class="p">
-            Bartendly is both a platform and an operational engine: when a project becomes “real-world” (staffing, timing, delivery), Bartendly can support execution.
-          </p>
-
-          <div class="card-actions">
-            <a class="btn btn-primary" href="https://app.bartendly.com" target="_blank" rel="noopener">Open the app</a>
-            <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Bartendly website</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Instagram gallerie-->
-    <section class="section" id="instagram">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>From Instagram</h2>
-          <p class="section-sub">
-            The live editorial feed is on
-            <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener">@world.of.mixologists</a>
-          </p>
-        </header>
-    
-        <div class="ig-grid">
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/01.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/02.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/03.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/04.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/05.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/06.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/07.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/08.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/09.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/10.jpg" alt="World of Mixologists Instagram feature"></a>
-          <!--<a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/11.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/12.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/13.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/14.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/15.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/16.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/17.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/18.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/19.jpg" alt="World of Mixologists Instagram feature"></a>
-          <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener"><img src="/assets/ig/20.jpg" alt="World of Mixologists Instagram feature"></a>
-        -->
-        </div>
-    
-        <div class="card-actions">
-          <a class="btn btn-secondary" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener">See more on Instagram</a>
-        </div>
-      </div>
-    </section>    
-
-    <!-- PROS -->
-    <section class="section" id="pros">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>For hospitality professionals</h2>
-          <p class="section-sub">
-            Extra visibility, extra revenue opportunities, and extra networking — worldwide.
-          </p>
-        </header>
-
-        <div class="grid2">
-          <article class="card">
-            <h3 class="card-title">For bartenders</h3>
-            <ul class="list">
-              <li><span class="ico" aria-hidden="true">✓</span><span>Get featured on WØM (editorial, credited)</span></li>
-              <li><span class="ico" aria-hidden="true">✓</span><span>Make your events visible globally on Bartendly</span></li>
-              <li><span class="ico" aria-hidden="true">✓</span><span>Access jobs, gigs and private/corporate requests</span></li>
-              <li><span class="ico" aria-hidden="true">✓</span><span>Connect with bars, brands and pros worldwide</span></li>
-            </ul>
-            <div class="card-actions">
-              <button class="btn btn-primary" type="button" data-open-dialog>Get involved</button>
-              <a class="btn btn-secondary" href="https://app.bartendly.com/" target="_blank" rel="noopener">Join Bartendly</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3 class="card-title">For bars & teams</h3>
-            <ul class="list">
-              <li><span class="ico" aria-hidden="true">✓</span><span>Highlight your team and culture via WØM</span></li>
-              <li><span class="ico" aria-hidden="true">✓</span><span>Publish events and attract the right audience</span></li>
-              <li><span class="ico" aria-hidden="true">✓</span><span>Connect to talent and collaborations via Bartendly</span></li>
-              <li><span class="ico" aria-hidden="true">✓</span><span>Turn attention into structured actions (jobs, gigs, guest shifts)</span></li>
-            </ul>
-            <div class="card-actions">
-              <button class="btn btn-primary" type="button" data-open-dialog>Get involved</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- HIRE -->
-    <section class="section" id="hire">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>Hire a bartender (private & corporate events)</h2>
-          <p class="section-sub">
-            If you found us via World of Mixologists and need bartending for an event, use Bartendly to request staffing and book professional bartenders.
-          </p>
-        </header>
-
-        <div class="grid2">
-          <article class="card">
-            <h3 class="card-title">Private events</h3>
-            <p class="p">Birthdays, home parties, premium gatherings — professional bartenders, clear expectations, smooth coordination.</p>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="https://www.bartendly.com" target="_blank" rel="noopener">Hire via Bartendly</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3 class="card-title">Corporate & brand activations</h3>
-            <p class="p">Conferences, exhibitions, launches, VIP hospitality — staffing where reliability matters.</p>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="https://www.bartendly.com" target="_blank" rel="noopener">Request staffing</a>
-              <!--<button class="btn btn-secondary" type="button" data-open-dialog>Request a quote</button>-->
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>Projects (including digital ideas)</h2>
-          <p class="section-sub">
-            Not every hospitality project is a guest shift or masterclass. Many ideas need a digital layer — and most founders have zero tech background.
-          </p>
-        </header>
-
-        <div class="card">
-          <p class="p">
-            Bartendly can support projects through existing infrastructure (profiles, events, bars, jobs, brand connections).
-            In selected cases, we can build custom platform features when the project clearly serves the global hospitality community.
-          </p>
-          <ul class="list">
-            <li><span class="ico" aria-hidden="true">•</span><span>Formats, initiatives, tools, community programs, multi-city concepts</span></li>
-            <li><span class="ico" aria-hidden="true">•</span><span>Projects that need visibility, connections and a digital home</span></li>
-            <li><span class="ico" aria-hidden="true">•</span><span>We evaluate fit, impact and feasibility — we don’t promise to build everything</span></li>
-          </ul>
-          <div class="card-actions">
-            <button class="btn btn-primary" type="button" data-open-dialog>Propose a project</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BRANDS -->
-    <section class="section" id="brands">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>For brands</h2>
-          <p class="section-sub">
-            Post events, highlight bartenders with your brand, and engage hospitality talent across cities — with WØM visibility + Bartendly structure.
-          </p>
-        </header>
-
-        <div class="grid2">
-          <article class="card">
-            <h3 class="card-title">Visibility that reaches bartenders</h3>
-            <p class="p">
-              WØM can feature your events, collaborations and bartender stories (editorial or paid collaboration when relevant).
-            </p>
-          </article>
-
-          <article class="card">
-            <h3 class="card-title">Global engagement + structure</h3>
-            <p class="p">
-              Bartendly connects events, profiles, bars and opportunities — making it easier to engage bartenders worldwide and keep activations structured beyond a single post.
-            </p>
-          </article>
-        </div>
-
-        <div class="card-actions">
-          <button class="btn btn-primary" type="button" data-open-dialog>Discuss a brand collaboration</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="wrap">
-        <div class="cta">
-          <header class="section-head">
-            <h2>Get involved</h2>
-            <p class="section-sub">
-              Feature request, event visibility, hiring needs, brand collaboration, or a hospitality project (including digital ideas).
-            </p>
-          </header>
-          <div class="cta-actions">
-            <button class="btn btn-primary" type="button" data-open-dialog>Open request form</button>
-            <a class="btn btn-secondary" href="https://www.bartendly.com" target="_blank" rel="noopener">Hire a bartender</a>
-            <a class="btn btn-secondary" href="https://app.bartendly.com" target="_blank" rel="noopener">Join Bartendly Bartender platform</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="wrap foot">
-        <div>
-          <span class="foot-title">World of Mixologists</span>
-          <p class="foot-line">Email: <a href="mailto:martial@worldofmixologists.com">martial@worldofmixologists.com</a></p>
-          <p class="foot-line"> <a href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener">Instagram</a></p>
-        </div>
-        <p class="foot-small">
-          WØM surfaces people and ideas. Bartendly makes hospitality visible, connected and operational — worldwide.
-        </p>    
-      </div>
-    </footer>
-  </main>
-
-  <!-- REQUEST DIALOG (POPUP FORM) -->
-  <dialog class="request-dialog" id="requestDialog" aria-labelledby="requestTitle">
-    <div class="dialog-card">
-      <div class="dialog-head">
-        <strong id="requestTitle">Get featured / hire / propose a project</strong>
-        <button class="btn btn-secondary" type="button" data-close-dialog>Close</button>
-      </div>
-
-      <form id="requestForm" class="form" autocomplete="on">
-        <div class="field">
-          <label for="who">Who are you?</label>
-          <select id="who" name="who" >
-            <option value="" selected disabled>Select one</option>
-            <option>Bartender / hospitality professional</option>
-            <option>Bar / Venue</option>
-            <option>Brand</option>
-            <option>Client (private)</option>
-            <option>Agency / corporate organizer</option>
-            <option>Other</option>
-          </select>
-          <p class="help">This helps us route your request fast.</p>
-        </div>
-
-        <div class="grid2">
-          <div class="field">
-            <label for="city">City</label>
-            <input id="city" name="city" type="text" placeholder="Barcelona" required>
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="what">Your request (be concrete)</label>
-          <textarea id="what" name="what" placeholder="What is it? Who is involved? Dates/timeframe? Instagram handles to credit? If hiring: guests + venue + hours. If project: what needs a digital layer?" required></textarea>
-          <p class="help">Minimum: what / where / when + who to credit/tag.</p>
-        </div>
-
-        <div class="grid2">
-          <div class="field">
-            <label for="timeframe">Timeframe</label>
-            <input id="timeframe" name="timeframe" type="text" placeholder="Anytime / next week / specific dates">
-          </div>
-          <div class="field">
-            <label for="budget">Budget (optional)</label>
-            <input id="budget" name="budget" type="text" placeholder="If paid collaboration: range">
-          </div>
-        </div>
-
-        <div class="grid2">
-          <div class="field">
-            <label for="whatsapp">WhatsApp (preferred)</label>
-            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+34 600 000 000">
-            <p class="help">We reply faster on WhatsApp. Include country code.</p>
-          </div>
-          <div class="field">
-            <label for="email">Email (optional)</label>
-            <input id="email" name="email" type="email" placeholder="name@company.com">
-          </div>
-        </div>
-
-        <div class="form-actions">
-          <button class="btn btn-secondary" type="button" data-close-dialog>Cancel</button>
-          <button class="btn btn-primary" type="submit">Submit</button>
-        </div>
-
-        <p class="fine form-fine">
-          Some posts are editorial. Some collaborations are paid. We keep it selective and transparent.
-        </p>
-      </form>
     </div>
-  </dialog>
+  </section>
 
-  <!-- Floating mobile CTAs -->
-  <button class="start-float" id="startFloat" type="button" data-open-dialog aria-label="Get involved">Get involved</button>
-  <a class="wa-float" id="waFloat" href="https://wa.me/34618502493?text=Hi%20W%C3%98M%20%E2%80%94%20I%E2%80%99d%20like%20to%20get%20featured%2C%20hire%20a%20bartender%2C%20or%20propose%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
-  <script>(() => {const qs=(s,r=document)=>r.querySelector(s),qsa=(s,r=document)=>Array.from(r.querySelectorAll(s));const requestDialog=qs("#requestDialog"),menuDialog=qs("#menuDialog"),openDialogBtns=qsa("[data-open-dialog]"),closeDialogBtns=qsa("[data-close-dialog]"),openMenuBtn=qs("[data-open-menu]"),closeMenuBtns=qsa("[data-close-menu]"),form=qs("#requestForm");const lock=()=>{document.documentElement.style.overflow="hidden";document.body.style.overflow="hidden";},unlock=()=>{document.documentElement.style.overflow="";document.body.style.overflow="";};const show=(dlg)=>{if(!dlg)return;if(typeof dlg.showModal==="function")dlg.showModal();else dlg.setAttribute("open","");lock();requestAnimationFrame(()=>{dlg.scrollTop=0;});},hide=(dlg)=>{if(!dlg)return;if(typeof dlg.close==="function")dlg.close();else dlg.removeAttribute("open");unlock();};openDialogBtns.forEach(b=>b.addEventListener("click",()=>{if(menuDialog&&menuDialog.open)hide(menuDialog);show(requestDialog);}));closeDialogBtns.forEach(b=>b.addEventListener("click",()=>hide(requestDialog)));if(requestDialog)requestDialog.addEventListener("click",(e)=>{if(e.target===requestDialog)hide(requestDialog);});if(openMenuBtn)openMenuBtn.addEventListener("click",()=>show(menuDialog));closeMenuBtns.forEach(el=>el.addEventListener("click",()=>hide(menuDialog)));if(menuDialog)menuDialog.addEventListener("click",(e)=>{if(e.target===menuDialog)hide(menuDialog);});window.addEventListener("keydown",(e)=>{if(e.key!=="Escape")return;if(requestDialog&&requestDialog.open)hide(requestDialog);if(menuDialog&&menuDialog.open)hide(menuDialog);});const wa=qs("#waFloat"),start=qs("#startFloat"),isMobile=window.matchMedia("(max-width: 859px)").matches;if(isMobile&&wa)setTimeout(()=>{wa.style.display="inline-flex";requestAnimationFrame(()=>{wa.style.opacity="1";});},2200);if(isMobile&&start)setTimeout(()=>{start.style.display="inline-flex";requestAnimationFrame(()=>{start.style.opacity="1";});},1600);if(form)form.addEventListener("submit",(e)=>{e.preventDefault();const data=new FormData(form),p=Object.fromEntries(data.entries());const subject=encodeURIComponent("WØM — Feature / Collaboration Request");const body=encodeURIComponent(`Who: ${p.who}\nCity: ${p.city}\nCountry: ${p.country}\nTimeframe: ${p.timeframe}\nBudget: ${p.budget||"-"}\nWhatsApp: ${p.whatsapp}\nEmail: ${p.email||"-"}\n\nMessage:\n${p.what}\n\n(Submitted from worldofmixologists.com)`);window.location.href=`mailto:martial@worldofmixologists.com?subject=${subject}&body=${body}`;hide(requestDialog);form.reset();});})();</script> 
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="about.eyebrow">What is World of Mixologists</div>
+        <h2 data-i18n="about.title">A premium editorial platform for the people, places and moments that make hospitality worth caring about.</h2>
+        <p class="section-intro" data-i18n="about.intro">World of Mixologists exists to document, highlight and support what actually matters in hospitality: bartenders, bars, creators, guest shifts, concepts, cities and experiences that create real desire, memory and return value.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="editorial-card reveal">
+          <div class="editorial-media">
+            <img class="editorial-image" src="images/wom-about-document.jpg" alt="Editorial bartender story placeholder">
+          </div>
+          <div class="editorial-body">
+            <div class="editorial-tag" data-i18n="about.card1Tag">We document</div>
+            <h3 class="editorial-title" data-i18n="about.card1Title">A living global view of cocktail culture</h3>
+            <p class="editorial-text" data-i18n="about.card1Text">WØM captures bars, guest shifts, creators, hospitality scenes and city energy as a curated editorial layer — not noise, not a database without soul, but a point of view.</p>
+          </div>
+        </article>
+
+        <article class="editorial-card reveal">
+          <div class="editorial-media">
+            <img class="editorial-image" src="images/wom-about-highlight.jpg" alt="Premium bar atmosphere placeholder">
+          </div>
+          <div class="editorial-body">
+            <div class="editorial-tag" data-i18n="about.card2Tag">We highlight</div>
+            <h3 class="editorial-title" data-i18n="about.card2Title">Real places. Real people. Real experiences.</h3>
+            <p class="editorial-text" data-i18n="about.card2Text">We highlight bars and professionals because they create something worth feeling, remembering and revisiting — not because they bought visibility or fit a mechanical scoring system.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="grid-2" style="margin-top:18px;">
+        <article class="text-card reveal">
+          <h3 class="text-card-title" data-i18n="about.card3Title">Why it exists</h3>
+          <p class="text-card-text" data-i18n="about.card3Text">The hospitality world deserves visibility that feels human, credible and desirable. Too much attention is captured by systems that are paid, artificial, limited or disconnected from the emotional reality of going out. WØM exists to show the bars, the people and the moments that create true hospitality value.</p>
+        </article>
+
+        <article class="text-card reveal">
+          <h3 class="text-card-title" data-i18n="about.card4Title">What we value</h3>
+          <p class="text-card-text" data-i18n="about.card4Text">Innovation, creativity, generosity, atmosphere, fun, social energy, strong identity, memorable hospitality and places where people genuinely enjoy their time. We show what actually matters in hospitality — the people, the places and the moments that make you come back.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="difference">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="difference.eyebrow">What makes us different</div>
+        <h2 data-i18n="difference.title">Not a ranking. Not a paid badge. Not an artificial authority machine.</h2>
+        <p class="section-intro" data-i18n="difference.intro">World of Mixologists exists alongside the broader cocktail ecosystem, but it stands on a fundamentally different philosophy: not rank, not scarcity for prestige, not paid legitimacy — but relevance, desirability and return value.</p>
+      </div>
+
+      <div class="manifesto-grid">
+        <article class="manifesto-card reveal">
+          <h3 class="text-card-title" data-i18n="difference.cardTitle">Our difference is structural</h3>
+          <div class="manifesto-list">
+            <div class="manifesto-item"><span>—</span><span data-i18n="difference.item1"><strong>Not ranked.</strong> Hospitality is not reduced to a rigid ladder.</span></div>
+            <div class="manifesto-item"><span>—</span><span data-i18n="difference.item2"><strong>Not limited in number.</strong> Great places are not valid only because they fit a quota.</span></div>
+            <div class="manifesto-item"><span>—</span><span data-i18n="difference.item3"><strong>Not paid visibility.</strong> Editorial legitimacy is not for sale.</span></div>
+            <div class="manifesto-item"><span>—</span><span data-i18n="difference.item4"><strong>Not algorithm-driven.</strong> Hospitality is human, emotional and social before it is measurable.</span></div>
+            <div class="manifesto-item"><span>—</span><span data-i18n="difference.item5"><strong>Not only about perfect luxury codes.</strong> Some places matter because they feel alive, generous, magnetic and unforgettable.</span></div>
+          </div>
+        </article>
+
+        <article class="manifesto-quote reveal">
+          <div class="quote-line" data-i18n="difference.quote">We do not ask only whether a place looks right. We ask whether it makes people want to return.</div>
+          <p class="text-card-text" data-i18n="difference.quoteText">That is the logic behind the WØM Selection: a badge designed to coexist with ecosystem markers like 50 Best or Top 500 while standing for something else entirely — atmosphere, feeling, fun, people, experience, memory, social energy and desire.</p>
+        </article>
+      </div>
+
+      <div class="badge-grid">
+        <article class="badge-card reveal">
+          <div class="badge-visual">
+            <img src="images/wom-selection-badge.png" alt="WØM Selection badge placeholder">
+          </div>
+          <h3 class="badge-title" data-i18n="selection.title">The WØM Selection</h3>
+          <p class="badge-text" data-i18n="selection.text1">The WØM Selection is for bars worth discovering and worth returning to. It can exist alongside known industry badges, but it is built on a different foundation.</p>
+          <p class="badge-text" data-i18n="selection.text2">It is not ranked. It is not capped. It is not bought. It is not limited to bars that simply tick expected boxes. It is about places where atmosphere, people, experience and memory create a genuine reason to come back.</p>
+          <div class="quote-line" data-i18n="selection.quote">A place you don’t just visit — a place you come back to.</div>
+        </article>
+
+        <article class="badge-card reveal">
+          <h3 class="text-card-title" data-i18n="selection.criteriaTitle">What the badge can stand for</h3>
+          <div class="pill-grid">
+            <span class="pill" data-i18n="selection.pill1">Atmosphere</span>
+            <span class="pill" data-i18n="selection.pill2">Feeling</span>
+            <span class="pill" data-i18n="selection.pill3">Fun</span>
+            <span class="pill" data-i18n="selection.pill4">People</span>
+            <span class="pill" data-i18n="selection.pill5">Experience</span>
+            <span class="pill" data-i18n="selection.pill6">Memory</span>
+            <span class="pill" data-i18n="selection.pill7">Social energy</span>
+            <span class="pill" data-i18n="selection.pill8">Desire to return</span>
+          </div>
+          <p class="badge-text" data-i18n="selection.criteriaText">The goal is not to imitate existing authority systems. The goal is to highlight bars that genuinely matter to the people who live, work and go out in this world. Some are elegant. Some are wild. Some are iconic. Some are deeply local. What matters is that they create return value.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="discover">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="discover.eyebrow">What you can discover</div>
+        <h2 data-i18n="discover.title">A richer and more human map of the cocktail world.</h2>
+        <p class="section-intro" data-i18n="discover.intro">World of Mixologists reveals not just names, but context — the bars, events, guest shifts, bartenders, cities, creators and hospitality moments that shape culture and make people want to go out.</p>
+      </div>
+
+      <div class="discovery-grid">
+        <article class="discovery-card reveal">
+          <img class="discovery-image" src="images/wom-discover-bars.jpg" alt="Bars worth discovering placeholder">
+          <div class="discovery-body">
+            <h3 class="discovery-title" data-i18n="discover.card1Title">Bars worth discovering</h3>
+            <p class="discovery-text" data-i18n="discover.card1Text">Places with identity, atmosphere, social energy and return value — not just names on a list.</p>
+          </div>
+        </article>
+
+        <article class="discovery-card reveal">
+          <img class="discovery-image" src="images/wom-discover-events.jpg" alt="Events and guest shifts placeholder">
+          <div class="discovery-body">
+            <h3 class="discovery-title" data-i18n="discover.card2Title">Events and guest shifts</h3>
+            <p class="discovery-text" data-i18n="discover.card2Text">Takeovers, launches, collaborations and nights worth planning around.</p>
+          </div>
+        </article>
+
+        <article class="discovery-card reveal">
+          <img class="discovery-image" src="images/wom-discover-bartenders.jpg" alt="Bartenders and creators placeholder">
+          <div class="discovery-body">
+            <h3 class="discovery-title" data-i18n="discover.card3Title">Bartenders and creators</h3>
+            <p class="discovery-text" data-i18n="discover.card3Text">The people whose energy, style and generosity shape the experience.</p>
+          </div>
+        </article>
+
+        <article class="discovery-card reveal">
+          <img class="discovery-image" src="images/wom-discover-cities.jpg" alt="Cities and scenes placeholder">
+          <div class="discovery-body">
+            <h3 class="discovery-title" data-i18n="discover.card4Title">Cities and scene energy</h3>
+            <p class="discovery-text" data-i18n="discover.card4Text">Cocktail culture is local, social and alive. WØM makes that visible.</p>
+          </div>
+        </article>
+
+        <article class="discovery-card reveal">
+          <img class="discovery-image" src="images/wom-discover-stories.jpg" alt="Stories and culture moments placeholder">
+          <div class="discovery-body">
+            <h3 class="discovery-title" data-i18n="discover.card5Title">Stories that create meaning</h3>
+            <p class="discovery-text" data-i18n="discover.card5Text">Not just information, but narrative value for the bars, professionals and moments that deserve to be seen properly.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="bartendly">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="bridge.eyebrow">Bridge to Bartendly</div>
+        <h2 data-i18n="bridge.title">From visibility to ecosystem</h2>
+        <p class="section-intro" data-i18n="bridge.intro">This is one of the main pillars of the page and the logic must be explicit: World of Mixologists reveals the cocktail world. Bartendly structures it.</p>
+      </div>
+
+      <div class="bridge-shell">
+        <article class="bridge-card reveal">
+          <div class="bridge-label" data-i18n="bridge.leftLabel">World of Mixologists</div>
+          <div class="bridge-title" data-i18n="bridge.leftTitle">Visibility, storytelling, authority and discovery.</div>
+          <p class="bridge-text" data-i18n="bridge.leftText">WØM is where the scene becomes visible. It creates desirability, context and cultural credibility around bars, people, places and experiences.</p>
+          <div class="bridge-list">
+            <div class="bridge-item"><span>—</span><span data-i18n="bridge.leftItem1"><strong>Visibility:</strong> bars, people and moments are seen in the right way.</span></div>
+            <div class="bridge-item"><span>—</span><span data-i18n="bridge.leftItem2"><strong>Storytelling:</strong> hospitality gets narrative value, not just exposure.</span></div>
+            <div class="bridge-item"><span>—</span><span data-i18n="bridge.leftItem3"><strong>Discovery:</strong> professionals and enthusiasts can find what matters.</span></div>
+            <div class="bridge-item"><span>—</span><span data-i18n="bridge.leftItem4"><strong>Amplification:</strong> launches, identities and city moments gain reach and meaning.</span></div>
+          </div>
+        </article>
+
+        <article class="bridge-card reveal">
+          <div class="bridge-label" data-i18n="bridge.rightLabel">Bartendly</div>
+          <div class="bridge-title" data-i18n="bridge.rightTitle">Structure, tools, connection and long-term ecosystem value.</div>
+          <p class="bridge-text" data-i18n="bridge.rightText">Bartendly is the platform layer that can turn visibility into action. It enables discovery, event tracking, guest shift exploration, bartender presence, venue history, brand connection and richer future services.</p>
+          <div class="bridge-list">
+            <div class="bridge-item"><span>—</span><span data-i18n="bridge.rightItem1"><strong>Discover where to go tonight:</strong> bars and activity become easier to explore.</span></div>
+            <div class="bridge-item"><span>—</span><span data-i18n="bridge.rightItem2"><strong>Track events and guest shifts:</strong> visibility becomes structured discovery.</span></div>
+            <div class="bridge-item"><span>—</span><span data-i18n="bridge.rightItem3"><strong>Build bartender presence:</strong> identity, history and opportunities grow over time.</span></div>
+            <div class="bridge-item"><span>—</span><span data-i18n="bridge.rightItem4"><strong>Connect bars, brands and people:</strong> the ecosystem becomes navigable and useful.</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="hero-actions reveal" style="margin-top:22px;">
+        <a class="btn btn-secondary" href="https://app.bartendly.com/" target="_blank" rel="noopener noreferrer" data-i18n="bridge.cta1">Join the platform</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="professionals">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="professionals.eyebrow">For professionals</div>
+        <h2 data-i18n="professionals.title">One page. One ecosystem. Clear value for bartenders, bars and brands.</h2>
+        <p class="section-intro" data-i18n="professionals.intro">No separate microsites. No scattered logic. WØM creates visibility. Bartendly creates structure. Together, they create stronger presence and better opportunities for the people building hospitality.</p>
+      </div>
+
+      <div class="pro-grid">
+        <article class="pro-card reveal">
+          <h3 class="pro-title" data-i18n="professionals.card1Title">Bartenders</h3>
+          <div class="pro-list">
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card1Item1"><strong>Visibility:</strong> be seen through credible cultural storytelling, not empty self-promotion.</span></div>
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card1Item2"><strong>Identity:</strong> build presence around your work, style, events and history.</span></div>
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card1Item3"><strong>Opportunities:</strong> connect to bars, projects, brands, services and future ecosystem value.</span></div>
+          </div>
+        </article>
+
+        <article class="pro-card reveal">
+          <h3 class="pro-title" data-i18n="professionals.card2Title">Bars</h3>
+          <div class="pro-list">
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card2Item1"><strong>Exposure:</strong> gain premium visibility that feels curated, desirable and real.</span></div>
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card2Item2"><strong>Event promotion:</strong> launches, guest shifts and programming become easier to surface.</span></div>
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card2Item3"><strong>Presence:</strong> build long-term discoverability and history through Bartendly.</span></div>
+          </div>
+        </article>
+
+        <article class="pro-card reveal">
+          <h3 class="pro-title" data-i18n="professionals.card3Title">Brands</h3>
+          <div class="pro-list">
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card3Item1"><strong>Activation:</strong> connect campaigns to the right people, places and hospitality moments.</span></div>
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card3Item2"><strong>Content:</strong> create visibility around launches, concepts and experiences.</span></div>
+            <div class="pro-item"><span>—</span><span data-i18n="professionals.card3Item3"><strong>Audience:</strong> reach a real cocktail and hospitality community through culture, not generic advertising.</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="hero-actions reveal" style="margin-top:22px;">
+        <a class="btn btn-primary" href="https://app.bartendly.com/" target="_blank" rel="noopener noreferrer" data-i18n="professionals.cta1">Join Bartendly</a>
+        <a class="btn btn-secondary" href="#final-cta" data-i18n="professionals.cta2">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="services.eyebrow">Services</div>
+        <h2 data-i18n="services.title">Curated opportunities and premium services around hospitality visibility and execution.</h2>
+        <p class="section-intro" data-i18n="services.intro">This layer must feel selective and coherent, not like a random agency menu. The logic is simple: use credibility, cultural visibility and real hospitality understanding to support meaningful projects.</p>
+      </div>
+
+      <div class="services-shell">
+        <div class="services-main grid-2">
+          <article class="service-card reveal">
+            <h3 class="service-title" data-i18n="services.card1Title">Brand campaigns</h3>
+            <p class="service-text" data-i18n="services.card1Text">Premium brand visibility built through the right bars, the right moments and the right hospitality context.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 class="service-title" data-i18n="services.card2Title">Content creation and visibility campaigns</h3>
+            <p class="service-text" data-i18n="services.card2Text">Editorial-style exposure around launches, initiatives, concepts and hospitality stories worth amplifying.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 class="service-title" data-i18n="services.card3Title">Bar features, launches and new menus</h3>
+            <p class="service-text" data-i18n="services.card3Text">Selective support for bars, openings, concepts and menu evolutions through strong cultural visibility.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 class="service-title" data-i18n="services.card4Title">Guest shift organization</h3>
+            <p class="service-text" data-i18n="services.card4Text">Support for collaborations, takeovers and event concepts that need both curation and operational understanding.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 class="service-title" data-i18n="services.card5Title">Bar consultancy through a network of professionals</h3>
+            <p class="service-text" data-i18n="services.card5Text">Selective hospitality support through trusted professionals for concept thinking, direction and targeted advisory work.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <h3 class="service-title" data-i18n="services.card6Title">Hospitality coaching</h3>
+            <p class="service-text" data-i18n="services.card6Text">Coaching and performance support for hospitality professionals who want stronger energy, presence and consistency.</p>
+          </article>
+        </div>
+
+        <aside class="services-side reveal">
+          <div class="signature-tag" data-i18n="services.sideTag">GQ coaching</div>
+          <div class="signature-name" data-i18n="services.sideTitle">Giuseppe Quartararo</div>
+          <p class="signature-text" data-i18n="services.sideText">A dedicated coaching layer for hospitality professionals, with a focus on fitness, nutrition and performance. Because the way you feel, move and sustain energy matters in this industry.</p>
+          <div class="pill-grid">
+            <span class="pill" data-i18n="services.sidePill1">Fitness</span>
+            <span class="pill" data-i18n="services.sidePill2">Nutrition</span>
+            <span class="pill" data-i18n="services.sidePill3">Coaching</span>
+            <span class="pill" data-i18n="services.sidePill4">Hospitality performance</span>
+          </div>
+          <a class="btn btn-gold" href="#final-cta" data-i18n="services.sideCta">Work with us</a>
+        </aside>
+
+        <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="mailto:martial@worldofmixologists.com" data-i18n="services.mainCta1">Start a project</a>
+            <a class="btn btn-secondary" href="https://wa.me/+34618502493" target="_blank" data-i18n="services.mainCta2">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experiences">
+    <div class="container">
+      <div class="experiences-shell reveal">
+        <div class="experiences-media">
+          <img src="images/wom-bartendly-experiences.jpg" alt="Bartending event staffing placeholder">
+        </div>
+        <div class="experiences-body">
+          <div class="eyebrow" data-i18n="experiences.eyebrow">Bartendly Experiences</div>
+          <h2 data-i18n="experiences.title">Need bartenders for your event?</h2>
+          <p class="section-intro" data-i18n="experiences.intro">Bartendly Experiences is the service layer for curated bartending support, especially for trade shows, brand activations and corporate events. It should feel focused, premium and execution-driven.</p>
+          <div class="pill-grid">
+            <span class="pill" data-i18n="experiences.pill1">Trade shows</span>
+            <span class="pill" data-i18n="experiences.pill2">Brand activations</span>
+            <span class="pill" data-i18n="experiences.pill3">Corporate events</span>
+            <span class="pill" data-i18n="experiences.pill4">Bartenders can join</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://bartendly.com/" target="_blank" rel="noopener noreferrer" data-i18n="experiences.cta1">Request bartenders</a>
+            <a class="btn btn-secondary" href="https://app.bartendly.com/" target="_blank" rel="noopener noreferrer" data-i18n="experiences.cta2">Join Bartendly</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="instagram">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow" data-i18n="instagram.eyebrow">Instagram</div>
+        <h2 data-i18n="instagram.title">The live authority and distribution layer of the scene.</h2>
+        <p class="section-intro" data-i18n="instagram.intro">Instagram is where hospitality visibility moves fast: guest shifts, city moments, bars, creators and the pulse of cocktail culture. WØM uses it as a real editorial distribution engine, not just as a feed block.</p>
+      </div>
+
+      <div class="instagram-grid">
+        <a class="insta-card reveal" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener noreferrer" aria-label="Instagram tile 1">
+          <img class="insta-image" src="images/wom-instagram-01.jpg" alt="WØM Instagram tile placeholder 1">
+          <div class="insta-copy">
+            <strong data-i18n="instagram.tile1Title">Guest shifts</strong>
+            <span data-i18n="instagram.tile1Text">What is happening now, tonight and next.</span>
+          </div>
+        </a>
+
+        <a class="insta-card reveal" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener noreferrer" aria-label="Instagram tile 2">
+          <img class="insta-image" src="images/wom-instagram-02.jpg" alt="WØM Instagram tile placeholder 2">
+          <div class="insta-copy">
+            <strong data-i18n="instagram.tile2Title">Bars</strong>
+            <span data-i18n="instagram.tile2Text">Places with identity, atmosphere and return value.</span>
+          </div>
+        </a>
+
+        <a class="insta-card reveal" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener noreferrer" aria-label="Instagram tile 3">
+          <img class="insta-image" src="images/wom-instagram-03.jpg" alt="WØM Instagram tile placeholder 3">
+          <div class="insta-copy">
+            <strong data-i18n="instagram.tile3Title">People</strong>
+            <span data-i18n="instagram.tile3Text">Bartenders, creators and hospitality voices.</span>
+          </div>
+        </a>
+
+        <a class="insta-card reveal" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener noreferrer" aria-label="Instagram tile 4">
+          <img class="insta-image" src="images/wom-instagram-04.jpg" alt="WØM Instagram tile placeholder 4">
+          <div class="insta-copy">
+            <strong data-i18n="instagram.tile4Title">Cities</strong>
+            <span data-i18n="instagram.tile4Text">The pulse of cocktail culture worldwide.</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="hero-actions reveal" style="margin-top:18px;">
+        <a class="btn btn-primary" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener noreferrer" data-i18n="instagram.cta">Follow WØM</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="final-cta">
+    <div class="container">
+      <div class="final-shell reveal">
+        <div class="eyebrow" data-i18n="final.eyebrow">See the scene. Build with us.</div>
+        <h2 class="final-title" data-i18n="final.title">See the scene. Explore the platform. Build with us.</h2>
+        <p class="final-text" data-i18n="final.text">World of Mixologists reveals the cocktail world. Bartendly structures it. Follow WØM for visibility and discovery. Explore Bartendly for structure, tools and ecosystem value. Contact us if you want to create something meaningful in hospitality.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://app.bartendly.com" target="_blank" rel="noopener noreferrer" data-i18n="final.cta1">Explore Bartendly</a>
+          <a class="btn btn-secondary" href="https://www.instagram.com/world.of.mixologists/" target="_blank" rel="noopener noreferrer" data-i18n="final.cta2">Follow WØM</a>
+          <a class="btn btn-gold" href="mailto:martial@worldofmixologists.com" data-i18n="final.cta3">Work with us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-copy">
+          <span>© <span id="currentYear"></span> World of Mixologists.</span>
+          <span data-i18n="footer.copy">All rights reserved. Visibility with meaning. Structure with purpose.</span>
+        </div>
+        <div class="footer-links">
+          <a class="footer-link" href="https://bartendly.com" target="_blank" rel="noopener noreferrer" data-i18n="footer.link1">Bartendly</a>
+          <a class="footer-link" href="https://www.instagram.com/worldofmixologists/" target="_blank" rel="noopener noreferrer" data-i18n="footer.link2">Instagram</a>
+          <a class="footer-link" href="mailto:martial@worldofmixologists.com" data-i18n="footer.link3">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <a href="https://wa.me/+34618502493" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#ffffff" d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.3 31.7l8-2.1c2.3 1.3 4.9 2 7.7 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.6c-2.5 0-4.9-.7-7-2l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.4-2.2-2.1-4.7-2.1-7.2C2.7 8.5 8.5 2.7 16 2.7S29.3 8.5 29.3 16 23.5 29 16 29zm7.6-10.4c-.4-.2-2.3-1.1-2.7-1.2-.4-.1-.6-.2-.9.2-.2.4-1 1.2-1.2 1.5-.2.2-.5.3-.9.1-.4-.2-1.8-.7-3.4-2.2-1.3-1.2-2.2-2.7-2.5-3.1-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.7.1-.2 0-.5-.1-.7-.1-.2-.9-2.1-1.2-2.9-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5-.3.4-1.3 1.3-1.3 3.1s1.3 3.5 1.5 3.7c.2.2 2.6 4 6.3 5.6.9.4 1.6.6 2.2.8.9.3 1.7.2 2.3.1.7-.1 2.3-.9 2.6-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5z"/>
+    </svg>
+  </a>
+
+<script src="i18n.js"></script>
+<script>
+const body=document.body;
+const menuToggle=document.getElementById('menuToggle');
+const mobileNav=document.getElementById('mobileNav');
+const navLinks=[...document.querySelectorAll('.nav-link')];
+const mobileLinks=[...document.querySelectorAll('.mobile-nav-link')];
+const sections=[...document.querySelectorAll('main section[id]')];
+const revealItems=[...document.querySelectorAll('.reveal')];
+const languageSwitcher=document.getElementById('languageSwitcher');
+const langWrap=document.getElementById('langWrap');
+const currentYear=document.getElementById('currentYear');
+const whatsappFloat=document.querySelector('.whatsapp-float');
+window.addEventListener('scroll',function(){if(window.scrollY>300){whatsappFloat.classList.add('visible');}else{whatsappFloat.classList.remove('visible');}});
+if(currentYear){currentYear.textContent=new Date().getFullYear();}
+function closeMenu(){body.classList.remove('nav-open');if(menuToggle){menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open menu');}}
+if(menuToggle){menuToggle.addEventListener('click',function(){const open=body.classList.toggle('nav-open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Close menu':'Open menu');});}
+[...navLinks,...mobileLinks].forEach(function(link){link.addEventListener('click',function(){closeMenu();});});
+document.addEventListener('keydown',function(event){if(event.key==='Escape'){closeMenu();}});
+const revealObserver=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target);}});},{threshold:0.12});
+revealItems.forEach(function(item){revealObserver.observe(item);});
+const navObserver=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){const id=entry.target.getAttribute('id');navLinks.forEach(function(link){link.classList.toggle('is-active',link.getAttribute('href')==='#'+id);});}});},{rootMargin:'-35% 0px -50% 0px',threshold:0});
+sections.forEach(function(section){navObserver.observe(section);});
+function getTranslationObject(){if(window.translations&&typeof window.translations==='object'){return window.translations;}if(window.i18nTranslations&&typeof window.i18nTranslations==='object'){return window.i18nTranslations;}return null;}
+function getLanguagesFromTranslations(data){if(!data||typeof data!=='object'){return [];}return Object.keys(data).filter(function(key){return typeof data[key]==='object'&&data[key]!==null;});}
+function updateLanguageVisibility(){const translationsData=getTranslationObject();const languages=getLanguagesFromTranslations(translationsData);if(!languageSwitcher||!langWrap){return;}if(languages.length>1){langWrap.classList.add('is-visible');languageSwitcher.innerHTML='';languages.forEach(function(lang){const option=document.createElement('option');option.value=lang;option.textContent=lang.toUpperCase();languageSwitcher.appendChild(option);});const current=document.documentElement.getAttribute('lang')||languages[0];languageSwitcher.value=languages.includes(current)?current:languages[0];languageSwitcher.addEventListener('change',function(){const selected=this.value;if(typeof window.setLanguage==='function'){window.setLanguage(selected);}else{document.documentElement.setAttribute('lang',selected);}});}else{langWrap.classList.remove('is-visible');}}
+window.addEventListener('load',function(){updateLanguageVisibility();});
+</script>
 </body>
 </html>
