@@ -173,8 +173,13 @@ body.nav-open .mobile-nav{opacity:1;visibility:visible;transform:translateY(0);}
 @media (min-width:768px){.section{padding:110px 0;}.hero-content{padding:40px 32px 28px;}.hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(300px,0.62fr);align-items:end;}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr));}.path-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.commercial-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.bridge-shell{grid-template-columns:repeat(2,minmax(0,1fr));}.selection-grid{grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);}.instagram-grid{grid-template-columns:repeat(4,minmax(0,1fr));}.footer-inner{flex-direction:row;align-items:center;justify-content:space-between;}}
 @media (min-width:1100px){.desktop-nav{display:block;}.header-cta{display:inline-flex;}.menu-toggle{display:none;}.mobile-nav{display:none;}.path-grid{grid-template-columns:repeat(3,minmax(0,1fr));}.commercial-grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
 @media (max-width:1099px){.header-cta{display:none!important;}}
-@media (max-width:767px){.hero-image{min-height:900px;object-fit:cover;object-position:58% 20%;transform:none;}.hero-media::after{background:linear-gradient(180deg,rgba(8,8,12,0.22) 0%,rgba(8,8,12,0.36) 28%,rgba(8,8,12,0.80) 68%,rgba(8,8,12,0.97) 100%),linear-gradient(90deg,rgba(8,8,12,0.72) 0%,rgba(8,8,12,0.28) 46%,rgba(8,8,12,0.22) 100%);}.btn{width:100%;}.hero-actions{display:grid;}.path-actions{display:grid;}.footer{padding-bottom:96px;}}
+/*@media (max-width:767px){.hero-image{min-height:900px;object-fit:cover;object-position:58% 20%;transform:none;}.hero-media::after{background:linear-gradient(180deg,rgba(8,8,12,0.22) 0%,rgba(8,8,12,0.36) 28%,rgba(8,8,12,0.80) 68%,rgba(8,8,12,0.97) 100%),linear-gradient(90deg,rgba(8,8,12,0.72) 0%,rgba(8,8,12,0.28) 46%,rgba(8,8,12,0.22) 100%);}.btn{width:100%;}.hero-actions{display:grid;}.path-actions{display:grid;}.footer{padding-bottom:96px;}}*/
+
+@media (max-width:767px){.hero-image{min-height:900px;object-fit:cover;object-position:58% 20%;transform:none;}.hero-media::after{background:linear-gradient(180deg,rgba(8,8,12,0.22) 0%,rgba(8,8,12,0.36) 28%,rgba(8,8,12,0.80) 68%,rgba(8,8,12,0.97) 100%),linear-gradient(90deg,rgba(8,8,12,0.72) 0%,rgba(8,8,12,0.28) 46%,rgba(8,8,12,0.22) 100%);}.hero-actions{display:grid;}.path-actions{display:grid;}.hero-actions .btn,.path-actions .btn,.mobile-nav-actions .btn,.text-card .btn,.commercial-card .btn,.final-shell .btn{width:100%;}.site-header .btn{width:auto;}.footer{padding-bottom:96px;}}
+
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{animation:none!important;transition:none!important;}.reveal{opacity:1;transform:none;}}
+
+@media (max-width:767px){.pill-grid{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;padding:2px 0 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}.pill-grid::-webkit-scrollbar{display:none;}.pill{flex:0 0 auto;min-height:36px;padding:0 12px;font-size:0.82rem;white-space:nowrap;}}
 </style>
 </head>
 <body>
@@ -202,7 +207,7 @@ body.nav-open .mobile-nav{opacity:1;visibility:visible;transform:translateY(0);}
 <div class="lang-wrap" id="langWrap">
 <select class="lang-select" id="languageSwitcher" aria-label="Language selector"></select>
 </div>
-<a class="btn btn-secondary" href="https://apps.apple.com/be/app/bartendly/id6758607655" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaApp">Download Bartendly</a>
+<a class="btn btn-secondary header-cta" href="https://apps.apple.com/be/app/bartendly/id6758607655" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaApp">Download Bartendly</a>
 <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">
 <span class="menu-icon"><span></span></span>
 </button>
