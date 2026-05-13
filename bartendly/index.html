@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bartendly | Discover Cocktail Events, Guest Shifts, Bars & Bartenders Worldwide</title>
-<meta name="description" content="Discover cocktail events, guest shifts, bars and bartenders worldwide with Bartendly. Download the app, open the global events calendar, add your event or hire bartenders through Bartendly Experiences.">
+<title>Bartendly | Cocktail Events, Guest Shifts, Bars & Bartenders</title>
+<meta name="description" content="Discover guest shifts, cocktail events, bars and bartenders worldwide. Download Bartendly, open the events calendar, add your event or hire bartenders.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#0b0b0f">
 <link rel="canonical" href="https://worldofmixologists.com/bartendly/">
@@ -12,6 +12,11 @@
 <meta property="og:title" content="Bartendly | The Cocktail Events Calendar by World of Mixologists">
 <meta property="og:description" content="Find cocktail events, guest shifts, bars and bartenders worldwide. Download Bartendly, open the calendar, add your event or hire bartenders.">
 <meta property="og:image" content="https://worldofmixologists.com/images/wom-bartendly-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bartendly cocktail events calendar by World of Mixologists">
+<meta name="twitter:image:alt" content="Bartendly cocktail events calendar by World of Mixologists">
+<meta name="apple-itunes-app" content="app-id=6758607655">
 <meta property="og:url" content="https://worldofmixologists.com/bartendly/">
 <meta property="og:site_name" content="World of Mixologists">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,560 +25,85 @@
 <meta name="twitter:image" content="https://worldofmixologists.com/images/wom-bartendly-og.jpg">
 <link rel="preload" as="image" href="/images/wom-bartendly-hero.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"Bartendly by World of Mixologists","url":"https://worldofmixologists.com/bartendly/","description":"A fast bridge page to download Bartendly, open the cocktail events calendar, add cocktail events and hire bartenders through Bartendly Experiences.","isPartOf":{"@type":"WebSite","name":"World of Mixologists","url":"https://worldofmixologists.com/"},"about":{"@type":"SoftwareApplication","name":"Bartendly","applicationCategory":"LifestyleApplication","operatingSystem":"iOS, Web","url":"https://app.bartendly.com"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"World of Mixologists","url":"https://worldofmixologists.com/","logo":"https://worldofmixologists.com/images/wom-logo-mark.png","sameAs":["https://www.instagram.com/world.of.mixologists/"],"description":"World of Mixologists gives cocktail culture global visibility and connects audiences to Bartendly for structured discovery of cocktail events, bars and bartenders."}
+    {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://worldofmixologists.com/bartendly/#webpage","name":"Bartendly | Cocktail Events, Guest Shifts, Bars & Bartenders","url":"https://worldofmixologists.com/bartendly/","description":"Discover guest shifts, cocktail events, bars and bartenders worldwide. Download Bartendly, open the events calendar, add your event or hire bartenders.","isPartOf":{"@id":"https://worldofmixologists.com/#website"},"about":{"@id":"https://app.bartendly.com/#app"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://worldofmixologists.com/images/wom-bartendly-og.jpg"},"breadcrumb":{"@id":"https://worldofmixologists.com/bartendly/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://worldofmixologists.com/bartendly/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"World of Mixologists","item":"https://worldofmixologists.com/"},{"@type":"ListItem","position":2,"name":"Bartendly","item":"https://worldofmixologists.com/bartendly/"}]},{"@type":"WebSite","@id":"https://worldofmixologists.com/#website","name":"World of Mixologists","url":"https://worldofmixologists.com/","publisher":{"@id":"https://worldofmixologists.com/#organization"}},{"@type":"Organization","@id":"https://worldofmixologists.com/#organization","name":"World of Mixologists","url":"https://worldofmixologists.com/","logo":"https://worldofmixologists.com/images/wom-logo-mark.png","sameAs":["https://www.instagram.com/world.of.mixologists/"],"description":"World of Mixologists gives cocktail culture global visibility and connects audiences to Bartendly for structured discovery of cocktail events, bars and bartenders."},{"@type":"SoftwareApplication","@id":"https://app.bartendly.com/#app","name":"Bartendly","applicationCategory":"LifestyleApplication","operatingSystem":"iOS, Web","url":"https://app.bartendly.com","sameAs":["https://apps.apple.com/be/app/bartendly/id6758607655"],"description":"Bartendly helps people discover cocktail events, guest shifts, bars and bartenders worldwide."}]}
 </script>
 <style>
-:root{
---bg:#0b0b0f;
---bg2:#111117;
---card:rgba(255,255,255,0.055);
---card2:rgba(255,255,255,0.085);
---line:rgba(255,255,255,0.10);
---line2:rgba(255,255,255,0.18);
---text:#f7f3ea;
---muted:#b7b0a1;
---muted2:#8d887c;
---orange:#ff6a1a;
---orange2:#ff8a2a;
---gold:#d5b06c;
---white:#ffffff;
---black:#09090c;
---radius:26px;
---radius2:34px;
---max:1180px;
---shadow:0 24px 90px rgba(0,0,0,0.42);
-}
-*{
-box-sizing:border-box;
-}
-html{
-scroll-behavior:smooth;
-}
-body{
-margin:0;
-font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-background:radial-gradient(circle at top left,rgba(255,106,26,0.16),transparent 28%),radial-gradient(circle at top right,rgba(213,176,108,0.11),transparent 24%),linear-gradient(180deg,#07070a 0%,#0b0b0f 54%,#121217 100%);
-color:var(--text);
--webkit-font-smoothing:antialiased;
-text-rendering:optimizeLegibility;
-}
-img{
-display:block;
-width:100%;
-height:auto;
-}
-a{
-color:inherit;
-text-decoration:none;
-}
-button,select{
-font:inherit;
-}
-.skip-link{
-position:absolute;
-left:-9999px;
-top:0;
-}
-.skip-link:focus{
-left:16px;
-top:16px;
-z-index:999;
-padding:12px 16px;
-border-radius:12px;
-background:#fff;
-color:#000;
-}
-.header{
-position:sticky;
-top:0;
-z-index:100;
-background:rgba(8,8,12,0.74);
-border-bottom:1px solid rgba(255,255,255,0.07);
-backdrop-filter:blur(18px);
-}
-.header-inner{
-width:min(calc(100% - 32px),var(--max));
-min-height:74px;
-margin:0 auto;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:16px;
-}
-.brand{
-display:flex;
-align-items:center;
-gap:12px;
-min-width:0;
-}
-.brand-mark{
-width:38px;
-height:38px;
-border-radius:999px;
-border:1px solid rgba(255,255,255,0.14);
-object-fit:cover;
-background:#000;
-}
-.brand-text{
-display:flex;
-flex-direction:column;
-gap:3px;
-min-width:0;
-}
-.brand-name{
-font-size:0.86rem;
-font-weight:850;
-letter-spacing:0.14em;
-text-transform:uppercase;
-white-space:nowrap;
-}
-.brand-sub{
-font-size:0.68rem;
-font-weight:700;
-letter-spacing:0.10em;
-text-transform:uppercase;
-color:var(--muted);
-white-space:nowrap;
-}
-.header-actions{
-display:flex;
-align-items:center;
-gap:10px;
-}
-.lang-select{
-display:none;
-height:40px;
-padding:0 12px;
-border:1px solid rgba(255,255,255,0.13);
-border-radius:999px;
-background:rgba(255,255,255,0.04);
-color:var(--text);
-outline:none;
-}
-.lang-select.is-visible{
-display:block;
-}
-.btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-min-height:52px;
-padding:0 18px;
-border-radius:999px;
-border:1px solid transparent;
-font-size:0.94rem;
-font-weight:850;
-letter-spacing:0.01em;
-text-align:center;
-transition:transform 0.2s ease,background 0.2s ease,border-color 0.2s ease,color 0.2s ease;
-}
-.btn:hover{
-transform:translateY(-1px);
-}
-.btn-primary{
-background:var(--orange);
-color:#fff;
-box-shadow:0 14px 36px rgba(255,106,26,0.24);
-}
-.btn-primary:hover{
-background:var(--orange2);
-}
-.btn-white{
-background:#fff;
-color:#0b0b0f;
-}
-.btn-dark{
-background:rgba(255,255,255,0.045);
-border-color:rgba(255,255,255,0.14);
-color:#fff;
-}
-.btn-gold{
-background:rgba(213,176,108,0.13);
-border-color:rgba(213,176,108,0.28);
-color:#f8e0af;
-}
-.container{
-width:min(calc(100% - 32px),var(--max));
-margin:0 auto;
-}
-.hero{
-padding:18px 0 42px;
-}
-.hero-shell{
-position:relative;
-overflow:hidden;
-min-height:680px;
-display:grid;
-align-items:end;
-border:1px solid rgba(255,255,255,0.09);
-border-radius:34px;
-background:#101015;
-box-shadow:var(--shadow);
-}
-.hero-bg{
-position:absolute;
-inset:0;
-z-index:0;
-}
-.hero-bg img{
-width:100%;
-height:100%;
-object-fit:cover;
-object-position:center;
-filter:saturate(0.92) contrast(1.04);
-transform:scale(1.02);
-}
-.hero-bg::after{
-content:"";
-position:absolute;
-inset:0;
-background:linear-gradient(180deg,rgba(6,6,10,0.30) 0%,rgba(6,6,10,0.42) 32%,rgba(6,6,10,0.88) 100%),linear-gradient(90deg,rgba(6,6,10,0.86) 0%,rgba(6,6,10,0.44) 54%,rgba(6,6,10,0.18) 100%);
-}
-.hero-content{
-position:relative;
-z-index:1;
-max-width:880px;
-padding:28px 20px 24px;
-display:grid;
-gap:20px;
-}
-.logos{
-display:flex;
-align-items:center;
-gap:12px;
-}
-.logo-chip{
-display:inline-flex;
-align-items:center;
-gap:8px;
-width:max-content;
-max-width:100%;
-padding:9px 13px;
-border:1px solid rgba(255,255,255,0.10);
-border-radius:999px;
-background:rgba(255,255,255,0.055);
-color:#f6ddb0;
-font-size:0.76rem;
-font-weight:850;
-letter-spacing:0.12em;
-text-transform:uppercase;
-backdrop-filter:blur(8px);
-}
-.hero-title{
-max-width:10ch;
-margin:0;
-font-size:clamp(3rem,13vw,7.6rem);
-line-height:0.89;
-font-weight:950;
-letter-spacing:-0.065em;
-}
-.hero-text{
-max-width:780px;
-margin:0;
-font-size:clamp(1.08rem,4vw,1.55rem);
-line-height:1.45;
-font-weight:760;
-color:#fff;
-}
-.hero-note{
-margin:0;
-font-size:0.94rem;
-line-height:1.7;
-color:var(--muted);
-}
-.actions{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-}
-.section{
-padding:64px 0;
-}
-.section-head{
-display:grid;
-gap:14px;
-margin-bottom:24px;
-}
-.eyebrow{
-display:inline-flex;
-align-items:center;
-width:max-content;
-max-width:100%;
-padding:9px 13px;
-border:1px solid rgba(255,255,255,0.09);
-border-radius:999px;
-background:rgba(255,255,255,0.045);
-color:var(--gold);
-font-size:0.75rem;
-font-weight:850;
-letter-spacing:0.13em;
-text-transform:uppercase;
-}
-h1,h2,h3,p{
-margin:0;
-}
-h2{
-max-width:900px;
-font-size:clamp(2rem,7vw,4.6rem);
-line-height:0.96;
-font-weight:950;
-letter-spacing:-0.055em;
-}
-.section-intro{
-max-width:850px;
-font-size:1.02rem;
-line-height:1.8;
-color:var(--muted);
-}
-.action-grid{
-display:grid;
-gap:14px;
-}
-.action-card{
-display:grid;
-gap:14px;
-padding:22px;
-border:1px solid rgba(255,255,255,0.09);
-border-radius:28px;
-background:linear-gradient(180deg,rgba(255,255,255,0.065),rgba(255,255,255,0.035));
-}
-.action-card.is-primary{
-border-color:rgba(255,106,26,0.30);
-background:radial-gradient(circle at top right,rgba(255,106,26,0.17),transparent 38%),linear-gradient(180deg,rgba(255,255,255,0.075),rgba(255,255,255,0.035));
-}
-.action-index{
-display:flex;
-align-items:center;
-justify-content:center;
-width:34px;
-height:34px;
-border-radius:999px;
-background:rgba(255,255,255,0.08);
-color:var(--gold);
-font-weight:900;
-font-size:0.86rem;
-}
-.action-title{
-font-size:1.38rem;
-line-height:1.1;
-font-weight:950;
-letter-spacing:-0.035em;
-}
-.action-text{
-font-size:0.98rem;
-line-height:1.75;
-color:var(--muted);
-}
-.action-note{
-font-size:0.84rem;
-line-height:1.55;
-color:var(--muted2);
-}
-.info-shell{
-display:grid;
-gap:18px;
-padding:24px;
-border:1px solid rgba(255,255,255,0.09);
-border-radius:32px;
-background:radial-gradient(circle at 12% 16%,rgba(255,106,26,0.10),transparent 26%),rgba(255,255,255,0.04);
-}
-.bullet-list{
-display:grid;
-gap:12px;
-}
-.bullet{
-display:flex;
-gap:12px;
-align-items:flex-start;
-font-size:1rem;
-line-height:1.65;
-color:var(--muted);
-}
-.bullet span:first-child{
-color:var(--orange);
-font-weight:950;
-}
-.card-grid{
-display:grid;
-gap:14px;
-}
-.small-card{
-display:grid;
-gap:12px;
-padding:22px;
-border:1px solid rgba(255,255,255,0.09);
-border-radius:26px;
-background:rgba(255,255,255,0.045);
-}
-.small-card h3{
-font-size:1.22rem;
-line-height:1.14;
-font-weight:950;
-letter-spacing:-0.03em;
-}
-.small-card p{
-font-size:0.96rem;
-line-height:1.75;
-color:var(--muted);
-}
-.wom-panel{
-display:grid;
-gap:18px;
-padding:26px;
-border:1px solid rgba(255,255,255,0.10);
-border-radius:34px;
-background:linear-gradient(180deg,rgba(255,255,255,0.065),rgba(255,255,255,0.035));
-box-shadow:var(--shadow);
-}
-.panel-line{
-font-size:clamp(1.4rem,5vw,2.4rem);
-line-height:1.15;
-font-weight:950;
-letter-spacing:-0.045em;
-}
-.final{
-padding-bottom:88px;
-}
-.final-shell{
-display:grid;
-gap:18px;
-padding:28px;
-border:1px solid rgba(255,255,255,0.10);
-border-radius:34px;
-background:radial-gradient(circle at top left,rgba(255,106,26,0.16),transparent 28%),radial-gradient(circle at bottom right,rgba(213,176,108,0.12),transparent 30%),rgba(255,255,255,0.045);
-}
-.footer{
-padding:28px 0 44px;
-border-top:1px solid rgba(255,255,255,0.08);
-}
-.footer-inner{
-display:flex;
-flex-direction:column;
-gap:16px;
-}
-.footer-copy{
-font-size:0.9rem;
-line-height:1.7;
-color:var(--muted2);
-}
-.footer-links{
-display:flex;
-flex-wrap:wrap;
-gap:14px;
-}
-.footer-links a{
-font-size:0.9rem;
-font-weight:750;
-color:var(--muted);
-}
-.reveal{
-opacity:0;
-transform:translateY(18px);
-transition:opacity 0.65s ease,transform 0.65s ease;
-}
-.reveal.is-visible{
-opacity:1;
-transform:translateY(0);
-}
-@media (min-width:760px){
-.hero-content{
-padding:44px 42px 36px;
-}
-.action-grid{
-grid-template-columns:repeat(2,minmax(0,1fr));
-}
-.card-grid{
-grid-template-columns:repeat(3,minmax(0,1fr));
-}
-.info-shell{
-grid-template-columns:1fr 0.92fr;
-align-items:start;
-padding:32px;
-}
-.footer-inner{
-flex-direction:row;
-align-items:center;
-justify-content:space-between;
-}
-}
-@media (min-width:1080px){
-.action-grid{
-grid-template-columns:repeat(4,minmax(0,1fr));
-}
-}
-@media (max-width:759px){
-.header-inner{
-width:min(calc(100% - 24px),var(--max));
-}
-.brand-name{
-font-size:0.72rem;
-letter-spacing:0.12em;
-}
-.brand-sub{
-font-size:0.58rem;
-}
-.header .btn{
-display:none;
-}
-.lang-select.is-visible{
-display:none;
-}
-.hero{
-padding:12px 0 28px;
-}
-.container{
-width:min(calc(100% - 24px),var(--max));
-}
-.hero-shell{
-min-height:560px;
-border-radius:28px;
-}
-.hero-bg img{
-object-position:56% 50%;
-}
-.hero-content{
-padding:22px 18px 20px;
-}
-.hero-title{
-font-size:clamp(3.05rem,17vw,5rem);
-}
-.actions{
-display:grid;
-}
-.btn{
-width:100%;
-min-height:54px;
-}
-.section{
-padding:48px 0;
-}
-.action-card{
-padding:20px;
-}
-.info-shell{
-padding:22px;
-}
-.final-shell{
-padding:24px;
-}
-}
-@media (prefers-reduced-motion:reduce){
-html{
-scroll-behavior:auto;
-}
-*{
-animation:none!important;
-transition:none!important;
-}
-.reveal{
-opacity:1;
-transform:none;
-}
-}
+    :root{--bg:#0b0b0f;--bg2:#111117;--card:rgba(255,255,255,0.055);--card2:rgba(255,255,255,0.085);--line:rgba(255,255,255,0.10);--line2:rgba(255,255,255,0.18);--text:#f7f3ea;--muted:#b7b0a1;--muted2:#8d887c;--orange:#ff6a1a;--orange2:#ff8a2a;--gold:#d5b06c;--white:#ffffff;--black:#09090c;--radius:26px;--radius2:34px;--max:1180px;--shadow:0 24px 90px rgba(0,0,0,0.42);}
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,rgba(255,106,26,0.16),transparent 28%),radial-gradient(circle at top right,rgba(213,176,108,0.11),transparent 24%),linear-gradient(180deg,#07070a 0%,#0b0b0f 54%,#121217 100%);color:var(--text);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+    img{display:block;width:100%;height:auto;}
+    a{color:inherit;text-decoration:none;}
+    button,select{font:inherit;}
+    .skip-link{position:absolute;left:-9999px;top:0;}
+    .skip-link:focus{left:16px;top:16px;z-index:999;padding:12px 16px;border-radius:12px;background:#fff;color:#000;}
+    .header{position:sticky;top:0;z-index:100;background:rgba(8,8,12,0.74);border-bottom:1px solid rgba(255,255,255,0.07);backdrop-filter:blur(18px);}
+    .header-inner{width:min(calc(100% - 32px),var(--max));min-height:74px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0;}
+    .brand-mark{width:38px;height:38px;border-radius:999px;border:1px solid rgba(255,255,255,0.14);object-fit:cover;background:#000;}
+    .brand-text{display:flex;flex-direction:column;gap:3px;min-width:0;}
+    .brand-name{font-size:0.86rem;font-weight:850;letter-spacing:0.14em;text-transform:uppercase;white-space:nowrap;}
+    .brand-sub{font-size:0.68rem;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
+    .header-actions{display:flex;align-items:center;gap:10px;}
+    .lang-select{display:none;height:40px;padding:0 12px;border:1px solid rgba(255,255,255,0.13);border-radius:999px;background:rgba(255,255,255,0.04);color:var(--text);outline:none;}
+    .lang-select.is-visible{display:block;}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 18px;border-radius:999px;border:1px solid transparent;font-size:0.94rem;font-weight:850;letter-spacing:0.01em;text-align:center;transition:transform 0.2s ease,background 0.2s ease,border-color 0.2s ease,color 0.2s ease;}
+    .btn:hover{transform:translateY(-1px);}
+    .btn-primary{background:var(--orange);color:#fff;box-shadow:0 14px 36px rgba(255,106,26,0.24);}
+    .btn-primary:hover{background:var(--orange2);}
+    .btn-white{background:#fff;color:#0b0b0f;}
+    .btn-dark{background:rgba(255,255,255,0.045);border-color:rgba(255,255,255,0.14);color:#fff;}
+    .btn-gold{background:rgba(213,176,108,0.13);border-color:rgba(213,176,108,0.28);color:#f8e0af;}
+    .container{width:min(calc(100% - 32px),var(--max));margin:0 auto;}
+    .hero{padding:18px 0 42px;}
+    .hero-shell{position:relative;overflow:hidden;min-height:680px;display:grid;align-items:end;border:1px solid rgba(255,255,255,0.09);border-radius:34px;background:#101015;box-shadow:var(--shadow);}
+    .hero-bg{position:absolute;inset:0;z-index:0;}
+    .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(0.92) contrast(1.04);transform:scale(1.02);}
+    .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,6,10,0.30) 0%,rgba(6,6,10,0.42) 32%,rgba(6,6,10,0.88) 100%),linear-gradient(90deg,rgba(6,6,10,0.86) 0%,rgba(6,6,10,0.44) 54%,rgba(6,6,10,0.18) 100%);}
+    .hero-content{position:relative;z-index:1;max-width:880px;padding:28px 20px 24px;display:grid;gap:20px;}
+    .logos{display:flex;align-items:center;gap:12px;}
+    .logo-chip{display:inline-flex;align-items:center;gap:8px;width:max-content;max-width:100%;padding:9px 13px;border:1px solid rgba(255,255,255,0.10);border-radius:999px;background:rgba(255,255,255,0.055);color:#f6ddb0;font-size:0.76rem;font-weight:850;letter-spacing:0.12em;text-transform:uppercase;backdrop-filter:blur(8px);}
+    .hero-title{max-width:760px;margin:0;font-size:clamp(3rem,8vw,6.8rem);line-height:0.92;font-weight:950;letter-spacing:-0.06em;}
+    .hero-text{max-width:780px;margin:0;font-size:clamp(1.08rem,4vw,1.55rem);line-height:1.45;font-weight:760;color:#fff;}
+    .hero-note{margin:0;font-size:0.94rem;line-height:1.7;color:var(--muted);}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;}
+    .actions-spaced{margin-top:18px;}
+    .section{padding:64px 0;}
+    .section-head{display:grid;gap:14px;margin-bottom:24px;}
+    .eyebrow{display:inline-flex;align-items:center;width:max-content;max-width:100%;padding:9px 13px;border:1px solid rgba(255,255,255,0.09);border-radius:999px;background:rgba(255,255,255,0.045);color:var(--gold);font-size:0.75rem;font-weight:850;letter-spacing:0.13em;text-transform:uppercase;}
+    h1,h2,h3,p{margin:0;}
+    h2{max-width:900px;font-size:clamp(2rem,7vw,4.6rem);line-height:0.96;font-weight:950;letter-spacing:-0.055em;}
+    .section-intro{max-width:850px;font-size:1.02rem;line-height:1.8;color:var(--muted);}
+    .action-grid{display:grid;gap:14px;}
+    .action-card{display:grid;gap:14px;padding:22px;border:1px solid rgba(255,255,255,0.09);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,0.065),rgba(255,255,255,0.035));}
+    .action-card.is-primary{border-color:rgba(255,106,26,0.30);background:radial-gradient(circle at top right,rgba(255,106,26,0.17),transparent 38%),linear-gradient(180deg,rgba(255,255,255,0.075),rgba(255,255,255,0.035));}
+    .action-index{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:999px;background:rgba(255,255,255,0.08);color:var(--gold);font-weight:900;font-size:0.86rem;}
+    .action-title{font-size:1.38rem;line-height:1.1;font-weight:950;letter-spacing:-0.035em;}
+    .action-text{font-size:0.98rem;line-height:1.75;color:var(--muted);}
+    .action-note{font-size:0.84rem;line-height:1.55;color:var(--muted2);}
+    .info-shell{display:grid;gap:18px;padding:24px;border:1px solid rgba(255,255,255,0.09);border-radius:32px;background:radial-gradient(circle at 12% 16%,rgba(255,106,26,0.10),transparent 26%),rgba(255,255,255,0.04);}
+    .bullet-list{display:grid;gap:12px;}
+    .bullet{display:flex;gap:12px;align-items:flex-start;font-size:1rem;line-height:1.65;color:var(--muted);}
+    .bullet span:first-child{color:var(--orange);font-weight:950;}
+    .card-grid{display:grid;gap:14px;}
+    .small-card{display:grid;gap:12px;padding:22px;border:1px solid rgba(255,255,255,0.09);border-radius:26px;background:rgba(255,255,255,0.045);}
+    .small-card h3{font-size:1.22rem;line-height:1.14;font-weight:950;letter-spacing:-0.03em;}
+    .small-card p{font-size:0.96rem;line-height:1.75;color:var(--muted);}
+    .wom-panel{display:grid;gap:18px;padding:26px;border:1px solid rgba(255,255,255,0.10);border-radius:34px;background:linear-gradient(180deg,rgba(255,255,255,0.065),rgba(255,255,255,0.035));box-shadow:var(--shadow);}
+    .panel-line{font-size:clamp(1.4rem,5vw,2.4rem);line-height:1.15;font-weight:950;letter-spacing:-0.045em;}
+    .final{padding-bottom:88px;}
+    .final-shell{display:grid;gap:18px;padding:28px;border:1px solid rgba(255,255,255,0.10);border-radius:34px;background:radial-gradient(circle at top left,rgba(255,106,26,0.16),transparent 28%),radial-gradient(circle at bottom right,rgba(213,176,108,0.12),transparent 30%),rgba(255,255,255,0.045);}
+    .footer{padding:28px 0 44px;border-top:1px solid rgba(255,255,255,0.08);}
+    .footer-inner{display:flex;flex-direction:column;gap:16px;}
+    .footer-copy{font-size:0.9rem;line-height:1.7;color:var(--muted2);}
+    .footer-links{display:flex;flex-wrap:wrap;gap:14px;}
+    .footer-links a{font-size:0.9rem;font-weight:750;color:var(--muted);}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity 0.65s ease,transform 0.65s ease;}
+    .reveal.is-visible{opacity:1;transform:translateY(0);}
+    @media (min-width:760px){.hero-content{padding:44px 42px 36px;}.action-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.card-grid{grid-template-columns:repeat(3,minmax(0,1fr));}.info-shell{grid-template-columns:1fr 0.92fr;align-items:start;padding:32px;}.footer-inner{flex-direction:row;align-items:center;justify-content:space-between;}}
+    @media (min-width:1080px){.action-grid{grid-template-columns:repeat(4,minmax(0,1fr));}}
+    @media (max-width:759px){.header-inner{width:min(calc(100% - 24px),var(--max));}.brand-name{font-size:0.72rem;letter-spacing:0.12em;}.brand-sub{font-size:0.58rem;}.header .btn{display:none;}.lang-select.is-visible{display:none;}.hero{padding:12px 0 28px;}.container{width:min(calc(100% - 24px),var(--max));}.hero-shell{min-height:560px;border-radius:28px;}.hero-bg img{object-position:58% 50%;}.hero-content{padding:22px 18px 20px;}.hero-title{max-width:100%;font-size:clamp(2.85rem,13vw,4.6rem);line-height:0.96;letter-spacing:-0.055em;}.actions{display:grid;}.btn{width:100%;min-height:54px;}.section{padding:48px 0;}.action-card{padding:20px;}.info-shell{padding:22px;}.final-shell{padding:24px;}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{animation:none!important;transition:none!important;}.reveal{opacity:1;transform:none;}}
 </style>
 </head>
 <body>
@@ -589,7 +119,7 @@ transform:none;
 </a>
 <div class="header-actions">
 <select class="lang-select" id="languageSwitcher" aria-label="Language selector"></select>
-<a class="btn btn-dark" href="https://app.bartendly.com" target="_blank" rel="noopener noreferrer" data-i18n="bartendlyPage.headerCta">Open Bartendly</a>
+<a class="btn btn-dark" href="https://apps.apple.com/be/app/bartendly/id6758607655" target="_blank" rel="noopener noreferrer" data-i18n="bartendlyPage.headerCta">Download Bartendly</a>
 </div>
 </div>
 </header>
@@ -604,8 +134,8 @@ transform:none;
 <div class="logos">
 <div class="logo-chip" data-i18n="bartendlyPage.kicker">WØM × Bartendly</div>
 </div>
-<h1 class="hero-title" data-i18n="bartendlyPage.heroTitle">The cocktail world, in one place.</h1>
-<p class="hero-text" data-i18n="bartendlyPage.heroText">Discover guest shifts, takeovers, cocktail events, bars and bartenders worldwide.</p>
+<h1 class="hero-title" data-i18n="bartendlyPage.heroTitle">Discover cocktail events worldwide.</h1>
+<p class="hero-text" data-i18n="bartendlyPage.heroText">Guest shifts, takeovers, cocktail events, bars and bartenders — powered by Bartendly and amplified by World of Mixologists.</p>
 <div class="actions">
 <a class="btn btn-primary" href="https://apps.apple.com/be/app/bartendly/id6758607655" target="_blank" rel="noopener noreferrer" data-i18n="bartendlyPage.ctaDownload">Download Bartendly</a>
 <a class="btn btn-white" href="https://app.bartendly.com" target="_blank" rel="noopener noreferrer" data-i18n="bartendlyPage.ctaCalendar">Open events calendar</a>
@@ -688,7 +218,7 @@ transform:none;
 <p data-i18n="bartendlyPage.proOrganizersText">Make activations, takeovers and cocktail events easier to discover before and after they happen.</p>
 </article>
 </div>
-<div class="actions reveal" style="margin-top:18px">
+<div class="actions actions-spaced reveal">
 <a class="btn btn-primary" href="https://app.bartendly.com" target="_blank" rel="noopener noreferrer" data-i18n="bartendlyPage.proCta">Add your event</a>
 </div>
 </div>
