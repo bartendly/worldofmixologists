@@ -1,18 +1,23 @@
-WØM Media Partner Kit
+WØM MEDIA PARTNER KIT
 
-Use for cocktail and hospitality events promoted with World of Mixologists.
+Primary logo to use on flyers:
+- wom-logo-white.png for dark flyers
+- wom-logo-dark.png for light flyers
+- wom-logo-gold.png for premium/dark layouts
 
-Recommended wording on flyers:
-- Media Partner: World of Mixologists
-- or WØM Media Partner
+Optional explicit lockup:
+- wom-media-partner-white.png
+- wom-media-partner-dark.png
+- wom-media-partner-gold.png
 
-Basic use:
-1. Add the WØM Media Partner logo lockup to the flyer.
-2. Keep clear space around the mark.
-3. Do not stretch, distort, recolor, or place it on a low-contrast background.
-4. Contact WØM with the event details: flyer, city, date, venue, guest bartender / guest bar, brands if relevant.
+Recommended use:
+Use the simple WØM logo when the flyer already has partner/sponsor labels.
+Use the WØM Media Partner lockup when the role needs to be explicit.
 
-Contact:
+Please do not stretch, recolor, distort, outline or add effects to the logo.
+Keep clear space around the logo and make sure it remains readable.
+
+World of Mixologists
 Instagram: @world.of.mixologists
-Email: martial@worldofmixologists.com
-WhatsApp: +34 618 502 493
+Website: https://worldofmixologists.com
+Media partner page: https://worldofmixologists.com/media-partner/
