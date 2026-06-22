@@ -85,7 +85,11 @@
   "footerBartendly": "Bartendly",
   "footerExperiences": "Bartendly Experiences",
   "footerInstagram": "Instagram",
-  "footerContact": "Contact"
+  "footerContact": "Contact",
+  "expCtaHongKong": "Hire bartenders in Hong Kong",
+  "expCtaBarcelona": "Hire bartenders in Barcelona",
+  "footerExperiencesHongKong": "Hire bartenders in Hong Kong",
+  "footerExperiencesBarcelona": "Hire bartenders in Barcelona"
 },
     
           "bartendlyPage": {
@@ -326,7 +330,11 @@
           "footerBartendly": "Bartendly",
           "footerExperiences": "Bartendly Experiences",
           "footerInstagram": "Instagram",
-          "footerContact": "Contacto"
+          "footerContact": "Contacto",
+          "expCtaHongKong": "Contratar bartenders en Hong Kong",
+          "expCtaBarcelona": "Contratar bartenders en Barcelona",
+          "footerExperiencesHongKong": "Bartenders para eventos en Hong Kong",
+          "footerExperiencesBarcelona": "Bartenders para eventos en Barcelona" 
         },
         "bartendlyPage": {
           "skip": "Saltar al contenido",
@@ -563,7 +571,11 @@
           "footerBartendly": "Bartendly",
           "footerExperiences": "Bartendly Experiences",
           "footerInstagram": "Instagram",
-          "footerContact": "Contact"
+          "footerContact": "Contact",
+          "expCtaHongKong": "Engager des bartenders à Hong Kong",
+          "expCtaBarcelona": "Engager des bartenders à Barcelone",
+          "footerExperiencesHongKong": "Bartenders pour événements à Hong Kong",
+          "footerExperiencesBarcelona": "Bartenders pour événements à Barcelone"
         },
         "bartendlyPage": {
           "skip": "Aller au contenu",
@@ -801,7 +813,11 @@
             "footerBartendly": "Bartendly",
             "footerExperiences": "Bartendly Experiences",
             "footerInstagram": "Instagram",
-            "footerContact": "Contatto"
+            "footerContact": "Contatto",
+            "expCtaHongKong": "Ingaggia bartender a Hong Kong",
+            "expCtaBarcelona": "Ingaggia bartender a Barcellona",
+            "footerExperiencesHongKong": "Bartender per eventi a Hong Kong",
+            "footerExperiencesBarcelona": "Bartender per eventi a Barcellona"
           },
           "bartendlyPage": {
             "skip": "Vai al contenuto",
@@ -1039,7 +1055,11 @@
               "footerBartendly": "Bartendly",
               "footerExperiences": "Bartendly Experiences",
               "footerInstagram": "Instagram",
-              "footerContact": "お問い合わせ"
+              "footerContact": "お問い合わせ",
+              "expCtaHongKong": "香港でバーテンダーを手配",
+              "expCtaBarcelona": "バルセロナでバーテンダーを手配",
+              "footerExperiencesHongKong": "香港のイベント向けバーテンダー",
+              "footerExperiencesBarcelona": "バルセロナのイベント向けバーテンダー"
             },
             "bartendlyPage": {
               "skip": "コンテンツへスキップ",
